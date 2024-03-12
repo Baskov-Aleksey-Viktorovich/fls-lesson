@@ -1,1 +1,32 @@
+
+/* resets style */
+
 @import url(reset.css);
+
+.container{
+    text-align: center;
+}
+
+.title{
+    color:#0056B9;
+}
+
+.list{
+    color: #FFD800;
+}
+
+img{
+    height: 150px;
+}
+
+div > h3 {
+    color: green;
+}
+
+a{
+    color: red;
+}
+
+.link{
+    color: blue;
+}
