@@ -3,6 +3,19 @@
 
 @import url(reset.css);
 
+*{font-style: italic;
+font-size: 16px;}
+
+.header{
+    background-color: #0056B9;
+}
+
+
+.about__text.text{
+    font-weight: bold;
+    color: black;
+}
+
 .container{
     text-align: center;
 }
@@ -19,14 +32,20 @@ img{
     height: 150px;
 }
 
-div > h3 {
-    color: green;
-}
-
-a{
-    color: red;
-}
 
 .link{
     color: blue;
+}
+
+#footer{
+    background-color: #FFD800;
+}
+
+#footer + ul {
+    color: aqua;
+    cursor: pointer;
+}
+
+.sub-title{
+    color:  red;
 }
