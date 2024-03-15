@@ -1,5 +1,11 @@
 
-/* resets style */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 
+
+/* resets style */
 @import url(reset.css);
 
+body{
+    font-family: "QuickSand";
+    font-weight:500;
+}
