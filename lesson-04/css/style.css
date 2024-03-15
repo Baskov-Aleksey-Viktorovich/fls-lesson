@@ -1,11 +1,57 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
-
+@import url(css/fonts.css);
 
 /* resets style */
 @import url(reset.css);
+@import url(fonts/ProximaNovaCond-RegularIt.woff);
 
 body{
     font-family: "QuickSand";
     font-weight:500;
 }
+
+.descr{
+    font-size: 20px;
+    letter-spacing: 4px;
+    line-height: 1.2500 ;
+    text-transform: capitalize;
+}
+
+.descr .mod{
+    color: #092b53;
+    text-transform: uppercase;
+    text-decoration: line-through dashed black;
+
+}
+
+.list{
+    color: red;
+    text-decoration: overline dashed black;
+    padding: 15px;
+}
+
+.block-hw{
+    font-family: "Proxima Nova", sans-serif;
+    margin-top: 30px;
+}
+
+.sub_title{
+    font-size: 35px;
+    text-shadow: 5px 5px 10px red, 5px -5px 4px black;
+    line-height: 1,56021;
+    text-decoration: line-through red;
+}
+
+.title{
+    color: #2b2929;
+    font-size: 16px;
+    letter-spacing: 0;
+}
+
+/* added General Letter of style */
+.title-upper{
+    text-transform: uppercase;
+}
+
+
