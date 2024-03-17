@@ -1,6 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
-@import url(css/fonts.css);
+@import url(fonts.css);
 
 /* resets style */
 @import url(reset.css);
@@ -9,6 +9,16 @@
 body{
     font-family: "QuickSand";
     font-weight:500;
+}
+
+.some-title{
+    text-align: center;
+    font-size: 40px;
+    text-transform: uppercase;
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+    text-decoration-color: red;
+
 }
 
 .descr{
@@ -31,11 +41,6 @@ body{
     padding: 15px;
 }
 
-.block-hw{
-    font-family: "Proxima Nova", sans-serif;
-    margin-top: 30px;
-}
-
 .sub_title{
     font-size: 35px;
     text-shadow: 5px 5px 10px red, 5px -5px 4px black;
@@ -43,15 +48,62 @@ body{
     text-decoration: line-through red;
 }
 
+.block-hw, .block-list{
+    margin-top: 50px;
+    color: #535353;
+    font-family: "Proxima Nova",sans-serif;
+    font-weight: 400;
+}
+
 .title{
-    color: #2b2929;
     font-size: 16px;
     letter-spacing: 0;
+    display: inline;
 }
 
-/* added General Letter of style */
-.title-upper{
-    text-transform: uppercase;
+.main-title{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 400;
+    color:#2B2929;
+    line-height: 1.83333;
+
+}
+
+.block-hw-text{
+    font-size: 16px;
+    font-weight: 400;
+    color: #2B2929;
+    line-height: 30px;
+    padding-top: 15px;
+}
+
+.main-image{
+    margin: 40px 0 40px 0;
+}
+
+.block-list-title{
+    font-size: 20px;
+    font-weight: 600;
+    text-align: left;
+    color: #2B2929;
+    line-height: 28px;
 }
 
 
+.the-list{
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.83333;
+}
+
+.the-list-item{
+    padding-top: 20px;
+}
+
+.block-list-text{
+    padding-top: 40px;
+    color: #2B2929;
+    font-weight: normal;
+    line-height: 1.83333;
+}
