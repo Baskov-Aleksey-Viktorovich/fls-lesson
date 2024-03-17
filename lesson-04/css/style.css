@@ -4,7 +4,6 @@
 
 /* resets style */
 @import url(reset.css);
-@import url(fonts/ProximaNovaCond-RegularIt.woff);
 
 body{
     font-family: "QuickSand";
@@ -44,7 +43,7 @@ body{
 .sub_title{
     font-size: 35px;
     text-shadow: 5px 5px 10px red, 5px -5px 4px black;
-    line-height: 1,56021;
+    line-height: 1.56021;
     text-decoration: line-through red;
 }
 
