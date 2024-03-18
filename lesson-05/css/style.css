@@ -1,0 +1,19 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url(fonts.css);
+
+/* resets style */
+@import url(reset.css);
+
+.block{
+    background-color: #77608d;
+    padding: 20px;
+}
+
+.inline{
+    background-color: #7a956b;
+}
+
+.inline-block{
+    background-color: #794f45;
+}
