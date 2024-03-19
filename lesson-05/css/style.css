@@ -88,14 +88,14 @@ div>h4 {
 }
 
 
-.block-negative{
+.block-negative {
     background-color: lightgray;
     height: 250px;
     width: 150px;
     margin: 0 0 0 -50px;
 }
 
-.box-overflow{
+.box-overflow {
     max-width: 400px;
     margin: 0 auto;
     background-color: grey;
@@ -104,13 +104,13 @@ div>h4 {
 
 /* Home work style*/
 
-.limiter{
+.limiter {
     max-width: 1920px;
     margin: 0 auto;
     font-family: "Roboto", sans-serif;
 }
 
-.box-hw-title{
+.box-hw-title {
     color: #000;
     font-size: 50px;
     text-align: center;
@@ -119,54 +119,114 @@ div>h4 {
 }
 
 
-.gallery{
+.gallery {
     font-size: 0;
     margin: 0 auto;
     text-align: center;
 }
 
-.gallery-col{
+.gallery-col {
     display: inline-block;
     padding: 24px;
 }
 
 /* article style homework */
-.limiter-mod{
+.limiter-mod {
     font-family: "Proxima Nova";
     max-width: 1070px;
 }
 
-.first-part{
+.first-part {
     margin-bottom: 40px;
     width: 100%;
     height: 786px;
     background-color: #f8f8f8;
 }
 
-.article-title{
+.article-title {
     margin-bottom: 40px;
     font-size: 40px;
     text-align: center;
 }
 
-.article-img{
+.article-img {
     display: block;
     margin: 40px auto;
 }
 
-.article-desc{
+.article-desc {
     line-height: 30px;
     margin-bottom: 20px;
 }
 
 /* second part style of article */
 
-.sub-header{
+.sub-header {
     font-size: 20px;
     line-height: 1.7;
 }
 
-.list{
+.list {
     display: block;
     padding: 15px;
 }
+
+.article-tag {
+    color: #2b2929;
+    text-align: left;
+    line-height: 1.53;
+}
+
+.second-part{
+    margin-bottom: 70px;
+}
+
+/* last-part */
+
+.last-part{
+    font-family: "Proxima Nova";
+    max-width: 100%;
+}
+
+.about-us-title{
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+.limiter-last{
+    max-width: 1290px;
+    margin: 0 auto;
+}
+
+
+.benefits {
+    font-size: 0;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.benefits-col {
+    display: inline-block;
+    font-size: 16px;
+    max-width: 22%;
+    text-align: center;
+    vertical-align: top;
+}
+
+.benefits-img{
+    margin-bottom: 20px;
+}
+
+.benefits-title {
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+.benefits-desc {
+    font-size: 14px;
+    line-height: 1.53;
+    padding: 15px;
+}
+
+
