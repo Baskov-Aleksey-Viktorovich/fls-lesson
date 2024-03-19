@@ -1,15 +1,11 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
-@import url(fonts.css);
+/* @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap'); */
 
 /* resets style */
+
+
 @import url(reset.css);
-
-
-body{
-    font-family: "Proxima Nova";
-    font-weight:500;
-}
+@import url(fonts.css);
 
 .some-title{
     text-align: center;
@@ -51,7 +47,7 @@ body{
 .block-hw, .block-list{
     margin-top: 50px;
     color: #535353;
-    font-family: "Proxima Nova",sans-serif;
+    font-family: "Proxima Nova", sans-serif;
     font-weight: 400;
 }
 
