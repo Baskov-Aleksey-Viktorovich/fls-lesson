@@ -8,6 +8,13 @@
 .block{
     background-color: #77608d;
     padding: 20px;
+    margin-bottom: 50px;
+    border: 2px dashed white;
+}
+
+.block-1{
+    border: 3px dotted black;
+    margin-top: 50px;
 }
 
 .inline{
