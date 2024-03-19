@@ -1,10 +1,8 @@
 @font-face {
-	font-family: 'Proxima Nova Rg';
-	src: url('ProximaNova-Regular.eot');
-	src: local('Proxima Nova Regular'), local('ProximaNova-Regular'),
-		url('ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),
-		url('ProximaNova-Regular.woff') format('woff'),
-		url('ProximaNova-Regular.ttf') format('truetype');
-	font-weight: normal;
+	font-family: "Inter";
+	src: url("../fonts/proximanova_regular.woff2") format("woff2"), 
+			 url("../fonts/proximanova_regular.woff") format("woff");
+	font-display: swap;
+	font-weight: 400;
 	font-style: normal;
 }

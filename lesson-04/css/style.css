@@ -5,8 +5,9 @@
 /* resets style */
 @import url(reset.css);
 
+
 body{
-    font-family: "QuickSand";
+    font-family: "Proxima Nova";
     font-weight:500;
 }
 
