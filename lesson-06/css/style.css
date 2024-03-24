@@ -236,7 +236,7 @@
 }
 
 .container{
-    max-width: 1440px;
+    max-width: 1372px;
     margin: 0 auto;
     font-family: "Quicksand",sans-serif;
 }
@@ -246,6 +246,7 @@
 .penultimate__img{
     display: inline-block;
     max-width: 49%;
+    margin: 50px;
 }
 
 .penultimate__btn{
@@ -256,6 +257,7 @@
     min-width: 217px;
     border-radius: 5px;
     cursor: pointer;
+    background:#fff url("/img/hat-graduation-svgrepo-com.svg") 20px / 20px no-repeat;
 }
 
 .penultimate-title{
@@ -284,6 +286,67 @@
     display: inline-block;
     max-width: 50%;
 }
+
+/* last part */
+
+.last-part{
+    min-height: 562px;
+    background: #f4f4f5 url("/img/start.svg") left / 50px no-repeat;
+}
+
+
+.container-mod{
+    padding: 225px 0 50px 0;
+}
+
+.last-part-postion{
+    font-family: "Roboto",sans-serif;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.last-part-left{
+    display: inline-block;
+    text-align: left;
+    max-width: 50%;
+    margin-right: 98px;
+}
+
+.last-part-right{
+    display: inline-block;
+    border-radius: 160px 0;
+    box-shadow: 18px 20px 0 -2px hsl(240deg 5% 96%), 18px 20px hsl(0deg 0% 0% / 25%)
+}
+
+
+.last-part-title{
+    font-size: 74px;
+    line-height: 1.3543;
+    margin-bottom: 52px;
+    padding-top: 74px;
+}
+
+.last-part-desc{
+    text-transform: capitalize;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 1.5454;
+    margin-bottom: 66px;
+}
+
+.last-part-btn{
+    width: 223px;
+    height: 70px;
+    background: #1e2832 url("/img/icon.svg") 26px / 24px no-repeat;
+    font-size: 24px;
+    color: white;
+    text-transform: capitalize;
+}
+.last-part-btn > a {
+    margin: 0 0 0 8px;
+}
+
+
 
 
 /* footer */
