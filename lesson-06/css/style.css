@@ -291,7 +291,7 @@
 
 .last-part{
     min-height: 562px;
-    background: #f4f4f5 url("../img/start.svg") left / 50px no-repeat;
+    background: url("../img/start.svg") 0 510px no-repeat, url("../img/end.svg") 100% 260px no-repeat;
 }
 
 
