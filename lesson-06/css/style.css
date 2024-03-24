@@ -99,7 +99,7 @@
 .page-block-containe {
     height: 500px;
     width: 50%;
-    background-image: url(../img/honey.jpg);
+    background-image: url("../img/honey.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -155,7 +155,7 @@
     padding-left: 25px;
     margin-bottom: 10px;
     min-height: 25px;
-    background: url(/img/hono.svg) 0 0 / 20px no-repeat ;
+    background: url("../img/hono.svg") 0 0 / 20px no-repeat ;
 }
 
 
@@ -257,7 +257,7 @@
     min-width: 217px;
     border-radius: 5px;
     cursor: pointer;
-    background:#fff url("/img/hat-graduation-svgrepo-com.svg") 20px / 20px no-repeat;
+    background:#fff url("../img/hat-graduation-svgrepo-com.svg") 20px / 20px no-repeat;
 }
 
 .penultimate-title{
@@ -291,7 +291,7 @@
 
 .last-part{
     min-height: 562px;
-    background: #f4f4f5 url("/img/start.svg") left / 50px no-repeat;
+    background: #f4f4f5 url("../img/start.svg") left / 50px no-repeat;
 }
 
 
@@ -337,7 +337,7 @@
 .last-part-btn{
     width: 223px;
     height: 70px;
-    background: #1e2832 url("/img/icon.svg") 26px / 24px no-repeat;
+    background: #1e2832 url("../img/icon.svg") 26px / 24px no-repeat;
     font-size: 24px;
     color: white;
     text-transform: capitalize;
