@@ -11,15 +11,20 @@
 
 .header {
     width: 100%;
-    background-color: grey;
+    background: url("../img/geometric-pattern.webp") center / 100px;
+    background-color: #989898;
     min-height: 90px;
 }
 
 .header__title {
+    font-family: "Quicksand";
+    position: relative;
     font-size: 35px;
     font-weight: 700;
     text-align: center;
-    color: orange;
+    color: #ff6600;
+    top: 50%;
+    transform: translateY(50%);
 }
 
 .container {
@@ -71,12 +76,12 @@
 /* try focus */
 
 .link:focus {
-    background-color: grey;
-    border: 5px solid orange;
+    background-color: #989898;
+    border: 5px solid #ff6600;
 }
 
 .link:focus span {
-    color: orange;
+    color: #ff6600;
 }
 
 
@@ -85,50 +90,112 @@
     display: block;
 }
 
+
 .page__show {
     width: 250px;
     height: 250px;
     margin: 0 auto;
-    background-color: grey;
-    border: 5px solid orange;
+    background-color: #989898;
+    border: 5px solid #ff6600;
     border-radius: 50%;
     text-align: center;
     display: none;
 }
 
 .page__show span {
-    color: orange;
+    color: #ff6600;
     font-size: 18px;
     font-weight: 700;
     position: relative;
     top: 45%;
-    transform: translateY(-50%);
+    transform: translateY(50%);
 }
-
-
 
 .page__text {
     text-align: center;
-    background-color: grey;
-    color: orange;
+    background-color: #989898;
+    color: #ff6600;
     margin-bottom: 50px;
 }
 
+.page__text p {
+    margin-bottom: 20px;
+    border-bottom: 2px solid white;
+}
+
+.page__text p:first-child {
+    background-color: #ff6600;
+    color: black;
+}
+
+/* last / first of-type */
+
+.page__text p:first-of-type {
+    background-color: #ff6600;
+    color: black;
+}
+
+
+.page__text p:last-of-type {
+    background-color: #ff6600;
+    color: black;
+}
+
+/* try nth-child */
+
+.page__text p:nth-child(odd){
+    background-color: black;
+    color: white;
+}
+
+/* try hard algorithm NTH-CHILD */
+    .page__text p:nth-child(2n + 1){
+        background-color: darkgrey;
+        color: black;
+        font-size: 18px;
+    }
+
 .page__text:hover {
-    background-color: orange;
+    background-color: #ff6600;
     color: gray;
     cursor: pointer;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* footer */
 .footer {
-    background-color: grey;
+    background: url("../img/multi-geometric.webp") center / 150px repeat;
+    background-color: #989898;
     width: 100%;
+    height: 150px;
 }
 
 .footer__title {
     font-family: "Quicksand";
     font-size: 35px;
     text-align: center;
-    color: orange;
+    color: #ff6600;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    text-shadow: 10px 10px 2px #989898;
+    background-color: rgba(152, 152, 152, .5);
 }
