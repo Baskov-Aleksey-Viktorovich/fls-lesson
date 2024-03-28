@@ -259,8 +259,7 @@ code{
 
 /* try before НІЯКИХ ПРОБІЛІВ*/
 .list-item:hover::before{
-    transform: rotate(180deg);
-    transition: all 0.3;
+    opacity: .5;
 }
 
 
