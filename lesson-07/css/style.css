@@ -141,6 +141,14 @@
     color: black;
 }
 
+/* try remove last-chil */
+
+/* .page__text p:last-child{
+    margin-bottom: 0;
+} */
+
+
+
 /* try nth-child */
 
 .page__text p:nth-child(odd){
@@ -160,8 +168,6 @@
     color: gray;
     cursor: pointer;
 }
-
-
 
 
 
