@@ -5,7 +5,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 
 
-code{
+code {
     display: block;
     margin: 0 auto;
     text-align: center;
@@ -160,17 +160,17 @@ code{
 
 /* try nth-child */
 
-.page__text p:nth-child(odd){
+.page__text p:nth-child(odd) {
     background-color: black;
     color: white;
 }
 
 /* try hard algorithm NTH-CHILD */
-    .page__text p:nth-child(2n + 1){
-        background-color: darkgrey;
-        color: black;
-        font-size: 18px;
-    }
+.page__text p:nth-child(2n + 1) {
+    background-color: darkgrey;
+    color: black;
+    font-size: 18px;
+}
 
 .page__text:hover {
     background-color: #ff6600;
@@ -180,16 +180,16 @@ code{
 
 
 
-.sand__box-title{
+.sand__box-title {
     font-family: "Quicksand", sans-serif;
     font-size: 30px;
     font-weight: bold;
     text-align: center;
     color: darkgray;
     margin-bottom: 15px;
-} 
+}
 
-.sand__box-wrap{
+.sand__box-wrap {
     height: 80px;
     width: 35%;
     margin: 0 auto;
@@ -198,7 +198,7 @@ code{
     margin-bottom: 15px;
 }
 
-.sand__box-wrap span{
+.sand__box-wrap span {
     font-family: "Quicksand", sans-serif;
     font-size: 18px;
     position: relative;
@@ -206,7 +206,7 @@ code{
     transform: translateY(-50%);
 }
 
-.sand__box-link{
+.sand__box-link {
     display: block;
     margin: 0 auto;
     font-family: "Quicksand", serif;
@@ -221,34 +221,35 @@ code{
 }
 
 
-.sand__box > *:last-child{
+.sand__box>*:last-child {
     margin-bottom: 0;
 }
 
 
 /* class work before/after */
-.sand__box-bfaf::before{
+.sand__box-bfaf::before {
     content: "(";
 }
 
-.sand__box-bfaf::after{
+.sand__box-bfaf::after {
     content: ")";
 }
 
 
 
-.list{
+.list {
     text-align: center;
-} 
+}
 
-.list-item{
+.list-item {
     cursor: pointer;
     font-size: 18px;
     font-weight: 600;
-} 
+}
 
+/*  */
 
-.list-item::before{
+.list-item::before {
     content: "";
     vertical-align: middle;
     background: url("../img/hono.svg") 0 0 / 70% no-repeat;
@@ -258,9 +259,10 @@ code{
 }
 
 /* try before НІЯКИХ ПРОБІЛІВ*/
-.list-item:hover::before{
+.list-item:hover::before {
     opacity: .5;
 }
+
 
 
 
