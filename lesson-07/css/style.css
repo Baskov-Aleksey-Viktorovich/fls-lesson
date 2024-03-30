@@ -285,6 +285,143 @@ code {
 }
 
 
+/* HOME WORK */
+
+.homework{
+
+} 
+.game{
+    margin: 50px auto;
+    width: 80%;
+    height: 500px;
+    border: 5px solid #ff6600;
+} 
+
+.game-title{
+    font-family: sans-serif;
+    text-align: center;
+    margin: 20px 0 20px 0;
+} 
+
+.game-title::before{
+    content: "";
+    margin: 5px auto;
+    display: block;
+    height: 2px;
+    width: 20%;
+    background-color: orangered;
+}
+
+.game-title::after{
+    content: "";
+    margin: 10px auto;
+    display: block;
+    height: 2px;
+    width: 80%;
+    background-color: orangered;
+}
+
+.game-first{} 
+.game-first::after{
+    content: "";
+    height: 50px;
+    width: 100%;
+}
+
+.game-first::after:hover{
+    background-color: lightblue;
+}
+
+.game-middle{} 
+
+.game-last{}
+
+.test-hover{
+    margin: 0 auto;
+    height: 50px;
+    width: 50px;
+    background-color: #ff6600;
+}
+
+.test-hover P{
+    padding-top: 20px;
+    visibility: hidden;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.test-hover:hover{
+    width: 100%;
+}
+
+.test-hover:hover p{
+    visibility: visible;
+    text-align: center;
+}
+
+
+/* last part home work */
+
+.last__part{
+}
+
+.limiter{
+    margin: 0 auto;
+    background:linear-gradient(-180deg,#000000e6 0,#000000fc 100%), url("../img/about-section.png") center / 100% no-repeat;
+    width: 1512px;
+    height: 555px;
+}
+
+.last__part-content{
+    font-family: "Exo";
+    padding-top: 120px;
+    margin: 0 auto;
+    max-width: 992px;
+    min-height: 260px;
+} 
+
+.last__part-title{
+    font-size: 60px;
+    text-align: center;
+    color: white;
+    display: block;
+    min-width: 501px;
+}
+
+.last__part-title::after{
+    display: block;
+    margin: 0 auto;
+    margin-top: 35px;
+    content: "";
+    height: 2px;
+    width: 401px;
+    background: linear-gradient(90deg, rgba(253,29,29,1) 0%, rgba(37,253,29,1) 50%, rgba(78,69,252,1) 100%);
+}
+
+.last__part-title{
+    color: white;
+}
+
+.last__part-descr{
+    color: white;
+    padding-top: 31px;
+    font-size: 18px;
+    line-height: 1.45; /*  18 / 40 */
+}
+
+
+.last-part-list{
+    text-align: center;
+    color: white;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.last-part-item{
+    display: inline-block;
+}
+
+
 
 
 
