@@ -398,16 +398,29 @@ code {
 }
 
 
+.test-hover{
+    height: 50px;
+    width: 50px;
+    background: #ff6600;
+    margin: 0 auto;
+}
 
 .test-hover P {
     padding-top: 20px;
     visibility: hidden;
     font-weight: 700;
     cursor: pointer;
+    color: #2b2929;
 }
 
 .test-hover:hover {
     width: 100%;
+    border-color: #e98644;
+}
+
+.test-hover:active{
+    background-color: #ebaf87;
+    width: 50%;
 }
 
 .test-hover:hover p {
