@@ -406,11 +406,14 @@ code {
     color: white;
     padding-top: 31px;
     font-size: 18px;
-    line-height: 1.45; /*  18 / 40 */
+    line-height: 40px; /*  18 / 40 */
+    text-align: center;
+    margin-bottom: 74px;
 }
 
 
 .last-part-list{
+    font-family: "Exo";
     text-align: center;
     color: white;
     margin: 0 auto;
@@ -419,9 +422,26 @@ code {
 
 .last-part-item{
     display: inline-block;
+    text-transform: capitalize;
+    font-size: 20px;
+    text-align: left;
+    font-weight: 500;
+    margin-bottom: 120px;
+    margin-left: 130px;
 }
 
+.last-part-item:first-child{
+    margin-left: 0;
+}
 
+.last-part-item::after{
+    content: "";
+    width: 10px;
+    height: 10px;
+    background: linear-gradient(90deg, rgba(253,29,29,1) 0%, rgba(37,253,29,1) 50%, rgba(78,69,252,1) 100%);
+    border-radius: 50%;
+    margin-left: 60px;
+}
 
 
 
