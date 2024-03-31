@@ -323,7 +323,7 @@ code {
 }
 
 
-.game__start{
+.game__start {
     width: 50px;
     height: 50px;
     margin: 20px 0 0 20px;
@@ -332,7 +332,7 @@ code {
     cursor: pointer;
 }
 
-.game__stream-one{
+.game__stream-one {
     width: 90%;
     height: 25px;
     background-color: #ff6600;
@@ -340,7 +340,7 @@ code {
     margin: 0 0 0 20px;
 }
 
-.game__stream-two{
+.game__stream-two {
     position: absolute;
     top: 70px;
     right: 54px;
@@ -350,7 +350,7 @@ code {
     visibility: hidden;
 }
 
-.game__stream-thee{
+.game__stream-thee {
     position: absolute;
     top: 150px;
     right: 58px;
@@ -361,7 +361,7 @@ code {
     margin: 0 0 0 20px;
 }
 
-.game__stream-four{
+.game__stream-four {
     position: absolute;
     top: 250px;
     right: 58px;
@@ -372,7 +372,7 @@ code {
     margin: 0 0 0 20px;
 }
 
-.congradilation{
+.congradilation {
     position: absolute;
     top: 150px;
     left: 250px;
@@ -383,22 +383,21 @@ code {
     visibility: hidden;
 }
 
-.game__start:hover + .game__stream-one, 
+.game__start:hover+.game__stream-one,
 .game__stream-one:hover,
 
-.game__stream-one:hover + .game__stream-two,
+.game__stream-one:hover+.game__stream-two,
 .game__stream-two:hover,
 
-.game__stream-two:hover + .game__stream-thee,
+.game__stream-two:hover+.game__stream-thee,
 .game__stream-thee:hover,
 
-.game__stream-thee:hover + .congradilation
-{
+.game__stream-thee:hover+.congradilation {
     visibility: visible;
 }
 
 
-.test-hover{
+.test-hover {
     height: 50px;
     width: 50px;
     background: #ff6600;
@@ -418,7 +417,7 @@ code {
     border-color: #e98644;
 }
 
-.test-hover:active{
+.test-hover:active {
     background-color: #ebaf87;
     width: 50%;
 }
@@ -519,22 +518,23 @@ code {
     margin-left: 60px;
 }
 
-.mod{
+.mod {
     max-width: 1512px;
     background-color: black;
 }
-.about-me{
+
+.about-me {
     width: 100%;
 }
 
-.about-me-list{
+.about-me-list {
     font-family: "Exo";
     font-size: 0;
     text-align: center;
     color: white;
-} 
+}
 
-.about-me-item{
+.about-me-item {
     display: inline-block;
     font-size: 20px;
     text-align: left;
@@ -542,7 +542,7 @@ code {
 }
 
 
-.mode-one::before{
+.mode-one::before {
     content: "";
     margin-right: 20px;
     height: 20px;
@@ -551,7 +551,7 @@ code {
 
 }
 
-.mode-two::before{
+.mode-two::before {
     content: "";
     margin-right: 20px;
     height: 20px;
@@ -559,7 +559,7 @@ code {
     background: url("../img/location.svg") left / 20px no-repeat;
 }
 
-.mode-three::before{
+.mode-three::before {
     content: "";
     margin-right: 20px;
     height: 20px;
@@ -600,7 +600,7 @@ code {
     text-align: left;
 }
 
-.article-desc::before{
+.article-desc::before {
     content: "";
     height: 50px;
     width: 50px;
@@ -628,12 +628,12 @@ code {
     line-height: 1.53;
 }
 
-.second-part{
+.second-part {
     margin-bottom: 70px;
 }
 
 
-.list > li:last-child{
+.list>li:last-child {
     margin: 0;
 }
 
