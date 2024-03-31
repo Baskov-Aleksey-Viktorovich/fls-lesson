@@ -290,11 +290,12 @@ code {
 
 .homework {}
 
-.game {
+.game-wrapper {
     margin: 50px auto;
     width: 80%;
     height: 500px;
     border: 5px solid #ff6600;
+    position: relative;
 }
 
 .game-title {
@@ -321,28 +322,82 @@ code {
     background-color: orangered;
 }
 
-.game-first {}
 
-.game-first::after {
-    content: "";
-    height: 50px;
-    width: 100%;
-}
-
-.game-first::after:hover {
-    background-color: lightblue;
-}
-
-.game-middle {}
-
-.game-last {}
-
-.test-hover {
-    margin: 0 auto;
-    height: 50px;
+.game__start{
     width: 50px;
+    height: 50px;
+    margin: 20px 0 0 20px;
+    background: url("../img/start.png") center / 50px no-repeat;
     background-color: #ff6600;
+    cursor: pointer;
 }
+
+.game__stream-one{
+    width: 90%;
+    height: 25px;
+    background-color: #ff6600;
+    visibility: hidden;
+    margin: 0 0 0 20px;
+}
+
+.game__stream-two{
+    position: absolute;
+    top: 95px;
+    right: 54px;
+    width: 25px;
+    height: 200px;
+    background-color: #ff6600;
+    visibility: hidden;
+}
+
+.game__stream-thee{
+    position: absolute;
+    top: 150px;
+    right: 58px;
+    width: 90%;
+    height: 25px;
+    background-color: #ff6600;
+    visibility: hidden;
+    margin: 0 0 0 20px;
+}
+
+.game__stream-four{
+    position: absolute;
+    top: 250px;
+    right: 58px;
+    width: 90%;
+    height: 25px;
+    background-color: #ff6600;
+    visibility: hidden;
+    margin: 0 0 0 20px;
+}
+
+.congradilation{
+    position: absolute;
+    top: 150px;
+    left: 250px;
+    background: url("../img/win-gesture-svgrepo-com.svg")center / 200px;
+    width: 200px;
+    height: 200px;
+    color: #ff6600;
+    visibility: hidden;
+}
+
+.game__start:hover + .game__stream-one, 
+.game__stream-one:hover,
+
+.game__stream-one:hover + .game__stream-two,
+.game__stream-two:hover,
+
+.game__stream-two:hover + .game__stream-thee,
+.game__stream-thee:hover,
+
+.game__stream-thee:hover + .congradilation
+{
+    visibility: visible;
+}
+
+
 
 .test-hover P {
     padding-top: 20px;
