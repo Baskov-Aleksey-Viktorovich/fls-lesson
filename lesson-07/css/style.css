@@ -266,7 +266,7 @@ code {
 }
 
 
-.sub-title{
+.sub-title {
     text-align: center;
     font-family: "Exo";
     font-weight: bold;
@@ -275,35 +275,34 @@ code {
     line-height: 1.16;
 }
 
-.sub-title::after{
+.sub-title::after {
     content: "";
     display: block;
     margin: 10px auto;
     height: 2px;
     width: 80%;
-    background: linear-gradient(90deg, rgba(253,29,29,1) 0%, rgba(37,253,29,1) 50%, rgba(78,69,252,1) 100%);
+    background: linear-gradient(90deg, rgba(253, 29, 29, 1) 0%, rgba(37, 253, 29, 1) 50%, rgba(78, 69, 252, 1) 100%);
 }
 
 
 /* HOME WORK */
 
-.homework{
+.homework {}
 
-} 
-.game{
+.game {
     margin: 50px auto;
     width: 80%;
     height: 500px;
     border: 5px solid #ff6600;
-} 
+}
 
-.game-title{
+.game-title {
     font-family: sans-serif;
     text-align: center;
     margin: 20px 0 20px 0;
-} 
+}
 
-.game-title::before{
+.game-title::before {
     content: "";
     margin: 5px auto;
     display: block;
@@ -312,7 +311,7 @@ code {
     background-color: orangered;
 }
 
-.game-title::after{
+.game-title::after {
     content: "";
     margin: 10px auto;
     display: block;
@@ -321,40 +320,41 @@ code {
     background-color: orangered;
 }
 
-.game-first{} 
-.game-first::after{
+.game-first {}
+
+.game-first::after {
     content: "";
     height: 50px;
     width: 100%;
 }
 
-.game-first::after:hover{
+.game-first::after:hover {
     background-color: lightblue;
 }
 
-.game-middle{} 
+.game-middle {}
 
-.game-last{}
+.game-last {}
 
-.test-hover{
+.test-hover {
     margin: 0 auto;
     height: 50px;
     width: 50px;
     background-color: #ff6600;
 }
 
-.test-hover P{
+.test-hover P {
     padding-top: 20px;
     visibility: hidden;
     font-weight: 700;
     cursor: pointer;
 }
 
-.test-hover:hover{
+.test-hover:hover {
     width: 100%;
 }
 
-.test-hover:hover p{
+.test-hover:hover p {
     visibility: visible;
     text-align: center;
 }
@@ -362,25 +362,24 @@ code {
 
 /* last part home work */
 
-.last__part{
-}
+.last__part {}
 
-.limiter{
+.limiter {
     margin: 0 auto;
-    background:linear-gradient(-180deg,#000000e6 0,#000000fc 100%), url("../img/about-section.png") center / 100% no-repeat;
+    background: linear-gradient(-180deg, #000000e6 0, #000000fc 100%), url("../img/about-section.png") center / 100% no-repeat;
     width: 1512px;
     height: 555px;
 }
 
-.last__part-content{
+.last__part-content {
     font-family: "Exo";
     padding-top: 120px;
     margin: 0 auto;
     max-width: 992px;
     min-height: 260px;
-} 
+}
 
-.last__part-title{
+.last__part-title {
     text-transform: uppercase;
     font-size: 60px;
     text-align: center;
@@ -390,26 +389,27 @@ code {
     font-weight: bold;
 }
 
-.last__part-title::after{
+.last__part-title::after {
     display: block;
     margin: 0 auto;
     margin-top: 35px;
     content: "";
     height: 2px;
     width: 401px;
-    background: linear-gradient(90deg, rgba(253,29,29,1) 0%, rgba(37,253,29,1) 50%, rgba(78,69,252,1) 100%);
+    background: linear-gradient(90deg, rgba(253, 29, 29, 1) 0%, rgba(37, 253, 29, 1) 50%, rgba(78, 69, 252, 1) 100%);
 }
 
-.last__part-title{
+.last__part-title {
     color: white;
 }
 
-.last__part-descr{
+.last__part-descr {
     color: white;
     padding-top: 31px;
     font-size: 18px;
     font-weight: 300;
-    line-height: 40px; /*  18 / 40 */
+    line-height: 40px;
+    /*  18 / 40 */
     text-align: center;
     margin-bottom: 74px;
     min-width: 992px;
@@ -417,7 +417,7 @@ code {
 
 
 
-.last-part-list{
+.last-part-list {
     font-family: "Exo";
     text-align: center;
     color: white;
@@ -425,7 +425,7 @@ code {
     padding: 0;
 }
 
-.last-part-item{
+.last-part-item {
     display: inline-block;
     text-transform: capitalize;
     font-size: 20px;
@@ -435,20 +435,66 @@ code {
     margin-left: 130px;
 }
 
-.last-part-item:first-child{
+.last-part-item:first-child {
     margin-left: 0;
 }
 
-.last-part-item::after{
+.last-part-item::after {
     content: "";
     width: 10px;
     height: 10px;
-    background: linear-gradient(90deg, rgba(253,29,29,1) 0%, rgba(37,253,29,1) 50%, rgba(78,69,252,1) 100%);
+    background: linear-gradient(90deg, rgba(253, 29, 29, 1) 0%, rgba(37, 253, 29, 1) 50%, rgba(78, 69, 252, 1) 100%);
     border-radius: 50%;
     margin-left: 60px;
 }
 
+.mod{
+    max-width: 1512px;
+    background-color: black;
+}
+.about-me{
+    width: 100%;
+}
 
+.about-me-list{
+    font-family: "Exo";
+    font-size: 0;
+    text-align: center;
+    color: white;
+} 
+
+.about-me-item{
+    display: inline-block;
+    font-size: 20px;
+    text-align: left;
+    margin-left: 80px;
+}
+
+
+.mode-one::before{
+    content: "";
+    margin-right: 20px;
+    height: 20px;
+    width: 20px;
+    background: url("../img/call.svg") left / 20px no-repeat;
+
+}
+
+.mode-two::before{
+    content: "";
+    margin-right: 20px;
+    height: 20px;
+    width: 20px;
+    background: url("../img/location.svg") left / 20px no-repeat;
+}
+
+.mode-three::before{
+    content: "";
+    margin-right: 20px;
+    height: 20px;
+    width: 20px;
+    background: url("../img/email.svg") left / 20px no-repeat;
+}
 
 
 
