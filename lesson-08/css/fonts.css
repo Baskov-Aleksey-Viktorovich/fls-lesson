@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Nyght Serif Dark';
+    src: url('NyghtSerif-Dark.eot');
+    src: local('Nyght Serif Dark'), local('NyghtSerif-Dark'),
+        url('NyghtSerif-Dark.eot?#iefix') format('embedded-opentype'),
+        url('NyghtSerif-Dark.woff2') format('woff2'),
+        url('NyghtSerif-Dark.woff') format('woff'),
+        url('NyghtSerif-Dark.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+

@@ -1,0 +1,144 @@
+/* resets style */
+@import url(reset.css);
+
+/* connect fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url(fonts.css);
+
+
+.page__title{
+    font-size: 48px;
+    text-align: center;
+    margin-bottom: 50px;
+    font-family: "Quicksand", sans-serif;
+}
+
+
+
+.container {
+    font-family: "Quicksand", sans-serif;
+    max-width: 1550px;
+    margin: 0 auto;
+}
+
+
+.list{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.list-item{
+    position: relative;
+    margin-bottom: 25px;
+    padding: 0;
+    cursor: pointer;
+    font-family: 'Nyght Serif', sans-serif;
+    font-weight: 800;
+}
+.list-item::before, 
+.list-item::after{
+    content: "";
+    position: absolute;
+    background-color: rgb(34, 31, 31);
+    display: block;
+    width: 100%;
+    height: 2px;
+    transition: add 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    right: 0;
+    bottom: 0;
+}
+
+.list-item:hover:before{
+    bottom: 100%;
+}
+
+.list-item img{
+    display: block;
+    margin: 0 auto;
+    max-width: 50%;
+}
+
+.list-item:last-child{
+    margin: 0;
+}
+
+.mod{
+    padding: 20px;
+    background-color: lightgrey;
+}
+.mod img {
+    display: inline;
+    margin-right: 25px;
+} 
+
+.sap,.telegram,.viber{
+    min-height: 60px;
+    width: 60px;
+    border-radius: 20%;
+}
+
+.sap{
+    background-color: #75B73B;
+}
+
+.telegram{
+    background-color: #fff;
+}
+
+.viber{
+    background-color: #6F3FAA;
+}
+
+
+.page__btn{
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+    height: 70px;
+    width: 400px;
+    background-color: lightgray;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.page__btn span{
+    display: block;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    font-weight: 800;
+}
+
+.page__btn:hover{
+    background-color: hsl(180, 8%, 72%);
+}
+
+.page__btn:active{
+    background:url("../img/bg-pattern.webp") center / 600px no-repeat;
+}
+
+
+.footer{
+    text-align: center;
+    background-color: lightgray;
+    margin-top: 50px;
+}
+
+.footer__title{
+    font-size: 48px;
+    font-family: 'Nyght Serif', sans-serif;
+}
+
+/* style for dpr */
+.size-s, .size-m, .size-l{
+    max-width: 100%;
+    margin: 0 auto;
+} 
+
+.pictures__title{
+    text-align: center;
+    font-size: 28px;
+}
+
+

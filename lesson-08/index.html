@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--  підключення окремого файлу стилів -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/google-palm.svg">
+    <title>lesson-08 Web-graphics!</title>
+
+</head>
+
+<body>
+    <main class="page">
+        <h1 class="page__title">This home work Web-graphics</h1>
+        <div class="container">
+            <ul class="list">
+                <li class="list-item">Це векторне зображення логотипу
+                    <img src="img/vector-content/logo-header.svg" alt="логотип сайту кровато">
+                </li>
+
+                <li class="list-item mod">Це векторні зображення відомих месенджерів в svg форматі
+                    <img class="sap" src="img/vector-content/mesaggers/sap.svg" alt="лого ватСАП">
+                    <img class="telegram" src="img/vector-content/mesaggers/teleg.svg" alt="лого Телеграм">
+                    <img class="viber" src="img/vector-content/mesaggers/viber-01.svg" alt="лого вайбер">
+                </li>
+                <li class="list-item">Це расторове зображення переконвертоване з png в webp
+                    <img src="img/raster-content/money-hand.webp" alt="">
+                </li>
+                <li class="list-item mod">Це svg зобрежння іконок
+                    <img src="img/vector-icon/star.svg" alt="">
+                    <img src="img/vector-icon/creadit.svg" alt="">
+                    <img src="img/vector-icon/sale.svg" alt="">
+                </li>
+
+                <li class="list-item mod">Це векторі контентні зображення в svg форматі
+                    <img src="/img/vector-content/payment-01.svg" alt="Метод оплати">
+                    <img src="/img/vector-content/payment-02.svg" alt="Метод оплати">
+                    <img src="/img/vector-content/payment-03.svg" alt="Метод оплати">
+                    <img src="/img/vector-content/payment-04.svg" alt="Метод оплати">
+                </li>
+
+                <li class="list-item mod">Це контентні іконки в svg
+                    <img src="/img/vector-content/ukr.svg" alt="Метод доставки">
+                    <img src="/img/vector-content/sale (2).svg" alt="Метод доставки">
+                    <img src="/img/vector-content/tick.svg" alt="Метод доставки">
+                </li>
+                <li class="list-item mod">Це контентні іконки svg форматі
+                    <img src="/img/vector-content/01.svg" alt="Метод доставки">
+                    <img src="/img/vector-content/02.svg" alt="Метод доставки">
+                    <img src="/img/vector-content/03.svg" alt="Метод доставки">
+                </li>
+            </ul>
+
+            <div class="pictures">
+                <h3 class="pictures__title">Тут використовую тег picture
+                </h3>
+                <picture>
+                    <source srcset="img/raster-content/pic-01.avif" type="image/avif"> <!-- додавання в форматі avif -->
+                    <source srcset="img/raster-content/pic-03.webp" type="image/webp"> <!-- додавання в форматі webp -->
+                    <img src="/img/raster-content/pic-01.jpg" alt="image">
+                </picture>
+
+            </div>
+            <a class="page__btn" href="dpr.html" target="_blank"><span>Перехід на сторінку з різними розмірами
+                    фото!</span></a>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <h4 class="footer__title">Це футер</h4>
+        </div>
+    </footer>
+</body>
+
+</html>
