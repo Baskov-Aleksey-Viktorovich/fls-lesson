@@ -18,7 +18,7 @@
 .header__title{
     margin: 0 auto;
     max-width: 70%;
-    background: url("../img/bem.svg");
+    background: url("..img/bem.svg");
     background-position: left;
     background-size: contain;
     background-repeat: no-repeat;
@@ -35,6 +35,7 @@
     font-family: "Quicksand", sans-serif;
     max-width: 1550px;
     margin: 0 auto;
+    text-align: center;
 }
 
 
