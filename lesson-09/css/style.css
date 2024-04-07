@@ -11,16 +11,22 @@
     width: 100%;
     margin-bottom: 50px;
     border-bottom: 2px solid lightgray;
+    margin-bottom: 50px;
 }
 
 
 .header__title{
     margin: 0 auto;
-    background: url("../img/bem.svg") center / 100px no-repeat;
-    font-size: 48px;
+    width: 1000px;
+    background: url("../img/bem.svg");
+    background-position: left;
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+    padding-top: 15px;
+    font-size: 38px;
     text-align: center;
     font-family: "Quicksand", sans-serif;
-    padding: 130px 0 0 25px;
 }
 
 
