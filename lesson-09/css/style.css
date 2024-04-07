@@ -1,0 +1,48 @@
+/* resets style */
+@import url(reset.css);
+
+/* connect fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url(fonts.css);
+
+
+.header{
+    width: 100%;
+    margin-bottom: 50px;
+    border-bottom: 2px solid lightgray;
+}
+
+
+.header__title{
+    margin: 0 auto;
+    background: url("../img/bem.svg") center / 100px no-repeat;
+    font-size: 48px;
+    text-align: center;
+    font-family: "Quicksand", sans-serif;
+    padding: 130px 0 0 25px;
+}
+
+
+
+.container {
+    font-family: "Quicksand", sans-serif;
+    max-width: 1550px;
+    margin: 0 auto;
+}
+
+
+
+.footer{
+    border-top: 2px solid lightgray;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.footer__title{
+    font-size: 48px;
+    font-family: 'Nyght Serif', sans-serif;
+    padding: 20px 0 20px 0;
+}
+
+
