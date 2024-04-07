@@ -12,12 +12,412 @@
 </head>
 
 <body>
-    <header class="header">
+    <div class="header">
         <h1 class="header__title">Методологія БЕМ (Блок, Елемент, Модифікатор)</h1>
-    </header>
+    </div>
 
     <main class="page">
-        <div class="container"></div>
+        <div class="container">
+            
+            <div class="sub-header">
+                <ul class="sub-header__list">
+                    <li class="sub-header__item">Про нас</li>
+                    <li class="sub-header__item">Оплата</li>
+                    <li class="sub-header__item">Доставка та збірка</li>
+                    <li class="sub-header__item">Відгуки</li>
+                    <li class="sub-header__item">Блог</li>
+                    <li class="sub-header__item">Контакти</li>
+                </ul>
+
+                <div class="sub-header__support">
+                        <a class="sub-header__link" href="#" type="link">
+                            <img src="img/main-page-header/vector/whatsapp.svg" alt="іконка whatsapp">
+                        </a>
+                        <a class="sub-header__link" href="#" type="link">
+                            <img src="img/main-page-header/vector/telega.svg" alt="іконка telegramm">
+                        </a>
+                        <a class="sub-header__link" href="#">
+                            <img src="img/main-page-header/vector/viber.svg" alt="viber">
+                        </a>
+                </div>
+            </div>
+            
+            <header class="header-hw header-hw--margin">
+                <a class="header-hw__link" href="#">
+                    <img class="header-hw-logo" src="img/main-page-header/raster/logotipe.png"
+                        alt="логотип сайту кровато там жовта кровать і слово кровато">
+                </a>
+                <a class="header-hw__catalog" href="#">
+                    <span>Каталог</span>
+                </a>
+
+                <div class="header-hw__search">
+                    <input class="header-hw__peach" placeholder="Пошук товарів" type="text">
+                </div>
+
+                <div class="header-hw__phone">
+                    <img class="header-hw__icon" src="img/main-page-header/vector/phone.svg" alt="іконка телефону">
+                    <span class="header-hw__sub-title">Щодня з 9:00 до 18:00</span>
+                </div>
+
+                <a class="favorite" src="#">
+                    <img class="icon" src="img/main-page-header/vector/favorite.svg" alt="іконка сердечко улюблене">
+                </a>
+
+                <a class="cart" src="#">
+                    <img class="icon" src="img/main-page-header/vector/cart.svg" alt="іконка корзини">
+                </a>
+            </header>
+
+            <div class="nav-bar nav-bar--margin">
+                <ul class="nav-bar__list">
+                    <li class="nav-bar__item">
+                        <img class="icon" src="img/main-page-header/vector/star.svg" alt="іконка зірочки">
+                        Акції
+                    </li>
+                    <li class="nav-bar__item">
+                        <img class="icon" src="img/main-page-header/vector/circle-perc.svg" alt="">Розпродаж
+                    </li>
+                    <li class="nav-bar__item">
+                        <img src="img/main-page-header/vector/past-circle.svg" alt="">
+                        Купити в кредит
+                    </li>
+                </ul>
+    
+                <ul class="nav-bar__category">
+                    <li class="nav-bar__item">Дитяча</li>
+                    <li class="nav-bar__item">Кухня</li>
+                    <li class="nav-bar__item">Ванна</li>
+                    <li class="nav-bar__item">Спальня</li>
+                    <li class="nav-bar__item">Передпокій</li>
+                    <li class="nav-bar__item">Вітальня</li>
+                    <li class="nav-bar__item">Офіс</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="favorite-category favorite-category--margin">
+            <h2 class="main-title main-title--margin">Популярні категорії</h2>
+
+            <div class="favorite-catrgory-item">
+                <h5 class="favorite-category__name">Ліжка</h5>
+                <span class="favorite-category__id">54</span>
+                <img class="favorite-category__image" src="/img/main-page-content/category/sofa.webp" alt="фото ліжка">
+                <a href="#">
+                    <img src="img/main-page-content/arrow.svg" alt="іконка стрілочки посилання на категорію на сайті">
+                </a>
+            </div>
+
+            <div class="favorite-catrgory-item">
+                <h5 class="favorite-category__name">Матраци</h5>
+                <span class="favorite-category__id">54</span>
+                <img class="favorite-category__image" src="/img/main-page-content/category/mat.webp" alt="фото матрацу">
+                <a href="#">
+                    <img src="img/main-page-content/arrow.svg" alt="іконка стрілочки посилання на категорію на сайті">
+                </a>
+            </div>
+
+            <div class="favorite-catrgory-item">
+                <h5 class="favorite-category__name">Ліжка</h5>
+                <span class="favorite-category__id">54</span>
+                <img class="favorite-category__image" src="/img/main-page-content/category/sofa.webp" alt="">
+                <a href="#">
+                    <img src="img/main-page-content/arrow.svg" alt="іконка стрілочки посилання на категорію на сайті">
+                </a>
+            </div>
+
+            <div class="favorite-catrgory-item">
+                <h5 class="favorite-category__name">М'які меблі</h5>
+                <span class="favorite-category__id">196</span>
+                <img class="favorite-category__image" src="/img/main-page-content/category/soft-staff.webp" alt="">
+                <a href="#">
+                    <img src="img/main-page-content/arrow.svg" alt="іконка стрілочки посилання на категорію на сайті">
+                </a>
+            </div>
+
+            <div class="favorite-catrgory-item">
+                <h5 class="favorite-category__name">Столи</h5>
+                <span class="favorite-category__id">35</span>
+                <img class="favorite-category__image" src="/img/main-page-content/category/table.webp" alt="фото столу">
+                <a href="#">
+                    <img src="img/main-page-content/arrow.svg" alt="іконка стрілочки посилання на категорію на сайті">
+                </a>
+            </div>
+
+            <div class="favorite-catrgory-item">
+                <h5 class="favorite-category__name">Стільці</h5>
+                <span class="favorite-category__id">54</span>
+                <img class="favorite-category__image" src="/img/main-page-content/category/chair.webp" alt="фото стільця">
+                <a href="#">
+                    <img src="img/main-page-content/arrow.svg" alt="іконка стрілочки посилання на категорію на сайті">
+                </a>
+            </div>
+
+            <div class="favorite-catrgory-item">
+                <h5 class="favorite-category__name">Меблеві стіни</h5>
+                <span class="favorite-category__id">24</span>
+                <img class="favorite-category__image" src="/img/main-page-content/category/furniture.webp" alt="фото меблів">
+                <a href="#">
+                    <img src="img/main-page-content/arrow.svg" alt="іконка стрілочки посилання на категорію на сайті">
+                </a>
+            </div>
+
+            <div class="favorite-catrgory-item">
+                <h5 class="favorite-category__name">Кухні</h5>
+                <span class="favorite-category__id">30</span>
+                <img class="favorite-category__image" src="/img/main-page-content/category/kichen.webp" alt="фото кухні">
+                <a href="#">
+                    <img src="img/main-page-content/arrow.svg" alt="іконка стрілочки посилання на категорію на сайті">
+                </a>
+            </div>
+        </div>
+
+        <div class="favorite-goods favorite-goods--margin">
+            <h2 class="main-title main-title--margin">Найпопулярніші товари</h2>
+
+            <div class="favorite-goods__item">
+                <img src="/img/main-page-content/goods/goods-00.webp" alt="#">
+
+                <ul class="favorite-goods__atr">
+                    <li>розмір:
+                        <ul>
+                            <li>
+                                61 x 184 x 2130 мм
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <h3 class="favorite-goods__name">Ліжко Спарта / Sparta з підйомним механізмом</h3>
+                
+                <span class="favorite-goods__stok-status"><img src="img/main-page-content/tick.svg" alt="галочка наявності">В наявності</span>
+
+                <div class="price-box">
+                    <span class="old-price">25400</span>
+                    <span class="price">15400</span>
+
+                    <a class="add-to-favorite" href="#">
+                        <img src="img/main-page-header/vector/favorite.svg" alt="іконка сердечко додати до улюбленого">
+                    </a>
+        
+                    <a class="add-to-cart" href="#">
+                        <img src="img/main-page-header/vector/cart.svg" alt="іконка додати до кошика">
+                    </a>
+                </div>
+            </div>
+            <div class="favorite-goods__item">
+                <img src="/img/main-page-content/goods/goods-01.webp" alt="#">
+
+                <ul class="favorite-goods__atr">
+                    <li>розмір:
+                        <ul>
+                            <li>
+                                61 x 184 x 2130 мм
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <h3 class="favorite-goods__name">Ліжко Аргон з підйомним механізмом</h3>
+                
+                <span class="favorite-goods__stok-status"><img src="img/main-page-content/tick.svg" alt="галочка наявності">В наявності</span>
+
+                <div class="price-box">
+                    <span class="old-price">25400</span>
+                    <span class="price">15400</span>
+
+                    <a class="add-to-favorite" href="#">
+                        <img src="img/main-page-header/vector/favorite.svg" alt="іконка сердечко додати до улюбленого">
+                    </a>
+        
+                    <a class="add-to-cart" href="#">
+                        <img src="img/main-page-header/vector/cart.svg" alt="іконка додати до кошика">
+                    </a>
+                </div>
+            </div>
+            <div class="favorite-goods__item">
+                <img src="/img/main-page-content/goods/goods-02.webp" alt="#">
+
+                <ul class="favorite-goods__atr">
+                    <li>розмір:
+                        <ul>
+                            <li>
+                                61 x 184 x 2130 мм
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <h3 class="favorite-goods__name">Ліжко Престиж з підйомним механізмом</h3>
+                
+                <span class="favorite-goods__stok-status"><img src="img/main-page-content/tick.svg" alt="галочка наявності">В наявності</span>
+
+                <div class="price-box">
+                    <span class="old-price">25400</span>
+                    <span class="price">15400</span>
+
+                    <a class="add-to-favorite" href="#">
+                        <img src="img/main-page-header/vector/favorite.svg" alt="іконка сердечко додати до улюбленого">
+                    </a>
+        
+                    <a class="add-to-cart" href="#">
+                        <img src="img/main-page-header/vector/cart.svg" alt="іконка додати до кошика">
+                    </a>
+                </div>
+            </div>
+            <div class="favorite-goods__item">
+                <img src="/img/main-page-content/goods/goods-03.webp" alt="#">
+
+                <ul class="favorite-goods__atr">
+                    <li>розмір:
+                        <ul>
+                            <li>
+                                61 x 184 x 2130 мм
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <h3 class="favorite-goods__name">Диван Токіо-2</h3>
+                
+                <span class="favorite-goods__stok-status"><img src="img/main-page-content/tick.svg" alt="галочка наявності">В наявності</span>
+
+                <div class="price-box">
+                    <span class="old-price">25400</span>
+                    <span class="price">15400</span>
+
+                    <a class="add-to-favorite" href="#">
+                        <img src="img/main-page-header/vector/favorite.svg" alt="іконка сердечко додати до улюбленого">
+                    </a>
+        
+                    <a class="add-to-cart" href="#">
+                        <img src="img/main-page-header/vector/cart.svg" alt="іконка додати до кошика">
+                    </a>
+                </div>
+            </div>
+            <div class="favorite-goods__item">
+                <img src="/img/main-page-content/goods/goods-04.webp" alt="#">
+
+                <ul class="favorite-goods__atr">
+                    <li>розмір:
+                        <ul>
+                            <li>
+                                61 x 184 x 2130 мм
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <h3 class="favorite-goods__name">Матрац Largo SLIM / Ларго Слім</h3>
+                
+                <span class="favorite-goods__stok-status"><img src="img/main-page-content/tick.svg" alt="галочка наявності">В наявності</span>
+
+                <div class="price-box">
+                    <span class="old-price">25400</span>
+                    <span class="price">15400</span>
+
+                    <a class="add-to-favorite" href="#">
+                        <img src="img/main-page-header/vector/favorite.svg" alt="іконка сердечко додати до улюбленого">
+                    </a>
+        
+                    <a class="add-to-cart" href="#">
+                        <img src="img/main-page-header/vector/cart.svg" alt="іконка додати до кошика">
+                    </a>
+                </div>
+            </div>
+            <div class="favorite-goods__item">
+                <img src="/img/main-page-content/goods/goods-05.webp" alt="#">
+
+                <ul class="favorite-goods__atr">
+                    <li>розмір:
+                        <ul>
+                            <li>
+                                61 x 184 x 2130 мм
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <h3 class="favorite-goods__name">Матрац ARGENTUM AMALTEA / Аргентум Амалті</h3>
+                
+                <span class="favorite-goods__stok-status"><img src="img/main-page-content/tick.svg" alt="галочка наявності">В наявності</span>
+
+                <div class="price-box">
+                    <span class="old-price">25400</span>
+                    <span class="price">15400</span>
+
+                    <a class="add-to-favorite" href="#">
+                        <img src="img/main-page-header/vector/favorite.svg" alt="іконка сердечко додати до улюбленого">
+                    </a>
+        
+                    <a class="add-to-cart" href="#">
+                        <img src="img/main-page-header/vector/cart.svg" alt="іконка додати до кошика">
+                    </a>
+                </div>
+            </div>
+            <div class="favorite-goods__item">
+                <img src="/img/main-page-content/goods/goods-06.webp" alt="#">
+
+                <ul class="favorite-goods__atr">
+                    <li>розмір:
+                        <ul>
+                            <li>
+                                61 x 184 x 2130 мм
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <h3 class="favorite-goods__name">Диван Браво</h3>
+                
+                <span class="favorite-goods__stok-status"><img src="img/main-page-content/tick.svg" alt="галочка наявності">В наявності</span>
+
+                <div class="price-box">
+                    <span class="old-price">25400</span>
+                    <span class="price">15400</span>
+
+                    <a class="add-to-favorite" href="#">
+                        <img src="img/main-page-header/vector/favorite.svg" alt="іконка сердечко додати до улюбленого">
+                    </a>
+        
+                    <a class="add-to-cart" href="#">
+                        <img src="img/main-page-header/vector/cart.svg" alt="іконка додати до кошика">
+                    </a>
+                </div>
+            </div>
+            <div class="favorite-goods__item">
+                <img src="/img/main-page-content/goods/goods-07.webp" alt="#">
+
+                <ul class="favorite-goods__atr">
+                    <li>розмір:
+                        <ul>
+                            <li>
+                                61 x 184 x 2130 мм
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <h3 class="favorite-goods__name">Ліжко МК-5</h3>
+                
+                <span class="favorite-goods__stok-status"><img src="img/main-page-content/tick.svg" alt="галочка наявності">В наявності</span>
+
+                <div class="price-box">
+                    <span class="old-price">25400</span>
+                    <span class="price">15400</span>
+
+                    <a class="add-to-favorite" href="#">
+                        <img src="img/main-page-header/vector/favorite.svg" alt="іконка сердечко додати до улюбленого">
+                    </a>
+        
+                    <a class="add-to-cart" href="#">
+                        <img src="img/main-page-header/vector/cart.svg" alt="іконка додати до кошика">
+                    </a>
+                </div>
+            </div>
+            
+        </div>
+
     </main>
 
     <footer class="footer">

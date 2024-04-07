@@ -17,13 +17,13 @@
 
 .header__title{
     margin: 0 auto;
-    width: 1000px;
+    max-width: 70%;
     background: url("../img/bem.svg");
     background-position: left;
     background-size: contain;
     background-repeat: no-repeat;
-    
     padding-top: 15px;
+
     font-size: 38px;
     text-align: center;
     font-family: "Quicksand", sans-serif;
@@ -52,3 +52,25 @@
 }
 
 
+
+/* BEM css */
+
+.header-hw--margin{
+    margin-bottom: 15px;
+}
+
+.nav-bar--margin{
+    margin-bottom: 50px;
+}
+
+.favorite-category--margin{
+    margin-bottom: 50px;
+}
+
+.main-title--margin{
+    margin-bottom: 40px;
+}
+
+.favorite-goods--margin{
+    margin-bottom: 50px;
+}
