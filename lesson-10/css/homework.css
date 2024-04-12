@@ -82,7 +82,7 @@
 
 .menu__item::after{
     content: "";
-    background: url("/img/vector/menu/arrow.svg") 0 0 / 12px no-repeat;
+    background: url("../img/vector/menu/arrow.svg") 0 0 / 12px no-repeat;
     height: 20px;
     width: 12px;
     position: absolute;
