@@ -1,3 +1,122 @@
+@import url(reset.css);
+
 .title{
+    font-size: 48px;
     text-align: center;
+}
+
+.title--margin{
+    margin-top: 50px;
+}
+
+.header{
+    min-height: 100px;
+}
+
+.container {
+    font-family:"Proxima Nova",sans-serif;
+    max-width: 1290px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.logo-link {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.logo-link--margin{
+    margin-right: 34px;
+}
+
+.menu {
+    cursor: pointer;
+    display: inline-block;
+    min-width: 145px;
+    text-align: center;
+    padding: 13px 0;
+    background-color: #FFBC57;
+    border-radius: 8px;
+    position: absolute;
+}
+
+.menu__title{
+    font-size: 18px;
+    color: #fff;
+    font-weight: 400;
+    position: relative;
+}
+
+
+.menu__title::before{
+    content: "";
+    background-image: url("../img/vector/menu-catalog.svg");
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 0;
+    right: 68px;
+    padding-right: 10px;
+    width: 24px;
+    height: 24px;
+}
+
+.menu:active .menu__title::before{
+    display: none;
+}
+
+.menu__list{
+    position: absolute;
+    min-width: 300px;
+    height: 100%;
+    top: calc(100% + 37px);
+    left: 0;
+} 
+
+.menu__item{
+    text-align: left;
+    min-width: 300px;
+    padding: 10px 0;
+    position: relative;
+    position: relative;
+}
+
+.menu__item::after{
+    content: "";
+    background: url("/img/vector/menu/arrow.svg") 0 0 / 12px no-repeat;
+    height: 20px;
+    width: 12px;
+    position: absolute;
+    top: 18px;
+    right: 15px;
+}
+
+.menu__item:hover::after{
+    filter: invert(100%);
+}
+
+.menu__link{
+    text-align: left;
+    padding-left: 35px;
+}
+
+.menu__img{
+    min-width: 40px;
+    vertical-align:middle;
+    padding-right: 15px;
+}
+
+.menu__item:hover{
+    background-color: #FFBC57;
+}
+
+.menu__item:hover .menu__list::after{
+    content: "TEST";
+}
+
+.sub-menu{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    width: 100%;
+    min-width: 100px;
 }
