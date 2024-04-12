@@ -1,6 +1,9 @@
 @import url(reset.css);
 
 .title{
+    position: absolute;
+    top: 50%;
+    left: 30%;
     font-size: 48px;
     text-align: center;
 }
@@ -114,6 +117,7 @@
 }
 
 .sub-menu{
+    display: none;
     position: absolute;
     top: 30%;
     left: 50%;
