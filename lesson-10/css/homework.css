@@ -37,7 +37,7 @@
     margin-right: 34px;
 }
 
-.menu {
+.catalog {
     cursor: pointer;
     display: inline-block;
     min-width: 145px;
@@ -48,6 +48,14 @@
     position: absolute;
     max-height: 616px;
 }
+
+.menu{
+    position: absolute;
+    top: 100%;
+    left: 23%;
+}
+
+
 
 .menu__title{
     font-size: 18px;
@@ -83,11 +91,12 @@
     border-radius: 8px;
     background-color: #fff;
     padding-top: 8px;
+    border: 2px solid black;
 }
 
 .menu__list:target {
     display: block;
-} 
+}
 
 .menu__item{
     text-align: left;
@@ -129,29 +138,22 @@
 }
 
 
-.menu__item:hover .menu__list::after{
-    height: 100%;
-    border-left: 4px solid #FFBC57;
-}
-
 .sub-menu{
     display: none;
     position: absolute;
-    top: 0;
     left: 98%;
-    width: 100%;
-    min-width: 100px;
-    min-height: 100%;
+    top: 0;
+    min-width: 100%;
+    border-radius: 0 8px 8px 0;
+    background-color: gray;
+    max-height: 400px;
+    overflow-y: auto;
 }
 
 .sub-menu__list{
-    overflow-y: auto;
-    background-color: gray;
-    border-radius: 0 8px 0 0;
-    position: absolute;
-    top: 0;
-    left: 0;
     z-index: 99;
+    overflow-y: auto;
+    
 }
 
 .sub-menu__item{
