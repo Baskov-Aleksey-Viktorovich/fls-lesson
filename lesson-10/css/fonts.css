@@ -1,13 +1,9 @@
 @font-face {
-    font-family: 'Nyght Serif Dark';
-    src: url('NyghtSerif-Dark.eot');
-    src: local('Nyght Serif Dark'), local('NyghtSerif-Dark'),
-        url('NyghtSerif-Dark.eot?#iefix') format('embedded-opentype'),
-        url('NyghtSerif-Dark.woff2') format('woff2'),
-        url('NyghtSerif-Dark.woff') format('woff'),
-        url('NyghtSerif-Dark.ttf') format('truetype');
-    font-weight: 800;
-    font-style: normal;
-    font-display: swap;
+	font-family: "Proxima Nova";
+	src: url("../fonts/proximanova_regular.woff2") format("woff2"), 
+			 url("../fonts/proximanova_regular.woff") format("woff");
+	font-display: swap;
+	font-weight: 400;
+	font-style: normal;
 }
 
