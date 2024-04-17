@@ -1,0 +1,62 @@
+@keyframes rotate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes drive{
+    0%{
+        transform: translate(-100%);
+    }
+
+    100%{
+        transform: translate(100%);
+    }
+}
+
+@keyframes fly-left{
+    0%{
+        rotate:45deg;
+        
+    }
+    50%,100%{
+        rotate:0deg;
+    }
+}
+
+
+@keyframes right-left{
+    0%,50%{
+        rotate:0deg;
+        
+    }
+    100%{
+        rotate:-45deg;
+    }
+}
+
+@keyframes emergence {
+    0%{
+        translate: 100%;
+        rotate: 0deg;
+    }
+
+    100%{
+        translate: 0%;
+        rotate: 360deg;
+    }
+}
+
+
+@keyframes switchOn{
+    0%{
+        border-right: 400px solid transparent;
+    }
+
+    100%{
+        border-right: 400px solid rgb(244,253,29);
+    }
+}
