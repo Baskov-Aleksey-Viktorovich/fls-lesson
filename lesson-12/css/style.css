@@ -444,12 +444,17 @@ code {
     }
 }
 
-
+.footer{
+    height: 250px;
+    position: relative;
+}
 
 
 .list {
-    font-size: 48px;
-    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url("../img/vector/menu.svg") left / 50px no-repeat;
 }
 
 
