@@ -143,7 +143,7 @@ code {
     width: 50px;
     background: url("../img/vector/mosquito.svg") 0 0 / 50px no-repeat;
     offset-path: path("M353.5 2.5L0.5 328.5V728.5L243 1028.5L500.5 728.5L353.5 481.5L543 386.5L711 660L816.5 297L979.5 2.5L1053 960L1285 2.5L1453 913L1595.5 2.5L1711 913L2858.5 2.5H3000.5");
-    animation: owl-move 30s ease-in-out 1 forwards;
+    animation: owl-move 15s ease-in-out 1 forwards;
 }
 
 .canvas::after{
