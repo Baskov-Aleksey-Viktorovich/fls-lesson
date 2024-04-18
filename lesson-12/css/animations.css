@@ -60,3 +60,9 @@
         border-right: 400px solid rgb(244,253,29);
     }
 }
+
+@keyframes owl-move{
+    100%{
+        offset-distance:60%;
+    }
+}
