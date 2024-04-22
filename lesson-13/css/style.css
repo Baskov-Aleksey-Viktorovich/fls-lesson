@@ -37,6 +37,8 @@ body {
     background-color: blueviolet;
     transition: all .5s;
     border-radius: 50%;
+    overflow: hidden;
+    align-items: flex-end;
 }
     
 .flex--start{
@@ -59,6 +61,17 @@ body {
     justify-content: space-around;
 }
 
+.flex--evenly{
+    justify-content: space-evenly;
+}
+
+.flex--construction{
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+
 .flex__item:not(:last-child){
     margin-right: 50px;
 }
@@ -73,7 +86,7 @@ body {
 }
 
 [class*="--margin"]{
-    margin-bottom: 50px;
+    margin-bottom: 25px;
 }
 
 /* footer */
