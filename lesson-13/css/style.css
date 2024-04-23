@@ -1,0 +1,92 @@
+/* resets style */
+@import url(reset.css);
+@import url(animations.css);
+
+/* connect fonts*/
+
+body {
+    background-color: #333;
+}
+
+.page{
+    padding: 30px;
+    height: 1500px;
+}
+
+.sub-title{
+    font-size: 36px;
+    color: white;
+}
+
+.flex{
+    display: flex;
+    height: 100%;
+    justify-content: flex-start;
+    width: 100%;
+    background-color: #797979;
+    padding: 15px;
+    flex-wrap: wrap;
+}
+
+.flex__item{
+    font-size: 24px;
+    color: #ffffff;
+    text-align: center;
+    width: 200px;
+    height: 200px;
+    background-color: blueviolet;
+    transition: all .5s;
+    border-radius: 50%;
+    overflow: hidden;
+    align-items: flex-end;
+}
+    
+.flex--start{
+    justify-content: flex-start;
+}
+
+.flex--end{
+    justify-content: flex-end;
+}
+
+.flex--center{
+    justify-content: center;
+}
+
+.flex--between{
+    justify-content: space-between;
+}
+
+.flex--around{
+    justify-content: space-around;
+}
+
+.flex--evenly{
+    justify-content: space-evenly;
+}
+
+.flex--construction{
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+
+.flex__item:not(:last-child){
+    margin-right: 50px;
+}
+.flex__item:hover{
+    transform: rotate3d(2,2,2, 45deg);
+}
+
+.main-title{
+    font-size: 36px;
+    color: white;
+    text-align: center;
+}
+
+[class*="--margin"]{
+    margin-bottom: 25px;
+}
+
+/* footer */
