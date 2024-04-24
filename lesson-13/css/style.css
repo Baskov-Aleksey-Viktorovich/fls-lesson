@@ -26,6 +26,7 @@ body {
     background-color: #797979;
     padding: 15px;
     flex-wrap: wrap;
+    gap:15px;
 }
 
 .flex__item:nth-child(odd){
@@ -71,6 +72,7 @@ body {
 
 .flex--construction{
     flex-direction: column;
+    gap: 15px;
     justify-content: space-around;
     flex-wrap: nowrap;
     flex-direction: column;
@@ -86,11 +88,9 @@ body {
 
 .flex--self{
     justify-content: center;
+    gap: 15px;
 }
 
-.flex__item:not(:last-child){
-    margin-right: 50px;
-}
 .flex__item:hover{
     transform: rotate3d(2,2,2, 45deg);
 }
@@ -175,6 +175,24 @@ body {
 .flex-order__item:nth-child(3){
     order: 2;
 }
+
+
+.flex-practice{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin: 0 -5px -10px -5px;
+} 
+
+.flex-practice__item{
+    padding: 0 5px 0 5px;
+    margin: 10px 0 10px 0;
+    flex-basis: 33.33%;
+    flex-grow: 1;
+    flex-basis: auto;
+    background-color: #7a957b;
+    flex-shrink: 1;
+} 
 
 
 
