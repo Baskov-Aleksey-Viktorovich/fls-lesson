@@ -3,14 +3,16 @@
 @import url(animations.css);
 
 /* connect fonts*/
+@import url(fonts.css);
 
-body {
+* {
+    font-family: "Proxima Nova";
 }
 
 
 .sub-title{
     font-size: 36px;
-    color: white;
+
 }
 
 .flex{
@@ -190,7 +192,7 @@ body {
 }
 
 .container{
-    max-width: 1310px;
+    max-width: 1320px;
     padding: 0 15px;
     margin: 0 auto;
     overflow: clip;
@@ -413,6 +415,11 @@ main{
     cursor: pointer;
 } 
 
+.catalog:hover .catalog__img{
+    transition: all .5s;
+    transform: rotate(360deg);
+}
+
 .catalog__img{
     align-self: center;
 } 
@@ -441,7 +448,7 @@ main{
 }
 
 .populars-category__item{
-    flex-basis: 230px;
+    flex-basis:250px;
     height: 300px;
     flex-shrink: 0;
     box-shadow: 1px 1px 8px 3px #f2eded;
