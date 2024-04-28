@@ -496,6 +496,7 @@ main{
 
 .populars-category__desc{
     font-weight: 700;
+    transition: all 0.3s ease 0s;
 }
 
 .populars-category__qunt{
@@ -561,7 +562,10 @@ main{
     padding: 20px;
     box-shadow: -3px 4px 15px rgba(0, 0, 0, .6);
     border-radius: 8px;
-    transition: all 1s;
+}
+
+.popular-goods__img{
+    transition: all .4s;
 }
 .popular-goods__item:hover .popular-goods__img{
     transform: scale(1.1, 1.1);
@@ -686,8 +690,17 @@ main{
     flex-wrap: wrap;
     margin: 0 auto;
 } 
-.sale__item {}
-.sale__img {}
+.sale__item {
+    border-radius: 8px;
+}
+
+.sale__img{
+    transition: all 0.4s;
+}
+
+.sale__item:hover .sale__img {
+    transform: scale(1.1, 1.1);
+}
 
 
 
