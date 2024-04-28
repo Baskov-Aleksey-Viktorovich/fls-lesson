@@ -160,7 +160,7 @@ main{
     justify-content: space-around;
 }
 
-.flex__sub-item{
+.flex-order__sub-item{
     height: 20px;
     height: 20px;
     background-color: gainsboro;
