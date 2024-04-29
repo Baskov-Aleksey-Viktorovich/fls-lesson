@@ -209,17 +209,20 @@ main{
 
 .sub-header__container{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     padding: 15px;
 }
 
 .sub-header__right{
     display: flex;
+    flex-wrap: wrap;
     gap: 32px;
 }
 
 .sub-header__left{
     display: flex;
+    flex-wrap: wrap;
 }
 
 .socials{
@@ -238,6 +241,7 @@ main{
 
 .links{
     display: flex;
+    flex-wrap: wrap;
     max-width: 565px;
     gap: 30px;
 }
@@ -274,11 +278,13 @@ main{
 }
 .header__container{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
 .header__left{
     display: flex;
+    flex-wrap: wrap;
     gap: 30px;
 }
 
@@ -305,6 +311,7 @@ main{
 
 .header__call-back{
     display: flex;
+    flex-wrap: wrap;
     gap: 23px;
 }
 .first{
@@ -331,6 +338,7 @@ main{
 
 .right{
     display: flex;
+    flex-wrap: wrap;
     gap:20px
 } 
 
@@ -365,6 +373,7 @@ main{
 
 .header-info__container{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
@@ -374,7 +383,9 @@ main{
 
 .header-info__list{
     display: flex;
+    flex-wrap: wrap;
     gap: 40px;
+    min-height: 100%;
 }
 
 .header-info__item{
