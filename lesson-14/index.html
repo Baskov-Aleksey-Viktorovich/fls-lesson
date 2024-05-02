@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--  підключення окремого файлу стилів -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/vector/aws-cloudformation.svg">
+    <title>lesson-14 Form</title>
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <h2 class="header__title">header</h2>
+        </header>
+        <main>
+            <h1>main</h1>
+            <form class="form form--margin" action="https://jkorpela.fi/cgi-bin/echo.cgi" enctype="multipart/form-data">
+                <h2 class="form__title">Моя перша форма</h2>
+                <div class="form__line">
+                    <label for="name">Name:</label>
+                    <input class="form__input" minlength="2" value="Іван" autocomplete="on" type="text" name="username[]" id="name" checked placeholder="Type your name">
+                </div>
+                <div class="form__line">
+                    <label for="password">Password:</label>
+                    <input type="password" name="password[]" required minlength="8" id="password" placeholder="Please type your password">
+                </div>
+
+                <div class="form__line">
+                    <label for="">Color:</label>
+                    <input type="color" name="color" id="color" placeholder="Please choose you favorite color">
+                </div>
+
+                <div class="form__line">
+                    <label for="">Email:</label>
+                    <input type="email" required name="email" id="email" placeholder="Please type you email">
+                </div>
+
+                <div class="form__line">
+                    <label for="tel">Number:</label>
+                    <input type="tel" value="+380" maxlength="11" required name="tel" id="tel" placeholder="Please type you number">
+                </div>
+
+                <div class="form__line">
+                    <label for="tel">Search:</label>
+                    <input type="search" name="search" id="search" placeholder="NIKE FORCE">
+                </div>
+
+                <div class="form__line">
+                    <label for="tel">Data:</label>
+                    <input type="date" name="date" id="date" >
+                </div>
+
+                <div class="form__line">
+                    <label for="tel">Range:</label>
+                    <input type="range" value="12" name="range" id="range" >
+                </div>
+
+                <div class="form__line">
+                    <span>Do you have a car?:</span>
+                    <label for="radio">Yep</label>
+                    <input class="radio" type="radio" value="yep" name="car" id="radio">
+                    <label for="radio">Nooooooo</label>
+                    <input class="radio" type="radio" value="Nooooooo" name="car" id="radio">
+                </div>
+
+                <fieldset class="form__group">
+                    <legend for="radio">What is you favorite fruit?:</legend>
+                    <div class="form__wrapper">
+                        <label for="radio">Potato</label>
+                        <input class="radio" type="radio" name="model" id="checkbox" checked >
+                    </div>
+                    <div class="form__wrapper">
+                        <label for="radio">Cucumber</label>
+                        <input class="radio" type="radio" name="model" id="checkbox">
+                    </div>
+                </fieldset>
+
+                <div class="form__line">
+                    <label for="name">Fille:</label>
+                    <input class="form__input" multiple accept=".svg, .png, .webp, .jpg" type="file" name="file" id="file">
+                </div>
+
+                <div class="form__line">
+                    <label for="tel">Information:</label>
+                    <textarea class="form-textaria" type="desc" name="desc" id="desc" placeholder="Type information about yourself"></textarea>
+                </div>
+
+                <input class="form__button" type="submit">
+            </form>
+
+            <div class="form-container">
+                <div class="container"></div>
+            </div>
+
+        </main>
+    </div>
+    <footer class="footer"><h2 class="footer__title">Футер</h2></footer>
+</body>
+
+</html>

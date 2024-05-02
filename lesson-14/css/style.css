@@ -1,0 +1,122 @@
+/* resets style */
+@import url(reset.css);
+
+/* connect fonts*/
+@import url(fonts.css);
+
+.header{
+    min-height: 50px;
+    background-color: orangered;
+}
+
+.header__title{
+    font-size: 36px;
+    font-style: italic;
+    color: white;
+    text-align: center;
+}
+
+
+.wrapper {
+    min-height: 100%;
+    overflow: clip;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper>main {
+    flex-grow: 1;
+}
+
+
+input {
+    border: 2px solid black;
+    height: 50px;
+    background-color: lightgrey;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+}
+
+fieldset{
+    font-weight: 700;
+    border: 2px solid black;
+    padding: 15px;
+}
+
+.checkbox {
+    width: 20px;
+    height: 20px;
+}
+
+.radio {
+    width: 20px;
+    height: 20px;
+}
+
+
+input:focus {
+    outline: 5px solid black;
+}
+
+input::placeholder {
+    color: red;
+}
+
+label {
+    font-weight: 700;
+
+}
+
+
+.form {
+    padding: 15px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    max-width: 400px;
+    border-radius: 8px;
+}
+
+.form-textaria{
+    height: 100px;
+    resize: vertical;
+}
+
+.form:hover {
+    background: url();
+}
+
+.form>* {
+    margin-bottom: 15px;
+}
+
+.form--margin {
+    margin: 0 auto;
+}
+
+.form__title {
+    font-size: 24px;
+    color: darkgrey;
+    font-weight: 700;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+
+.footer {
+    min-height: 50px;
+    background-color: orangered;
+}
+
+.footer__title {
+    font-size: 35px;
+    color: white;
+    text-align: center;
+}
+
+
+
+/* footer */
