@@ -131,6 +131,11 @@ label {
 }
 
 
+.form__line{
+    display: flex;
+    align-items: start;
+}
+
 
 /* footer */
 
