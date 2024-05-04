@@ -178,9 +178,11 @@ label {
     outline-offset: 5px;
 }
 
+
 .checkbox-custom__input:checked + .checkbox-custom__text::before{
-    background-color: aqua;
+    background-color: orange;
 }
+
 
 .checkbox-custom--margin{
     margin: 50px 0 50px 0;
