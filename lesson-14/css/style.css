@@ -105,6 +105,19 @@ label {
     text-align: center;
 }
 
+.form__wrapper{
+    display: flex;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+.form__button, .form__reset{
+    background-color: orangered;
+    padding: 20px;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+}
 
 .footer {
     min-height: 50px;
@@ -120,3 +133,55 @@ label {
 
 
 /* footer */
+
+
+/* practice */
+
+.checkbox-custom__choose{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+} 
+
+.checkbox-custom__item{
+    position: relative;
+    cursor: pointer;
+}
+
+.checkbox-custom__input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    opacity: 0;
+} 
+
+.checkbox-custom__text {
+    font-size: 18px;
+    font-weight: 700;
+    display: flex;
+    gap: 15px;
+}
+
+.checkbox-custom__text::before{
+    content: "";
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+}
+
+
+.checkbox-custom__input:focus-visible + .checkbox-custom__text{
+    outline: 2px solid black;
+    outline-offset: 5px;
+}
+
+.checkbox-custom__input:checked + .checkbox-custom__text::before{
+    background-color: aqua;
+}
+
+.checkbox-custom--margin{
+    margin: 50px 0 50px 0;
+}

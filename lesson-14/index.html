@@ -89,8 +89,32 @@
                     <textarea class="form-textaria" type="desc" name="desc" id="desc" placeholder="Type information about yourself"></textarea>
                 </div>
 
-                <input class="form__button" type="submit">
+                <div class="form__line">
+                    <select name="list">
+                        <option value="01">Пункт 1</option>
+                        <option value="02">Пункт 2</option>
+                        <option value="02">Пункт 3</option>
+                    </select>
+                </div>
+                <div class="form__wrapper">
+                    <button class="form__button" type="submit">Submit</button>
+                    <button class="form__reset" type="reset">Reset Data</button>
+                </div>
             </form>
+
+            <div class="checkbox-custom checkbox-custom--margin">
+                <form class="checkbox-custom__choose" action="">
+                    <label class="checkbox-custom__item" for="#">
+                        <input class="checkbox-custom__input" type="checkbox">
+                        <span class="checkbox-custom__text">Обeри мене</span>
+                    </label>
+
+                    <label class="checkbox-custom__item" for="#">
+                        <input class="checkbox-custom__input" type="checkbox">
+                        <span class="checkbox-custom__text">I мене</span>
+                    </label>
+                </form>
+            </div>
 
             <div class="form-container">
                 <div class="container"></div>
