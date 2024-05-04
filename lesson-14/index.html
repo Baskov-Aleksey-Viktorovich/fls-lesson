@@ -22,55 +22,65 @@
                 <h2 class="form__title">Моя перша форма</h2>
                 <div class="form__line">
                     <label for="name">Name:</label>
-                    <input class="form__input" minlength="2" value="Іван" autocomplete="on" type="text" name="username[]" id="name" checked placeholder="Type your name">
+                    <input class="form__input" minlength="2" autocomplete="on" type="text" name="username[]" id="name"
+                        checked placeholder="Type your name">
                 </div>
                 <div class="form__line">
                     <label for="password">Password:</label>
-                    <input  class="form__input" type="password" name="password[]" required minlength="8" id="password" placeholder="Please type your password">
+                    <input class="form__input" type="password" name="password[]" required minlength="8" id="password"
+                        placeholder="Please type your password">
                 </div>
 
                 <div class="form__line">
                     <label for="">Color:</label>
-                    <input class="form__input" type="color" name="color" id="color" placeholder="Please choose you favorite color">
+                    <input class="form__input" type="color" name="color" id="color"
+                        placeholder="Please choose you favorite color">
                 </div>
 
                 <div class="form__line">
                     <label for="">Email:</label>
-                    <input class="form__input" type="email" required name="email" id="email" placeholder="Please type you email">
+                    <input class="form__input" type="email" required name="email" id="email"
+                        placeholder="Please type you email">
                 </div>
 
                 <div class="form__line">
                     <label for="tel">Number:</label>
-                    <input class="form__input" type="tel" value="+380" maxlength="11" required name="tel" id="tel" placeholder="Please type you number">
+                    <input class="form__input" type="tel" value="+380" maxlength="11" required name="tel" id="tel"
+                        placeholder="Please type you number">
                 </div>
 
                 <div class="form__line">
                     <label for="tel">Search:</label>
-                    <input class="form__input" type="search" name="search" id="search" placeholder="NIKE FORCE">
+                    <input class="form__input" type="search" name="search" id="search" placeholder="nike">
                 </div>
 
                 <div class="form__line">
                     <label for="tel">Data:</label>
-                    <input class="form__input" type="date" name="date" id="date" >
+                    <input class="form__input" type="date" name="date" id="date">
                 </div>
 
                 <div class="form__line">
                     <label for="tel">Range:</label>
-                    <input class="form__input" type="range" value="12" name="range" id="range" >
+                    <input class="form__input" type="range" value="12" name="range" id="range">
                 </div>
 
                 <div class="form__line form__line--custom">
                     <span>Do you have a car?:</span>
-                    <input class="radio" type="radio" value="yep" name="car" id="radio">
-                    <label for="radio">Yep</label>
-                    <input class="radio" type="radio" value="Nooooooo" name="car" id="radio">
-                    <label for="radio">Nooooooo</label>
+                    <div class="form__cont">
+                        <input class="radio" type="radio" name="car">
+                        <label for="radio">Yep</label>
+                    </div>
+
+                    <div class="form__cont">
+                        <input class="radio" type="radio" name="car">
+                        <label for="radio">Nooooooo</label>
+                    </div>
                 </div>
 
                 <fieldset class="form__group form__line--custom">
                     <legend for="radio">What is you favorite fruit?:</legend>
                     <div class="form__wrapper">
-                        <input class="radio" type="radio" name="radio-1" id="checkbox" checked >
+                        <input class="radio" type="radio" name="radio-1" id="checkbox" checked>
                         <label for="radio-1">Potato</label>
                     </div>
                     <div class="form__wrapper">
@@ -81,12 +91,14 @@
 
                 <div class="form__line">
                     <label for="name">Fille:</label>
-                    <input class="form__input" multiple accept=".svg, .png, .webp, .jpg" type="file" name="file" id="file">
+                    <input class="form__input" multiple accept=".svg, .png, .webp, .jpg" type="file" name="file"
+                        id="file">
                 </div>
 
                 <div class="form__line">
                     <label for="desc">Information:</label>
-                    <textarea class="form-textaria" type="desc" name="desc" id="desc" placeholder="Type information about yourself"></textarea>
+                    <textarea class="form-textaria" type="desc" name="desc" id="desc"
+                        placeholder="Type information about yourself"></textarea>
                 </div>
                 Do you have
                 <div class="form__line">
@@ -125,15 +137,56 @@
                 </form>
             </div>
 
-                <div class="container">
-                        <h2 class="name">Оформлення замовлення</h2>
-                        <div class="form-container">
+            <div class="container">
+                <h2 class="main-title main-title--margin">Оформлення замовлення</h2>
+                <div class="wrap">
+                    <form class="form-container">
+                        <div class="user-data">
+                            <h2 class="sub-title sub-title--info sub-title--margin">Інформація про покупця</h2>
+
+                            <div class="user-data__container user-data__container--margin">
+                                <div class="user-data__left">
+                                    <input type="text" required class="user-data__surname" placeholder="Прізвище">
+                                    <input type="text" required class="user-data__name" placeholder="Ім’я">
+                                    <input type="text" class="user-data__lastname" placeholder="По батькові">
+                                </div>
+
+                                <div class="user-data__right">
+                                    <input type="text" required class="user-data__phone" placeholder="Контактний телефон">
+                                    <input type="email" class="user-data__email" placeholder="E-mail">
+                                </div>
+                            </div>
+                            <label class="checkbox-spec">
+                                <input class="checkbox-spec__input" type="checkbox">
+                                <span class="checkbox-spec__desc">Отримуватиме замовлення інша людина</span>
+                            </label>
                         </div>
+                        <div class="user-data">
+                            <h2 class="sub-title sub-title--delivery sub-title--margin">Вибір способу доставки</h2>
+                            <div class="user-data__container user-data__container--margin">
+                                <div class="user-data__left">
+                                    <input type="text" required class="user-data__surname" placeholder="Прізвище">
+                                    <input type="text" required class="user-data__name" placeholder="Ім’я">
+                                    <input type="text" class="user-data__lastname" placeholder="По батькові">
+                                </div>
+                            </div>
+                            <label class="checkbox-spec">
+                                <input class="checkbox-spec__input" type="checkbox">
+                                <span class="checkbox-spec__desc">Отримуватиме замовлення інша людина</span>
+                            </label>
+                        </div>
+                    </form>
+                    <div class="cart-container">
+                        <h2 class="sub-title sub-title--space">Ваш кошик</h2>
+                    </div>
                 </div>
 
+            </div>
         </main>
     </div>
-    <footer class="footer"><h2 class="footer__title">footer</h2></footer>
+    <footer class="footer">
+        <h2 class="footer__title">footer</h2>
+    </footer>
 </body>
 
 </html>
