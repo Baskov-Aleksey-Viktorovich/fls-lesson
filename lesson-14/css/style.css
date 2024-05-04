@@ -4,6 +4,15 @@
 /* connect fonts*/
 @import url(fonts.css);
 
+*{
+    font-family: 'Proxima Nova';
+}
+
+.container{
+    min-width: 740px;
+    margin: 0 auto;
+}
+
 .header{
     min-height: 50px;
     background-color: orangered;
@@ -11,7 +20,6 @@
 
 .header__title{
     font-size: 36px;
-    font-style: italic;
     color: white;
     text-align: center;
 }
@@ -192,10 +200,57 @@ label {
 
 
 .checkbox-custom__input:checked + .checkbox-custom__text::before{
-    background-color: orange;
+    transition: all .3s;
+    background: url("../img/vector/simple-tick.svg") center / 100% no-repeat;
+    background-color: orangered;
 }
 
 
 .checkbox-custom--margin{
     margin: 50px 0 50px 0;
+}
+
+
+.radio-item{
+    position: relative;
+    cursor: pointer;
+}
+
+.radio-item__input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    opacity: 0;
+}
+
+.radio-item__text::before{
+    content: "";
+    width: 20px;
+    height: 20px;
+    border: 2px solid black;
+    border-radius: 50%;
+}
+
+.radio-item__input:checked + .radio-item__text::before{
+    background: url("../img/vector/tick.svg") center / 100% no-repeat;
+    background-color: orangered;
+}
+
+.radio-item__text{
+    font-size: 18px;
+    font-weight: 700;
+    display: flex;
+    gap: 15px;
+}
+
+
+.container{
+    width: 730px;
+    margin: 0 auto;
+}
+
+.name{
+    font-size: 40px;
 }
