@@ -140,19 +140,19 @@
                 <h2 class="main-title main-title--margin">Оформлення замовлення</h2>
                 <div class="wrap">
                     <form class="form-container">
-                        <div class="user-data">
+                        <div class="data">
                             <h2 class="sub-title sub-title--info sub-title--margin">Інформація про покупця</h2>
 
-                            <div class="user-data__container user-data__container--margin">
-                                <div class="user-data__left">
-                                    <input type="text" required class="user-data__surname" placeholder="Прізвище">
-                                    <input type="text" required class="user-data__name" placeholder="Ім’я">
-                                    <input type="text" class="user-data__lastname" placeholder="По батькові">
+                            <div class="data__container data__container--margin">
+                                <div class="data__left">
+                                    <input type="text" required class="data__surname" placeholder="Прізвище">
+                                    <input type="text" required class="data__name" placeholder="Ім’я">
+                                    <input type="text" class="data__lastname" placeholder="По батькові">
                                 </div>
 
-                                <div class="user-data__right">
-                                    <input type="text" required class="user-data__phone" placeholder="Контактний телефон">
-                                    <input type="email" class="user-data__email" placeholder="E-mail">
+                                <div class="data__right">
+                                    <input type="text" required class="data__phone" placeholder="Контактний телефон">
+                                    <input type="email" class="data__email" placeholder="E-mail">
                                 </div>
                             </div>
                             <label class="checkbox-spec">
@@ -160,19 +160,34 @@
                                 <span class="checkbox-spec__desc">Отримуватиме замовлення інша людина</span>
                             </label>
                         </div>
-                        <div class="user-data">
+                        <div class="data">
                             <h2 class="sub-title sub-title--delivery sub-title--margin">Вибір способу доставки</h2>
-                            <div class="user-data__container user-data__container--margin">
-                                <div class="user-data__left">
-                                    <input type="text" required class="user-data__surname" placeholder="Прізвище">
-                                    <input type="text" required class="user-data__name" placeholder="Ім’я">
-                                    <input type="text" class="user-data__lastname" placeholder="По батькові">
+                            <div class="data__container data__container--margin">
+                                <div class="data__delivery">
+                                    <label class="checkbox-delivery">
+                                        <img class="checkbox-delivery__img" src="img/form/shop.svg" alt="іконка магазину">
+                                        <input class="checkbox-delivery__input" name="delivery" type="radio">
+                                        <span class="checkbox-delivery__desc checkbox-delivery__desc--sw">Самовивіз із магазину</span>
+                                        <span class="checkbox-delivery__name">Бесплатно</span>
+                                    </label>
+                                </div>
+                                <div class="data__delivery">
+                                    <label class="checkbox-delivery">
+                                        <img class="checkbox-delivery__img" src="img/form/np.svg" alt="іконка нової пошти">
+                                        <input class="checkbox-delivery__input" name="delivery" type="radio">
+                                        <span class="checkbox-delivery__desc checkbox-delivery__desc--np">Доставка Нова Пошта</span>
+                                        <span class="checkbox-delivery__name">≈ від 500 грн</span>
+                                    </label>
+                                </div>
+                                <div class="data__delivery">
+                                    <label class="checkbox-delivery">
+                                        <img class="checkbox-delivery__img" src="img/form/courier.svg" alt="іконка курьєра">
+                                        <input class="checkbox-delivery__input" name="delivery" type="radio">
+                                        <span class="checkbox-delivery__desc checkbox-delivery__desc--ku">Доставка кур'єром</span>
+                                        <span class="checkbox-delivery__name">≈ від 200 грн</span>
+                                    </label>
                                 </div>
                             </div>
-                            <label class="checkbox-spec">
-                                <input class="checkbox-spec__input" type="checkbox">
-                                <span class="checkbox-spec__desc">Отримуватиме замовлення інша людина</span>
-                            </label>
                         </div>
                     </form>
                     <div class="cart-container">
