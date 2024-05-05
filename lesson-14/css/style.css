@@ -523,6 +523,127 @@ label {
     opacity: 0;
 }
 
-.checkbox-delivery__input:checked + .checkbox-delivery{
-    border: 5px solid #ffbc57;
+.checkbox-delivery:focus{
+    outline: 5px solid #ffbc57;
+}
+
+.data__desc{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.data__strong{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+
+.data__map{
+    display: flex;
+    gap: 20px;
+    background-color: #f8f8f8;
+    align-items: center;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.data__link{
+    display: flex;
+    gap: 10px;
+    min-width: 142px;
+    padding: 13px;
+    background-color:#ffbc57;
+    border-radius: 8px;
+}
+
+.data__link span{
+    font-size: 19px;
+    color: #fff;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0;
+}
+
+
+.sub-title--payment{
+    gap: 15px;
+    align-items: center;
+}
+
+.sub-title--payment::before{
+    content: "";
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: url("../img/form/wallet.svg") center / 30px no-repeat ;
+    background-color: #ffbc57;
+}  
+
+.data__payment{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.checkbox-payment {
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    gap: 10px;
+}
+
+.checkbox-payment__input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    opacity: 0;
+}
+
+.checkbox-payment__desc {
+    display: flex;
+    gap: 10px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.checkbox-payment__desc::before{
+    content: "";
+    width: 24px;
+    height: 24px;
+    border: 2px solid #d1d5d5;
+    border-radius: 50%;
+}
+
+.checkbox-payment__input:checked + .checkbox-payment__desc::before{
+    background: url("../img/form/form-tick.svg") center / 15px no-repeat;
+    background-color: #ffbc57;
+}
+
+
+
+.sub-title--feedback{
+    gap: 15px;
+    align-items: center;
+}
+
+.sub-title--feedback::before{
+    content: "";
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: url("../img/form/circle-tik.svg") center / 30px no-repeat ;
+    background-color: #ffbc57;
+}  
+
+.data__feedback{
+    min-height: 150px;
+    width: 100%;
+    border: 2px solid #c5c5c5;
+    border-radius: 8px;
+    padding: 10px 20px;
+    resize: vertical;
 }
