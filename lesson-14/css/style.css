@@ -475,11 +475,6 @@ label {
     padding: 20px;
 }
 
-.data-delivery:focus{
-    outline: 2px solid black;
-    outline-offset: 5px;
-}
-
 .checkbox-delivery__input{
     position: absolute;
     top: 0;
@@ -524,6 +519,10 @@ label {
     opacity: 1;
 }
 
+.checkbox-delivery__input:checked + .checkbox-delivery__img{
+    opacity: 0;
+}
+
 .checkbox-delivery__input:checked + .checkbox-delivery{
-    border: 5px solid black;
+    border: 5px solid #ffbc57;
 }
