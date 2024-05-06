@@ -463,6 +463,7 @@ label {
 .data__delivery{
     display: flex;
     flex-basis: 210px;
+    position: relative;
 }
 
 .checkbox-delivery{
@@ -509,7 +510,6 @@ label {
     top: 12px;
     left: 39%;
     opacity: 0;
-    z-index: 100;
 }
 
 .checkbox-delivery__img{
@@ -518,15 +518,19 @@ label {
     width: 30px;
 }
 
-.checkbox-delivery input:checked + .checkbox-delivery__desc::before{
-    opacity: 1;
+.data__delivery input:checked + .checkbox-delivery{
+    outline: 5px solid #ffbc57;
 }
 
-.checkbox-delivery input:checked + .checkbox-delivery__img{
+.data__delivery input:checked + .checkbox-delivery__img{
     opacity: 0;
 }
 
-.data__delivery:focus{
+.data__delivery input:checked + .checkbox-delivery__desc::before{
+    opacity: 1;
+}
+
+.checkbox-delivery:focus{
     outline: 5px solid #ffbc57;
 }
 
