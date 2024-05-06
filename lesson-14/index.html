@@ -163,36 +163,27 @@
                         <div class="data">
                             <h2 class="sub-title sub-title--delivery sub-title--margin">Вибір способу доставки</h2>
                             <div class="data__container data__container--margin">
-                                <div class="data__delivery">
                                     <label class="checkbox-delivery">
-                                        <img class="checkbox-delivery__img" src="img/form/shop.svg"
-                                            alt="іконка магазину">
                                         <input class="checkbox-delivery__input" name="delivery" type="radio">
+                                        <img class="checkbox-delivery__img" src="img/form/shop.svg" alt="іконка магазину">
                                         <span class="checkbox-delivery__desc checkbox-delivery__desc--sw">Самовивіз із
                                             магазину</span>
                                         <span class="checkbox-delivery__name">Бесплатно</span>
                                     </label>
-                                </div>
-                                <div class="data__delivery">
                                     <label class="checkbox-delivery">
-                                        <img class="checkbox-delivery__img" src="img/form/np.svg"
-                                            alt="іконка нової пошти">
                                         <input class="checkbox-delivery__input" name="delivery" type="radio">
+                                        <img class="checkbox-delivery__img" src="img/form/np.svg" alt="іконка нової пошти">
                                         <span class="checkbox-delivery__desc checkbox-delivery__desc--np">Доставка Нова
                                             Пошта</span>
                                         <span class="checkbox-delivery__name">≈ від 500 грн</span>
                                     </label>
-                                </div>
-                                <div class="data__delivery">
                                     <label class="checkbox-delivery">
-                                        <img class="checkbox-delivery__img" src="img/form/courier.svg"
-                                            alt="іконка курьєра">
                                         <input class="checkbox-delivery__input" name="delivery" type="radio">
+                                        <img class="checkbox-delivery__img" src="img/form/courier.svg" alt="іконка курьєра">
                                         <span class="checkbox-delivery__desc checkbox-delivery__desc--ku">Доставка
                                             кур'єром</span>
                                         <span class="checkbox-delivery__name">≈ від 200 грн</span>
                                     </label>
-                                </div>
                             </div>
                             <div class="data__map">
                                 <img src="img/form/location.svg" alt="іконка локації">
@@ -213,7 +204,7 @@
                                 <div class="data__payment">
                                     <label class="checkbox-payment">
                                         <input class="checkbox-payment__input" name="payment" type="radio">
-                                        <span class="checkbox-payment__desc">Готівкою при отриманні (Післясплата)</span>
+                                        <span class="checkbox-payment__desc">Готівкою при отриманні (Після сплата)</span>
                                     </label>
                                     <label class="checkbox-payment">
                                         <input class="checkbox-payment__input" name="payment" type="radio">
@@ -246,7 +237,10 @@
                         <div class="data">
                             <h2 class="sub-title sub-title--feedback sub-title--margin">Вибір способу оплати</h2>
                             <div class="data__container data__container--margin">
-                                <textarea class="data__feedback" placeholder="Ваш коментар"></textarea>
+                                <div class="data__feedback">
+                                    <textarea class="data__comment" placeholder="Ваш коментар"></textarea>
+                                    <button class="submit-btn" type="submit">Оформити замовлення</button>
+                                </div>
                             </div>
                         </div>
                     </form>

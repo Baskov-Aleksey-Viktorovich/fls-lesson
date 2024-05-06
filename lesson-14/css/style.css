@@ -464,9 +464,11 @@ label {
     display: flex;
     flex-basis: 210px;
 }
+
 .checkbox-delivery{
     display: flex;
     flex-direction: column;
+    width: 100%;
     cursor: pointer;
     position: relative;
     gap: 10px;
@@ -507,6 +509,7 @@ label {
     top: 12px;
     left: 39%;
     opacity: 0;
+    z-index: 100;
 }
 
 .checkbox-delivery__img{
@@ -515,15 +518,15 @@ label {
     width: 30px;
 }
 
-.checkbox-delivery__input:checked + .checkbox-delivery__desc::before{
+.checkbox-delivery input:checked + .checkbox-delivery__desc::before{
     opacity: 1;
 }
 
-.checkbox-delivery__input:checked + .checkbox-delivery__img{
+.checkbox-delivery input:checked + .checkbox-delivery__img{
     opacity: 0;
 }
 
-.checkbox-delivery:focus{
+.data__delivery:focus{
     outline: 5px solid #ffbc57;
 }
 
@@ -639,11 +642,32 @@ label {
     background-color: #ffbc57;
 }  
 
-.data__feedback{
+.data__comment{
     min-height: 150px;
     width: 100%;
     border: 2px solid #c5c5c5;
     border-radius: 8px;
     padding: 10px 20px;
     resize: vertical;
+}
+
+.data__feedback{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 30px;
+}
+
+.submit-btn{
+    margin: 0 auto;
+    padding: 13px;
+    background-color: #ffbc57;
+    border-radius: 8px;
+    max-width: 460px;
+    font-size: 19px;
+    font-weight: 400;
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
 }
