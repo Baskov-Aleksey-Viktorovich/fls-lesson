@@ -513,6 +513,7 @@ label {
     top: 12px;
     left: 39%;
     opacity: 0;
+    transition: all .3s;
 }
 
 .checkbox-delivery__img {
