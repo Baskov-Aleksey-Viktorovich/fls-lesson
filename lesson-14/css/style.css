@@ -685,7 +685,7 @@ label {
     font-size: 46px;
 }
 
-.switch__label {
+.switch {
     position: relative;
     display: inline-block;
     width: 60px;
