@@ -123,18 +123,23 @@ label {
     text-align: center;
 }
 
+.form__line{
+    display: flex;
+    justify-content: space-around;
+}
+
+.form__line label{
+    align-self: center;
+}
+
 .form__input{
     padding-inline: 10px;
     border: 2px solid black;
-    height: 50px;
-    width: 50%;
     background-color: lightgrey;
     border-radius: 8px;
     cursor: pointer;
-}
-
-.form__input:focus::placeholder{
-    transition: opacity .3s ease-in;
+    height: 50px;
+    width: 80%;
 }
 
 .form__wrapper{
@@ -471,7 +476,6 @@ label {
     flex-direction: column;
     width: 100%;
     cursor: pointer;
-    position: relative;
     gap: 10px;
     border: 2px solid #c5c5c5;
     border-radius: 8px;
@@ -499,7 +503,7 @@ label {
     text-align: center;
 }
 
-.checkbox-delivery__desc::before{
+.checkbox-delivery::before{
     content: "";
     width: 40px;
     height: 40px;
@@ -518,16 +522,16 @@ label {
     width: 30px;
 }
 
-.data__delivery input:checked + .checkbox-delivery{
+.checkbox-delivery__input:checked + .checkbox-delivery{
     outline: 5px solid #ffbc57;
 }
 
-.data__delivery input:checked + .checkbox-delivery__img{
-    opacity: 0;
+.checkbox-delivery__input:checked + .checkbox-delivery::before{
+    opacity: 1;
 }
 
-.data__delivery input:checked + .checkbox-delivery__desc::before{
-    opacity: 1;
+.checkbox-delivery__input:checked + .checkbox-delivery__img{
+    opacity: 0;
 }
 
 .checkbox-delivery:focus{
@@ -674,4 +678,33 @@ label {
     color: #fff;
     text-transform: uppercase;
     cursor: pointer;
+}
+
+
+.test{
+    position: relative;
+}
+
+
+.test__checkbox{
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+    position: absolute;
+    opacity: 0;
+}
+
+.test__span{
+    display: block;
+    width: 60px;
+    height: 60px;
+    border: 5px solid black;
+}
+
+.test__checkbox:checked + .test__span::before{
+    content: "";
+    width: 50px;
+    height: 50px;
+    border: 5px solid red;
 }
