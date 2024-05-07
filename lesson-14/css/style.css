@@ -4,27 +4,27 @@
 /* connect fonts*/
 @import url(fonts.css);
 
-*{
+* {
     font-family: 'Proxima Nova';
 }
 
-.container{
+.container {
     margin: 0 auto;
     max-width: 1320px;
 }
 
-.wrap{
+.wrap {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
 }
 
-.header{
+.header {
     min-height: 50px;
     background-color: orangered;
 }
 
-.header__title{
+.header__title {
     font-size: 36px;
     color: white;
     text-align: center;
@@ -43,7 +43,7 @@
     flex-grow: 1;
 }
 
-main{
+main {
     background-color: #f8f8f8;
 }
 
@@ -56,7 +56,7 @@ main{
     cursor: pointer;
 } */
 
-fieldset{
+fieldset {
     font-weight: 700;
     border: 2px solid black;
     padding: 15px;
@@ -98,7 +98,7 @@ label {
     border-radius: 8px;
 }
 
-.form-textaria{
+.form-textaria {
     min-height: 100px;
     resize: vertical;
 }
@@ -123,16 +123,16 @@ label {
     text-align: center;
 }
 
-.form__line{
+.form__line {
     display: flex;
     justify-content: space-around;
 }
 
-.form__line label{
+.form__line label {
     align-self: center;
 }
 
-.form__input{
+.form__input {
     padding-inline: 10px;
     border: 2px solid black;
     background-color: lightgrey;
@@ -142,12 +142,13 @@ label {
     width: 80%;
 }
 
-.form__wrapper{
+.form__wrapper {
     display: flex;
     gap: 20px;
 }
 
-.form__button, .form__reset{
+.form__button,
+.form__reset {
     background-color: orangered;
     padding: 20px;
     border-radius: 8px;
@@ -166,21 +167,21 @@ label {
     text-align: center;
 }
 
-.form__group{
+.form__group {
     display: flex;
     flex-direction: column;
     justify-content: left;
     gap: 10px;
 
-} 
+}
 
-.form__line--custom{
+.form__line--custom {
     display: flex;
     gap: 20px;
     flex-direction: column;
 }
 
-.form__cont{
+.form__cont {
     display: flex;
     gap: 10px;
 }
@@ -190,27 +191,27 @@ label {
 
 /* practice */
 
-.checkbox-custom__choose{
+.checkbox-custom__choose {
     display: flex;
     flex-direction: column;
     gap: 10px;
     align-items: flex-start;
     padding: 25px;
-} 
+}
 
-.checkbox-custom__item{
+.checkbox-custom__item {
     position: relative;
     cursor: pointer;
 }
 
-.checkbox-custom__input{
+.checkbox-custom__input {
     position: absolute;
     top: 0;
     left: 0;
     width: 0;
     height: 0;
     opacity: 0;
-} 
+}
 
 .checkbox-custom__text {
     font-size: 18px;
@@ -219,7 +220,7 @@ label {
     gap: 15px;
 }
 
-.checkbox-custom__text::before{
+.checkbox-custom__text::before {
     content: "";
     width: 20px;
     height: 20px;
@@ -227,30 +228,30 @@ label {
 }
 
 
-.checkbox-custom__input:focus-visible + .checkbox-custom__text{
+.checkbox-custom__input:focus-visible+.checkbox-custom__text {
     outline: 2px solid black;
     outline-offset: 5px;
 }
 
 
-.checkbox-custom__input:checked + .checkbox-custom__text::before{
+.checkbox-custom__input:checked+.checkbox-custom__text::before {
     transition: all .3s;
     background: url("../img/vector/simple-tick.svg") center / 100% no-repeat;
     background-color: orangered;
 }
 
 
-.checkbox-custom--margin{
+.checkbox-custom--margin {
     margin: 50px 0 50px 0;
 }
 
 
-.radio-item{
+.radio-item {
     position: relative;
     cursor: pointer;
 }
 
-.radio-item__input{
+.radio-item__input {
     position: absolute;
     top: 0;
     left: 0;
@@ -259,7 +260,7 @@ label {
     opacity: 0;
 }
 
-.radio-item__text::before{
+.radio-item__text::before {
     content: "";
     width: 20px;
     height: 20px;
@@ -267,27 +268,27 @@ label {
     border-radius: 50%;
 }
 
-.radio-item__input:checked + .radio-item__text::before{
+.radio-item__input:checked+.radio-item__text::before {
     background: url("../img/vector/tick.svg") center / 100% no-repeat;
     background-color: orangered;
 }
 
-.radio-item__text{
+.radio-item__text {
     font-size: 18px;
     font-weight: 700;
     display: flex;
     gap: 15px;
 }
 
-.main-title{
+.main-title {
     font-size: 40px;
 }
 
-.main-title--margin{
+.main-title--margin {
     margin-bottom: 40px;
 }
 
-.form-container{
+.form-container {
     display: flex;
     flex-wrap: wrap;
     flex: 0 1 57.36%;
@@ -295,17 +296,17 @@ label {
     background-color: #ffffff;
 }
 
-.cart-container{
+.cart-container {
     display: flex;
     flex-wrap: wrap;
-    flex: 0 1 39.64% ;
+    flex: 0 1 39.64%;
     flex-direction: column;
     background-color: white;
     border-radius: 8px;
     height: 800px;
 }
 
-.sub-title{
+.sub-title {
     font-size: 26px;
     font-weight: bold;
     line-height: 34px;
@@ -313,28 +314,30 @@ label {
     position: relative;
     display: flex;
 }
-.sub-title--info{
+
+.sub-title--info {
     gap: 15px;
     align-items: center;
 }
-.sub-title--info::before{
+
+.sub-title--info::before {
     content: "";
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    background: url("../img/form/info.svg") center / 30px no-repeat ;
+    background: url("../img/form/info.svg") center / 30px no-repeat;
     background-color: #ffbc57;
-}  
+}
 
-.sub-title--margin{
+.sub-title--margin {
     margin-bottom: 30px;
 }
 
-.sub-title--space{
+.sub-title--space {
     margin: 30px 30px;
 }
 
-.data{
+.data {
     padding: 30px;
     border-bottom: 5px solid #f8f8f8;
     display: flex;
@@ -342,16 +345,16 @@ label {
     flex-wrap: wrap;
 }
 
-.data__container{
+.data__container {
     display: flex;
     gap: 30px;
 }
 
-.data__container--margin{
+.data__container--margin {
     margin-bottom: 20px;
 }
 
-.data__left{
+.data__left {
     display: flex;
     flex-grow: 1;
     flex-shrink: 1;
@@ -360,7 +363,7 @@ label {
     flex-direction: column;
 }
 
-.data__left input{
+.data__left input {
     height: 50px;
     padding-inline: 20px 10px;
     border: 2px solid #d7dada;
@@ -368,19 +371,19 @@ label {
 }
 
 
-.data__left input:focus{
+.data__left input:focus {
     outline: 2px solid #ffbc57;
 }
 
-.data__left input::placeholder{
+.data__left input::placeholder {
     transition: opacity .2s ease-in;
 }
 
-.data__left input:focus::placeholder{
+.data__left input:focus::placeholder {
     opacity: 0;
 }
 
-.data__right{
+.data__right {
     display: flex;
     flex-grow: 1;
     flex-shrink: 1;
@@ -390,7 +393,7 @@ label {
 }
 
 
-.data__right input{
+.data__right input {
     height: 50px;
     padding-inline: 20px 10px;
     border: 2px solid #d7dada;
@@ -398,15 +401,15 @@ label {
 }
 
 
-.data__right input:focus{
+.data__right input:focus {
     outline: 2px solid #ffbc57;
 }
 
-.data__right input::placeholder{
+.data__right input::placeholder {
     transition: opacity .2s ease-in;
 }
 
-.data__right input:focus::placeholder{
+.data__right input:focus::placeholder {
     opacity: 0;
 }
 
@@ -433,52 +436,52 @@ label {
     line-height: 30px;
 }
 
-.checkbox-spec__desc::before{
+.checkbox-spec__desc::before {
     content: "";
     width: 24px;
     height: 24px;
     border: 2px solid #d1d5d5;
 }
 
-.checkbox-spec__input:checked + .checkbox-spec__desc::before{
+.checkbox-spec__input:checked+.checkbox-spec__desc::before {
     background: url("../img/form/form-tick.svg") center / 15px no-repeat;
     background-color: #ffbc57;
 }
 
-.sub-title--delivery{
+.sub-title--delivery {
     gap: 15px;
     align-items: center;
 }
 
 
-.sub-title--delivery::before{
+.sub-title--delivery::before {
     content: "";
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    background: url("../img/form/delivery-track.svg") center / 30px no-repeat ;
+    background: url("../img/form/delivery-track.svg") center / 30px no-repeat;
     background-color: #ffbc57;
 }
 
 
-.data__delivery{
+.data__delivery {
     display: flex;
     flex-basis: 210px;
     position: relative;
 }
 
-.checkbox-delivery{
+.checkbox-delivery {
     cursor: pointer;
     display: flex;
     flex-direction: column;
     width: 100%;
     gap: 10px;
-    outline: 2px solid #c5c5c5;
     border-radius: 8px;
     padding: 20px;
+    outline: 2px solid #c5c5c5;
 }
 
-.checkbox-delivery__input{
+.checkbox-delivery__input {
     position: absolute;
     top: 0;
     left: 0;
@@ -487,7 +490,7 @@ label {
     opacity: 0;
 }
 
-.checkbox-delivery__desc{
+.checkbox-delivery__desc {
     color: #2b2929;
     font-weight: 500;
     font-size: 16px;
@@ -495,11 +498,11 @@ label {
     text-align: center;
 }
 
-.checkbox-delivery__name{
+.checkbox-delivery__name {
     text-align: center;
 }
 
-.checkbox-delivery::before{
+.checkbox-delivery::before {
     content: "";
     width: 40px;
     height: 40px;
@@ -512,41 +515,41 @@ label {
     opacity: 0;
 }
 
-.checkbox-delivery__img{
+.checkbox-delivery__img {
     opacity: 1;
     margin: 0 auto;
     width: 30px;
 }
 
-.checkbox-delivery__input:checked + .checkbox-delivery{
+.checkbox-delivery__input:checked+.checkbox-delivery {
     outline: 2px solid #ffbc57;
 }
 
-.checkbox-delivery__input:checked + .checkbox-delivery__img{
+.checkbox-delivery__input:checked+.checkbox-delivery__img {
     opacity: 0;
 }
 
-.checkbox-delivery__input:checked + .checkbox-delivery::before{
+.checkbox-delivery:has(.checkbox-delivery__input:checked)::before {
     opacity: 1;
 }
 
-.checkbox-delivery:focus{
-    outline: 5px solid #ffbc57;
+.checkbox-delivery:has(.checkbox-delivery__input:checked) {
+    outline: 2px solid #ffbc57;
 }
 
-.data__desc{
+.data__desc {
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
 }
 
-.data__strong{
+.data__strong {
     font-size: 20px;
     font-weight: 700;
 }
 
 
-.data__map{
+.data__map {
     display: flex;
     gap: 20px;
     background-color: #f8f8f8;
@@ -555,16 +558,16 @@ label {
     padding: 20px;
 }
 
-.data__link{
+.data__link {
     display: flex;
     gap: 10px;
     min-width: 142px;
     padding: 13px;
-    background-color:#ffbc57;
+    background-color: #ffbc57;
     border-radius: 8px;
 }
 
-.data__link span{
+.data__link span {
     font-size: 19px;
     color: #fff;
     font-weight: 500;
@@ -573,21 +576,21 @@ label {
 }
 
 
-.sub-title--payment{
+.sub-title--payment {
     gap: 15px;
     align-items: center;
 }
 
-.sub-title--payment::before{
+.sub-title--payment::before {
     content: "";
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    background: url("../img/form/wallet.svg") center / 30px no-repeat ;
+    background: url("../img/form/wallet.svg") center / 30px no-repeat;
     background-color: #ffbc57;
-}  
+}
 
-.data__payment{
+.data__payment {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -617,7 +620,7 @@ label {
     line-height: 30px;
 }
 
-.checkbox-payment__desc::before{
+.checkbox-payment__desc::before {
     content: "";
     width: 24px;
     height: 24px;
@@ -625,28 +628,28 @@ label {
     border-radius: 50%;
 }
 
-.checkbox-payment__input:checked + .checkbox-payment__desc::before{
+.checkbox-payment__input:checked+.checkbox-payment__desc::before {
     background: url("../img/form/form-tick.svg") center / 15px no-repeat;
     background-color: #ffbc57;
 }
 
 
 
-.sub-title--feedback{
+.sub-title--feedback {
     gap: 15px;
     align-items: center;
 }
 
-.sub-title--feedback::before{
+.sub-title--feedback::before {
     content: "";
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    background: url("../img/form/circle-tik.svg") center / 30px no-repeat ;
+    background: url("../img/form/circle-tik.svg") center / 30px no-repeat;
     background-color: #ffbc57;
-}  
+}
 
-.data__comment{
+.data__comment {
     min-height: 150px;
     width: 100%;
     border: 2px solid #c5c5c5;
@@ -655,7 +658,7 @@ label {
     resize: vertical;
 }
 
-.data__feedback{
+.data__feedback {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -663,7 +666,7 @@ label {
     gap: 30px;
 }
 
-.submit-btn{
+.submit-btn {
     margin: 0 auto;
     padding: 13px;
     background-color: #ffbc57;
@@ -677,12 +680,12 @@ label {
 }
 
 
-.test{
+.test {
     position: relative;
 }
 
 
-.test__checkbox{
+.test__checkbox {
     width: 0;
     height: 0;
     top: 0;
@@ -691,14 +694,14 @@ label {
     opacity: 0;
 }
 
-.test__span{
+.test__span {
     display: block;
     width: 60px;
     height: 60px;
     border: 5px solid black;
 }
 
-.test__checkbox:checked + .test__span::before{
+.test__checkbox:checked+.test__span::before {
     content: "";
     width: 50px;
     height: 50px;
