@@ -166,10 +166,6 @@ label {
     text-align: center;
 }
 
-
-
-
-
 .form__group{
     display: flex;
     flex-direction: column;
@@ -472,12 +468,12 @@ label {
 }
 
 .checkbox-delivery{
+    cursor: pointer;
     display: flex;
     flex-direction: column;
     width: 100%;
-    cursor: pointer;
     gap: 10px;
-    border: 2px solid #c5c5c5;
+    outline: 2px solid #c5c5c5;
     border-radius: 8px;
     padding: 20px;
 }
@@ -523,15 +519,15 @@ label {
 }
 
 .checkbox-delivery__input:checked + .checkbox-delivery{
-    outline: 5px solid #ffbc57;
-}
-
-.checkbox-delivery__input:checked + .checkbox-delivery::before{
-    opacity: 1;
+    outline: 2px solid #ffbc57;
 }
 
 .checkbox-delivery__input:checked + .checkbox-delivery__img{
     opacity: 0;
+}
+
+.checkbox-delivery__input:checked + .checkbox-delivery::before{
+    opacity: 1;
 }
 
 .checkbox-delivery:focus{
