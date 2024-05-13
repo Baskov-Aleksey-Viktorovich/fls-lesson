@@ -1,0 +1,12 @@
+@media (max-width: 670px) {
+    .some-items__item{
+        flex: 1 1 100%;
+    }
+}
+
+
+@media (any-hover: hover) {
+    [class*="__links"]:hover{
+        color: #ccc;
+    }
+}
