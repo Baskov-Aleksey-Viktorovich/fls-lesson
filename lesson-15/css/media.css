@@ -4,6 +4,13 @@
     }
 }
 
+@media (max-width: 1170px){
+    .header__logo{
+        width: 170px;
+        margin: 0 auto;
+    }
+}
+
 
 @media (any-hover: hover) {
     [class*="__links"]:hover{

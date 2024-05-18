@@ -40,8 +40,8 @@
                         <div class="language">
                             <label class="language__desc" for="language-select"></label>
                             <select class="language__select" id="language-select">
-                                <option value="ua">UA</option>
-                                <option value="eng">ENG</option>
+                                <option class="language__item" value="ua">UA</option>
+                                <option class="language__item" value="eng">ENG</option>
                             </select>
                         </div>
                     </div>
@@ -59,8 +59,9 @@
                     </div>
 
                     <div class="header__left">
-                        <a class="logo" href=""><img src="img/main-page-header/raster/logotipe.png"
-                                alt="лого кровато"></a>
+                        <div class="header__logo">
+                            <img class="logo" src="img/main-page-header/raster/logotipe.png" alt="лого кровато">
+                        </div>
                         <a class="catalog" href="#">
                             <img class="catalog__img" src="img/main-page-header/vector/catalog.svg" alt="іконка меню">
                             <span class="catalog__name">Каталог</span>
@@ -72,14 +73,14 @@
                     </div>
                     <div class="header__call-back">
                         <div class="first">
-                            <img src="img/main-page-header/vector/call-back-phone.svg" alt="">
+                            <img class="first__icon" src="img/main-page-header/vector/call-back-phone.svg" alt="">
                         </div>
                         <div class="last">
                             <label for="phone">Щодня з 9:00 до 18:00</label>
-                            <select id="phone">
-                                <option value="vodafone">067 929-45-45</option>
-                                <option value="kiev-star">067 929-45-45</option>
-                                <option value="life">067 929-45-45</option>
+                            <select class="phone" id="phone">
+                                <option class="phone__item" value="vodafone">067 929-45-45</option>
+                                <option class="phone__item" value="kiev-star">067 929-45-45</option>
+                                <option class="phone__item" value="life">067 929-45-45</option>
                             </select>
                         </div>
                     </div>
