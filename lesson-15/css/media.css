@@ -7,6 +7,6 @@
 
 @media (any-hover: hover) {
     [class*="__links"]:hover{
-        color: #ccc;
+        text-decoration: underline;
     }
 }

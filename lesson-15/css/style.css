@@ -11,7 +11,8 @@
 
 
 * {
-    font-family: "Proxima Nova";
+    font-family: "Proxima Nova", sans-serif;
+    color: #535353;
 }
 
 .page {
@@ -529,7 +530,6 @@
     align-items: flex-end;
     height: 35px;
     cursor: pointer;
-    display: none;
 }
 
 .hamburger__item{
