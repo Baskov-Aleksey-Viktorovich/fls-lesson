@@ -62,13 +62,13 @@
         left: 10%;
     }
 
+    .sub-header__left{
+        display: none;
+    }
+
     .hamburger{
         display: flex;
         background-color: transparent;
-    }
-
-    .sub-header__left{
-        display: none;
     }
 
     .header__container{
@@ -154,7 +154,7 @@
 
 }
 
-@media (max-width:321px) {
+@media (max-width:355px) {
    .sub-header__right{
     display: none;
    }
