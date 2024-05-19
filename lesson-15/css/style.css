@@ -1,13 +1,7 @@
-/* resets style */
-@import url(reset.css);
 
-/* connect fonts*/
-@import url(fonts.css);
+/* resets style */ @import url(reset.css);
 
-
-/* connect media query*/
-@import url(media.css);
-
+/* connect fonts*/ @import url(fonts.css);
 
 
 * {

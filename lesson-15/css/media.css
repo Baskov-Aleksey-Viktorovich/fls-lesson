@@ -5,7 +5,10 @@
 }
 
 @media (max-width: 1170px){
-
+    .header-info__list, .header-info__list{
+        column-gap: 20px !important;
+    }
+    
     .header__container{
         column-gap: 20px;
     }
