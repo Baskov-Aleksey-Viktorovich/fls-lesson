@@ -5,9 +5,13 @@
 }
 
 @media (max-width: 1170px){
+
+    .header__container{
+        column-gap: 20px;
+    }
+
     .header__logo{
         width: 170px;
-        margin: 0 auto;
     }
 }
 
