@@ -31,7 +31,7 @@
         display: none;
     }
 
-    .sub-header__container{
+    .container__sub-header{
         gap: 10px;
     }
 }
@@ -50,7 +50,7 @@
         justify-content: center;
     }
 
-    .sub-header__container{
+    .container__sub-header{
         position: relative;
         display: flex;
         justify-content: space-between;

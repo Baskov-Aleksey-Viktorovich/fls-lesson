@@ -221,7 +221,7 @@
     background-color: #F8F8F8;
 }
 
-.sub-header__container {
+.container__sub-header {
     display: flex;
     flex-wrap: wrap;
     column-gap: 10px;
