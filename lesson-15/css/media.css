@@ -18,6 +18,21 @@
     }
 }
 
+@media (max-width: 991.98px){
+    .hamburger{
+        display: flex;
+        flex-shrink: 0;
+    }
+
+    .header__call-back{
+        display: none;
+    }
+
+    .right{
+        display: none;
+    }
+}
+
 
 @media (any-hover: hover) {
     [class*="__links"]:hover{
