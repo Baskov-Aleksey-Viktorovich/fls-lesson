@@ -119,6 +119,7 @@ body {
     flex-wrap: wrap;
     column-gap: 30px;
     row-gap: 10px;
+    align-items: center;
 } 
 
 .body-header__logo {
@@ -152,13 +153,42 @@ body {
     height: 25px;
 }
 
-.body-header__search {}
+.body-header__search {
 
-.search-body-header {}
+}
 
-.search-body-header__input {} 
+.search-body-header {
+    position: relative;
+    border: 2px solid #F8F8F8;
+    border-radius: 8px;
+    flex-grow: 1;
+}
 
-.search-body-header__button {}
+.search-body-header__input {
+    height: 50px;
+    text-indent: 15px;
+    width: 100%;
+} 
+
+.search-body-header__input::-webkit-search-cancel-button{
+    opacity: 0;
+}
+
+.search-body-header__input:focus::placeholder{
+    opacity: 0;
+    outline: none;
+}
+
+
+.search-body-header__button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: url("../img/main-page-header/vector/poisk.svg") center / 25px no-repeat;
+    height: 50px;
+    width: 50px;
+
+}
 
 .body-header__contacts {}
 
