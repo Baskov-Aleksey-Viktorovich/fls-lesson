@@ -3,7 +3,7 @@
         display: none;
     }
     
-    .header-info__container{
+    .header-info__wrapper{
         flex-wrap: wrap;
         justify-content: center;
         row-gap: 20px;
@@ -31,7 +31,7 @@
         display: none;
     }
 
-    .container__sub-header{
+    .sub-header__wrapper{
         gap: 10px;
     }
 }
@@ -44,13 +44,13 @@
     .search{
         width: 20%;
     }
-    .header__container{
+    .header__wrapper{
         padding: 15px;
 
         justify-content: center;
     }
 
-    .container__sub-header{
+    .sub-header__wrapper{
         position: relative;
         display: flex;
         justify-content: space-between;
