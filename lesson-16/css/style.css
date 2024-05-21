@@ -3,6 +3,10 @@
 
 /* connect fonts*/ @import url(fonts.css);
 
+/* connect media query*/ @import url(media.css);
+
+
+
 body {
     font-family: "Proxima Nova", sans-serif;
     color: #535353;
@@ -127,6 +131,8 @@ body {
 } 
 
 .body-header__logo {
+    display: flex;
+    justify-content: flex-end;
     margin-right: 5px;
 }
 
@@ -319,6 +325,7 @@ body {
 
 .use-menu__list {
     display: flex;
+    flex-wrap: wrap;
     row-gap: 10px;
     column-gap: 40px;
     justify-content: space-between;
