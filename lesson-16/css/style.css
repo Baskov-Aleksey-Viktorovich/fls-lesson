@@ -6,7 +6,6 @@
 /* connect media query*/ @import url(media.css);
 
 
-
 body {
     font-family: "Proxima Nova", sans-serif;
     color: #535353;
@@ -395,3 +394,4 @@ body {
         text-decoration: underline;
     }
 }
+

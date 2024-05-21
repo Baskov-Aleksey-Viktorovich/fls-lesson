@@ -1,8 +1,14 @@
 @media (max-width:1200px) {
+    .body-header__container{
+        column-gap: 20px;
+    }
+    
     .body-header__logo{
         width: 170px;
         overflow: hidden;
     }
-    .body-header__img{
+
+    .sections-menu__list, .use-menu__list{
+        column-gap: 10px !important;
     }
 }
