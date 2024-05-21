@@ -45,6 +45,8 @@ body {
     z-index: 50;
 }
 
+/* header-top */
+
 .header__top {}
 
 .top-header {
@@ -108,6 +110,8 @@ body {
     background-color: transparent;
 }
 
+
+/* header*/
 .header__body {}
 
 .body-header {
@@ -243,7 +247,7 @@ body {
 
 .body-header__action {
     display: flex;
-    gap: 30px;
+    gap: 20px;
     align-items: center;
     justify-content: center; 
     height: 50px;
@@ -260,12 +264,7 @@ body {
     transition: all .3s ease-in;
 } 
 
-.body-header__action-link--favorite {
-    
-} 
-
-.body-header__action-link--cart {}
-
+/* header-bottom */
 
 /* footer */
 
