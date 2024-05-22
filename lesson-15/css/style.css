@@ -223,7 +223,7 @@
 .sub-header__wrapper{
     display: flex;
     flex-wrap: wrap;
-    column-gap: 10px;
+    column-gap: 30px;
     justify-content: space-between;
     padding: 15px;
 }
@@ -260,7 +260,7 @@
 .links {
     display: flex;
     flex-wrap: wrap;
-    max-width: 565px;
+    flex-basis: 565px;
     column-gap: 30px;
     row-gap: 10px;
 }
@@ -329,7 +329,7 @@
 
 
 .search {
-    width: 421px;
+    flex-grow: 1;
     border: 1px solid lightgray;
     border-radius: 8px;
     height: 50px;
@@ -427,10 +427,13 @@
 .header-info {
     width: 100%;
     min-height: 24px;
+    padding: 25px;
 }
 
 .header-info__wrapper {
     display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
@@ -468,10 +471,6 @@
     align-self: center;
 }
 
-
-.header-info--margin {
-    margin-top: 42px;
-}
 
 
 
