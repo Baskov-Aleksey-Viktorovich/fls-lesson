@@ -85,4 +85,8 @@
     .header__top {
         display: none;
     }
+
+    .contacts-body-header__wrapper{
+        display: none !important;
+    }
 }

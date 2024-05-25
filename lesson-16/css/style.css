@@ -238,6 +238,8 @@ body {
     background-color: #F8F8F8;
     cursor: pointer;
     transition: all ease-in 0.1s;
+    position: relative;
+    z-index: 2;
 }
 
 .contacts-body-header__label{
