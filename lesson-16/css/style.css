@@ -453,6 +453,8 @@ body {
     }
 
 
+
+
     .menu-icon {
         display: block !important;
         position: relative;
@@ -483,6 +485,7 @@ body {
 
     .body-header__catalog{
         z-index: 2;
+        flex-grow: 1;
     }
 
     .body-header__action {
@@ -613,6 +616,10 @@ body {
         display: none;
     }
 
+    .bottom-header{
+        padding: 100px 0 30px 0;
+    }
+
 }
 
 @media (max-width:600px) {
@@ -630,6 +637,6 @@ body {
     }
 
     .bottom-header__container {
-        column-gap: 40px;
+        column-gap: 13px;
     }
 }
