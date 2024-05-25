@@ -16,7 +16,7 @@
         <header class="header">
             
             <div class="header__top top-header">
-                <div class="top-header__container">
+                <div data-da=".burger-header__container, 991.98, 3" class="top-header__container">
                     <div class="top-header__menu menu-top-header">
                         <ul class="menu-top-header__list">
                             <li class="menu-top-header__item">
@@ -75,18 +75,18 @@
 
             <div class="header__body body-header">
                 <div class="body-header__container">
+                    <button type="button" class="menu-icon">
+                        <span class="menu-icon__name"></span>
+                    </button>
                     <div class="body-header__logo">
                         <img class="body-header__img" src="img/main-page-header/raster/logotipe.png" alt="логотип">
                     </div>
-                    <button class="body-header__catalog"><span>Каталог</span></button>
+                    <button data-da=".bottom-header__container, 991.98, 1" class="body-header__catalog"><span>Каталог</span></button>
 
                     <form class="body-header__search search-body-header" action="#">
                         <input class="search-body-header__input" type="search" placeholder="Пошук товарів тут">
                         <button class="search-body-header__button" type="button"></button>
                     </form>
-                    <button type="button" class="menu-icon">
-                        <span class="menu-icon__name"></span>
-                    </button>
                     <div class="body-header__contacts contacts-body-header">
                         <a href="+380505050" class="contacts-body-header__icon">
                             <img src="img/main-page-header/vector/call-back-phone.svg" alt="">
@@ -101,7 +101,8 @@
                         </div>
                     </div>
 
-                    <div class="body-header__action">
+                    <div data-da=".bottom-header__container, 991.98, 2" class="body-header__action">
+                        <button class="body-header__action-search"></button>
                         <a class="body-header__action-link body-header__action-link--favorite" href="#">
                             <img src="img/main-page-header/vector/favorite.svg" alt="">
                         </a>
@@ -114,14 +115,14 @@
 
             <div class="header__bottom bottom-header">
                 <div class="bottom-header__container">
-                    <div class="bottom-header__sections sections-menu">
-                        <ul class="sections-menu__list">
+                    <div data-da=".burger-header__container ,991.98, 2" class="bottom-header__sections sections-menu">
+                        <ul  class="sections-menu__list">
                             <li class="sections-menu__item"><a class="sections-menu__link sections-menu__link--star" href="#">Акції</a></li>
                             <li class="sections-menu__item"><a class="sections-menu__link sections-menu__link--sale" href="#">Розпродаж</a></li>
                             <li class="sections-menu__item"><a class="sections-menu__link sections-menu__link--creadit" href="#">Купити в кредит</a></li>
                         </ul>
                     </div>
-                    <div class="bottom-header__use use-menu">
+                    <div data-da=".burger-header__container ,991.98, 1" class="bottom-header__use use-menu">
                         <ul class="use-menu__list">
                             <li class="use-menu__item">
                                 <a class="use-menu__link" href="#">Дитяча</a>
@@ -151,6 +152,13 @@
                 </div>
             </div>
 
+            <div class="header__burger burger-header">
+                <div class="burger-header__container">
+
+                </div>
+
+            </div>
+
         </header>
         <main>
             <h1>Це main </h1>
@@ -159,6 +167,8 @@
             <h2 class="footer__title">Це футер</h2>
         </footer>
     </div>
+    <script src="js/da.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
