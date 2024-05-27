@@ -70,12 +70,19 @@ body {
     gap: 20px;
     /* блочно-рядковий грід */
     /* display: inline-grid; */
+
     /* Побування  явної сітки */
+
     /* Побудування колонок можно вказувати % він буде братись від ширини контейнера */
+
     /* fr - фрагмент або фракція */
+
     /* grid-template-columns:  .5fr 1fr .5fr; */
+
     /*Repeat Кількість та загальний розмір! */
+
    /*  grid-template-columns: repeat(3, 1fr); */
+   
    /* min - max */
    /* grid-template-columns: repeat(3, minmax(50px, 1fr)); */
     /*Побудування рядків  */;
@@ -86,7 +93,19 @@ body {
     /* grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
     grid-template-rows: 50px; */
     /* тут відразу прописуємо і колонки і рядки */
-    grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+    /* grid-template: repeat(3, 1fr) / repeat(2, 1fr); */
+    /* grid-auto-flow: - алгоритм виводу явної сітки! row \ column */
+
+
+    height: 300px;
+    /* Вирівювання обьектів в середині ячейки в здовж горизонтальної лінії */
+    justify-items: center; /* start \ end \ strech \ center */
+    /* Вирівнювання елементів в середині грід контейнера */
+    
+    grid-template: repeat(3, 1fr) / repeat(2, auto);
+
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
 }
 
 .grid__item{
