@@ -405,7 +405,7 @@ body {
         background-color: #ca8d32;
     }
 
-    .body-header__action-link:hover {
+    .body-header__action-link:hover,  .body-header__action-search:hover{
         background-color: #FFBC57;
     }
 
@@ -496,7 +496,7 @@ body {
         left: 0;
         height: 2px;
         width: 100%;
-        transform: translateY(0px, -50%);
+        transform: translateY(0, -50%);
         background-color: #ccc;
     }
 
@@ -599,6 +599,7 @@ body {
 
     .body-header__action-search{
         display: flex;
+        cursor: pointer;
     }
 
     .body-header__action{
