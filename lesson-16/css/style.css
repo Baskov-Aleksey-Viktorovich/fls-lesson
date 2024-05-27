@@ -475,6 +475,15 @@ body {
         flex-shrink: 0;
     }
 
+    .menu-icon__name {
+        position: absolute;
+        left: 0;
+        height: 2px;
+        width: 100%;
+        transform: translateY(-50%);
+        background-color: #ccc;
+    }
+
     .menu-icon::before {
         top: 0;
     }
@@ -482,6 +491,9 @@ body {
     .menu-icon::after {
         bottom: 0;
     }
+
+
+
 
     .body-header__catalog{
         z-index: 2;
@@ -491,14 +503,7 @@ body {
         z-index: 2;
     }
 
-    .menu-icon__name {
-        position: absolute;
-        left: 0;
-        height: 2px;
-        width: 100%;
-        transform: translateY(-50%);
-        background-color: #ccc;
-    }
+
 
     .bottom-header {
         position: fixed;
@@ -553,6 +558,23 @@ body {
     }
 
     
+    .active .menu-icon::before{
+        transform: rotate(-45deg);
+        top: 50%;
+        margin-top: -1px;
+    }
+
+    .active .menu-icon::after{
+        transform: rotate(45deg);
+        bottom: 50%;
+        margin-bottom: -1px;
+    }
+
+    .active .menu-icon__name{
+        transform: scale(0);
+    }
+
+    
     .burger-header__container{
         display: flex;
         flex-direction: column-reverse;
@@ -597,7 +619,7 @@ body {
     }
 
 
-    .body-header__action-search{
+    .body-header__action--search{
         display: flex;
         cursor: pointer;
     }
