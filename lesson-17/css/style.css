@@ -63,49 +63,13 @@ body {
 
 /* GRID PRACTIC */
 .grid{
-    min-height: 100px;
-    /* блочний грід */
     display: grid;
-    background-color: brown;
-    gap: 20px;
-    /* блочно-рядковий грід */
-    /* display: inline-grid; */
-
-    /* Побування  явної сітки */
-
-    /* Побудування колонок можно вказувати % він буде братись від ширини контейнера */
-
-    /* fr - фрагмент або фракція */
-
-    /* grid-template-columns:  .5fr 1fr .5fr; */
-
-    /*Repeat Кількість та загальний розмір! */
-
-   /*  grid-template-columns: repeat(3, 1fr); */
-   
-   /* min - max */
-   /* grid-template-columns: repeat(3, minmax(50px, 1fr)); */
-    /*Побудування рядків  */;
-
-    /* Алгоритм Автоматичного заповення auto-fit*/
-    /* grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); */
-    /* Алгоритм Автоматичного заповення auto-fil*/
-    /* grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-    grid-template-rows: 50px; */
-    /* тут відразу прописуємо і колонки і рядки */
-    /* grid-template: repeat(3, 1fr) / repeat(2, 1fr); */
-    /* grid-auto-flow: - алгоритм виводу явної сітки! row \ column */
-
-
     height: 300px;
-    /* Вирівювання обьектів в середині ячейки в здовж горизонтальної лінії */
-    justify-items: center; /* start \ end \ strech \ center */
-    /* Вирівнювання елементів в середині грід контейнера */
-    
-    grid-template: repeat(3, 1fr) / repeat(2, auto);
+    justify-content: space-between;
+    /* align-items: center; */
+    /* align-content: end; */
+    grid-template-columns: 1fr 1fr 1fr;
 
-    grid-auto-flow: column;
-    grid-auto-columns: 1fr;
 }
 
 .grid__item{
@@ -119,6 +83,12 @@ body {
 .grid__item:hover{
     transform: scale(1.05);
 }
+
+.grid__item:nth-child(3){
+    grid-column: 2 / 4;
+    background-color: green;
+}
+
     
     /* footer */
 
@@ -150,4 +120,4 @@ body {
         0 0 92px #FFBC57,
         0 0 102px #FFBC57,
         0 0 151px #FFBC57;
-} */
+}
