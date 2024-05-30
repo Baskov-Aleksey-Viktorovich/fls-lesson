@@ -11,5 +11,6 @@
         "hono",
         "svgrepo",
         "webp"
-    ]
+    ],
+    "liveServer.settings.port": 5501
 }
