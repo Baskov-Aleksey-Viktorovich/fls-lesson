@@ -446,10 +446,14 @@ body {
         overflow: hidden;
         flex-shrink: 0;
     }
+    .sections-menu, .use-menu{
+        width: 100%;
+    }
 
     .sections-menu__list,
     .use-menu__list {
         column-gap: 10px;
+        width: 100%;
     }
 
     .social-top-header__label {
@@ -537,9 +541,9 @@ body {
     .bottom-header__container {
         position: fixed;
         display: flex;
+        flex-direction: column;
         column-gap: 10px;
         row-gap: 10px;
-        flex-direction: row;
         justify-content: space-between;
     }
 
@@ -626,6 +630,7 @@ body {
         flex-direction: column;
         text-align: left;
         row-gap: 35px;
+        width: 100% !important;
     }
 
     .sections-menu__link,
@@ -676,8 +681,9 @@ body {
 
     .bottom-header__container {
         display: flex;
-        justify-content: space-between;
         width: 100%;
+        flex-direction: column;
+        justify-content: space-between;
         column-gap: 13px;
     }
 
