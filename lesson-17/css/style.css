@@ -203,7 +203,7 @@ body {}
 
 .popular__container {
     display: grid;
-    grid-template: repeat(3, minmax(290px, 1fr));
+    grid-template: repeat(3,minmax(290px,1fr));
     justify-content: start;
     gap: 24px;
 }
