@@ -1,0 +1,249 @@
+@use "sass:math";
+
+@import "_reset.scss"; /* attachment resets style */
+@import "_fonts.scss"; /* attachment fonts */
+
+$mainColor: #666666; 
+//mixin's
+@mixin box($width:100%, $height:50px, $bgColor:#ccc, $borderColor:rgb(230, 139, 139),){
+    width: $width;
+    height: $height;
+    background-color: $bgColor;
+    border-color: $borderColor;
+}
+
+/* Шаблон */
+%button{
+    padding: 10px 20px;
+    font-size: 20px;
+    color: #ccc;
+    background-color: #020202;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.wrapper {
+    display: flex;
+    min-height: 100%;
+    flex-direction: column;
+    overflow: clip;
+}
+
+.wrapper>main {
+    flex-grow: 1;
+}
+
+/* --------- Default style -------------*/
+[class*="__container"] {
+    max-width: 1320px;
+    padding: 0 15px 0 15px;
+    margin: 0 auto;
+}
+
+[class*="--margin"]{
+    margin: 25px 0 25px 0;
+}
+/* --------- Default style -------------*/
+
+.header{
+    width: 100%;
+    border: 5px solid;
+    border-color: #fff black black black;
+    @include box;
+    margin: 0 auto;
+}
+
+.header__title{
+    text-align: center;
+    font-size: 34px;
+    color: #020202;
+}
+
+//SASS syntax
+/* body
+    color:red */
+
+//Syntax SCSS
+
+/* body {
+    color: red;
+    font-size: 20px;
+} */
+
+// variable змінні
+//додали змінну више
+
+//Вкладеність
+
+.header{
+    &.header__title{
+        color: red;
+    }
+}
+
+/* Синтаксис SCSS */
+
+.block {
+    /* .block__container */
+
+    &__container {
+        width: 100%;
+        height: 100%;
+        background-color: #ccc;
+    }
+
+    /* .block__title */
+
+    &__title {
+        text-align: center;
+        color: white;
+        font-size: 24px;
+    }
+
+    /* .block__items */
+
+    &__items {
+        display: flex;
+        justify-content: space-between;
+        padding: 50px;
+    }
+
+    /* .block__item */
+
+    &__item {
+        padding: 25px;
+        font-size: 18px;
+        color: #fff;
+        border: 2px solid #fff;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: all .4s ease-in-out;
+        &:hover{
+            transform: rotate3d(1,1,1, 35deg);
+        }
+    }
+    &__button{
+        @extend %button;
+        border: 2px solid #fff;
+    }
+
+    &__sub-title{
+        @extend .block__title;
+        padding: 20px;
+    }
+}
+
+
+
+
+// Все разом по вкладеності
+/* .block {
+	.page & {
+		// ...
+	}
+	&--active {
+		// ...
+	}
+	// .block__container
+	&__container {
+		&:hover {
+		}
+		span {
+		}
+	}
+	// .block__title
+	&__title {
+		&::before {
+		}
+	}
+	// .block__body
+	&__body {
+		@media (max-width: 850px) {
+			//   ....
+		}
+	}
+	// .block__image
+	&__image {
+		// .block__image--big
+		&--big {
+		}
+	}
+	// .block__content
+	&__content {
+		&:last-child {
+			// ....
+		}
+	}
+} */
+
+
+/* Використання шаблону */
+.button{
+    @extend %button
+}
+
+// @mixin (вміє приймати значення) and @include
+
+.block__spinner{
+    margin:0 auto;
+    width: 100px;
+    height: 100px;
+    border: 17px solid;
+    border-radius: 50%;
+    border-color: #fff black black black;
+    animation: rotare 1.5s linear infinite;
+    cursor: pointer;
+    @keyframes rotare {
+        to {transform: rotate(365deg)};
+    }
+}
+
+.block__spinner:hover{
+    animation-play-state: paused;
+}
+
+
+/* @mixin box($width:500px, $height:500px, $bgColor:#ccc, $borderColor:#ccc black black black){
+    width: $width;
+    height: $height;
+    background-color: $bgColor;
+    border-color: $borderColor;
+} */
+
+.list {
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    gap: 20px;
+    /* .list__item */
+
+    &__item {
+        padding: 15px;
+        background-color: #050055;
+        border: 2px solid #fff;
+        cursor: pointer;
+        color: white;
+        text-align: center;
+        visibility: hidden;
+        transform: translate(-100%, 0);
+        opacity: 0;
+        animation: show-items 1s ease-in forwards;
+    }
+
+    @for $i from 1 through 6{
+        &:nth-child(#{$i}){
+            $delay: ($i - 1) * .2;
+            animation-delay: #{$delay}s;
+        }
+    }
+}
+
+@keyframes show-items{
+    0%{
+    }
+    100%{
+        opacity: 1;
+        visibility: visible;
+        transform: translate(0px, 0%);
+    }
+}
