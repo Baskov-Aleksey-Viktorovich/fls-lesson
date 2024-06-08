@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap"); /* attachment font */
+@import url("https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap");
 *,
 *::before,
 *::after {
@@ -288,6 +289,56 @@ input[type=text] {
           transform: translateY(-50%);
 }
 
+/*decomposition components header */
+.owner {
+  color: #fff;
+  font-family: "Orbitron", "sans-serif";
+  background-color: aqua;
+  /* .owner_sub-title */
+  /* .owner__layout */
+  /* .owner__left */
+  /* .owner__title */
+  /* .owner__descr */
+  /* .owner__call */
+  /* .owner__right */
+}
+.owner_sub-title {
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Exo", "sans-serif";
+  line-height: 20px;
+}
+.owner__layout {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-column-gap: 224px;
+     -moz-column-gap: 224px;
+          column-gap: 224px;
+  width: 100%;
+}
+.owner__left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 20px;
+}
+.owner__call {
+  cursor: pointer;
+  font-size: 20px;
+  color: #fff;
+  font-family: "Orbitron", "sans-serif";
+  font-weight: 900;
+  padding: 15px 60px;
+  background-color: #6f00a9;
+}
 /*decomposition components header */
 [class*=__container] {
   max-width: 1312px;
