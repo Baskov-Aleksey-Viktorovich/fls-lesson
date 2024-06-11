@@ -292,9 +292,9 @@ input[type=text] {
 /*decomposition components header */
 .owner {
   color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
   font-family: "Orbitron", "sans-serif";
-  background-color: aqua;
-  /* .owner_sub-title */
+  min-height: 600px;
   /* .owner__layout */
   /* .owner__left */
   /* .owner__title */
@@ -302,33 +302,71 @@ input[type=text] {
   /* .owner__call */
   /* .owner__right */
 }
+.owner__container--mod {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+}
 .owner_sub-title {
   font-size: 18px;
   font-weight: 400;
   font-family: "Exo", "sans-serif";
   line-height: 20px;
+  position: relative;
+}
+.owner_sub-title::after {
+  content: "";
+  background: -webkit-gradient(linear, left top, right top, from(#FF0000), color-stop(#42FF00), to(#2400FF));
+  background: linear-gradient(to right, #FF0000, #42FF00, #2400FF);
+  height: 2px;
+  width: 152px;
+  position: absolute;
+  top: 25px;
+  left: 0;
 }
 .owner__layout {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  grid-template-columns: 1fr 688px;
+  grid-template-rows: 2fr;
+  /* grid-template-rows: 1fr; */
   -webkit-column-gap: 224px;
      -moz-column-gap: 224px;
           column-gap: 224px;
-  width: 100%;
+  width: 20px;
 }
 .owner__left {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
   row-gap: 20px;
+}
+.owner__title {
+  color: #fff;
+  font-size: 80px;
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 70px;
+}
+.owner__descr {
+  font-size: 18px;
+  text-align: left;
+  font-family: "Exo", "sans-serif";
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: -1px;
 }
 .owner__call {
   cursor: pointer;
@@ -338,6 +376,20 @@ input[type=text] {
   font-weight: 900;
   padding: 15px 60px;
   background-color: #6f00a9;
+  text-transform: uppercase;
+  max-width: 253px;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+.owner__right {
+  grid-row-end: 2 span;
+}
+
+@media (any-hover) {
+  .owner__call:hover {
+    -webkit-box-shadow: 5px 5px 5px 0px rgba(111, 0, 169, 0.5);
+            box-shadow: 5px 5px 5px 0px rgba(111, 0, 169, 0.5);
+  }
 }
 /*decomposition components header */
 [class*=__container] {
