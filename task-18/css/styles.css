@@ -235,6 +235,7 @@ input[type=text] {
   }
   .menu-icon {
     display: block !important;
+    z-index: 99;
   }
   .menu__link {
     font-size: 24px;
@@ -261,6 +262,7 @@ input[type=text] {
   cursor: pointer;
   -ms-flex-item-align: center;
       align-self: center;
+  z-index: 1000;
 }
 
 .menu-icon::before {
@@ -271,6 +273,7 @@ input[type=text] {
   height: 2px;
   width: 100%;
   background-color: #fff;
+  z-index: 999;
 }
 
 .menu-icon::after {
@@ -283,6 +286,7 @@ input[type=text] {
   height: 2px;
   width: 100%;
   background-color: #fff;
+  z-index: 999;
 }
 
 .menu-icon__name {
@@ -426,7 +430,7 @@ input[type=text] {
   width: 188px;
   height: 136px;
   position: absolute;
-  background: url("../img/main-page-content/vector/Image.svg") left/100% no-repeat;
+  background: url("../img/main-page-content/vector/image.svg") left/100% no-repeat;
 }
 .owner__right::after {
   content: "";
