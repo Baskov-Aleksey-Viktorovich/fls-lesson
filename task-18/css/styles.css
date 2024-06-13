@@ -77,11 +77,11 @@ input[type=text] {
 }
 /* attachment fonts */
 .wrapper {
+  position: relative;
   background-color: #000;
 }
 
 .header {
-  position: sticky;
   top: 0;
   background-color: rgba(0, 0, 0, 0.5);
   min-height: 130px;
@@ -127,7 +127,6 @@ input[type=text] {
 }
 .header__menu {
   background-color: transparent;
-  z-index: 999;
 }
 .logo {
   /* .logo__img */
@@ -206,9 +205,6 @@ input[type=text] {
   }
 }
 @media (max-width: 1322px) {
-  .header {
-    background-color: #000 !important;
-  }
   .header__body {
     -webkit-column-gap: 10px;
        -moz-column-gap: 10px;
@@ -230,17 +226,17 @@ input[type=text] {
     background-color: transparent;
   }
   .header__menu {
-    position: absolute;
     display: none;
+    position: absolute;
     left: 0;
-    top: 10%;
+    top: 0;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
     text-align: center;
     width: 100%;
-    height: 1000px;
+    height: 100%;
     background-color: black;
     z-index: 999;
   }
@@ -249,7 +245,7 @@ input[type=text] {
     z-index: 999;
   }
   .menu__link {
-    font-size: 24px;
+    font-size: 34px;
   }
 }
 @media (max-width: 768px) {
@@ -261,6 +257,7 @@ input[type=text] {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  gap: 50px;
 }
 
 /*decomposition components header */
