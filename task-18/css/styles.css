@@ -432,6 +432,8 @@ input[type=text] {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-preferred-size: 584px;
+      flex-basis: 584px;
   -ms-flex-negative: 1;
       flex-shrink: 1;
   /* justify-content: center; */
@@ -470,13 +472,17 @@ input[type=text] {
   max-width: 253px;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
+  z-index: 2;
 }
 .owner__right {
-  -ms-flex-negative: 10;
-      flex-shrink: 10;
-  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   position: relative;
   padding-top: 120px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 688px;
+          flex: 0 1 688px;
 }
 .owner__right::before {
   content: "";
@@ -504,7 +510,12 @@ input[type=text] {
   z-index: 1;
 }
 .owner__content {
-  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .owner__content::before {
   content: "";
@@ -541,8 +552,23 @@ input[type=text] {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    -webkit-column-gap: 25px;
+       -moz-column-gap: 25px;
+            column-gap: 25px;
+  }
+}
+@media (max-width: 1550px) {
+  .owner__right::before {
+    left: 0%;
+  }
+  .owner__right::after {
+    right: 0%;
+  }
+  .owner__content::before {
+    right: 0%;
+  }
+  .owner__content::after {
+    left: 0%;
   }
 }
 /*decomposition components owner */
@@ -552,6 +578,7 @@ input[type=text] {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.98)), color-stop(0.5, rgba(0, 0, 0, 0.93))), url("../img/main-page-content/raster/backgroundAboutSection.webp") 0 0/100% no-repeat;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.98) 0%, rgba(0, 0, 0, 0.93) 0.5), url("../img/main-page-content/raster/backgroundAboutSection.webp") 0 0/100% no-repeat;
   min-height: 555px;
+  object-fit: contain;
   /* .about__container */
   /* .about__title */
   /* .about__descr */
@@ -646,6 +673,13 @@ input[type=text] {
           transform: translateY(50%);
 }
 
+@media (max-width: 1425px) {
+  .about__list {
+    -webkit-column-gap: 15px;
+       -moz-column-gap: 15px;
+            column-gap: 15px;
+  }
+}
 /*decomposition components about */
 .edits {
   position: relative;
