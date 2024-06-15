@@ -304,7 +304,7 @@ input[type=text] {
           transform: translateY(-50%);
 }
 
-/*decomposition components header */
+/*decomposition components burger */
 .owner {
   position: relative;
   color: #fff;
@@ -545,18 +545,21 @@ input[type=text] {
         justify-content: space-around;
   }
 }
-/*decomposition components header */
+/*decomposition components owner */
 .about {
   -o-object-fit: contain;
      object-fit: contain;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.88)), color-stop(0.5, rgba(0, 0, 0, 0.88))), url("/img/main-page-content/raster/backgroundAboutSection.webp") 0 0/100% no-repeat;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.88) 0%, rgba(0, 0, 0, 0.88) 0.5), url("/img/main-page-content/raster/backgroundAboutSection.webp") 0 0/100% no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.98)), color-stop(0.5, rgba(0, 0, 0, 0.93))), url("/img/main-page-content/raster/backgroundAboutSection.webp") 0 0/100% no-repeat;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.98) 0%, rgba(0, 0, 0, 0.93) 0.5), url("/img/main-page-content/raster/backgroundAboutSection.webp") 0 0/100% no-repeat;
   min-height: 555px;
   /* .about__container */
   /* .about__title */
   /* .about__descr */
   /* .about__list */
   /* .about__item */
+}
+.about--margin {
+  margin-bottom: 200px;
 }
 .about__title {
   display: block;
@@ -621,6 +624,10 @@ input[type=text] {
 .about__item {
   color: #fff;
   position: relative;
+  font-size: 20px;
+  font-family: "Orbitron", sans-serif;
+  font-weight: 500;
+  line-height: 25px;
 }
 .about__item::after {
   content: "";
@@ -639,7 +646,104 @@ input[type=text] {
           transform: translateY(50%);
 }
 
-/*decomposition components header */
+/*decomposition components about */
+.edits {
+  position: relative;
+  background: url("/img/main-page-content/vector/cover.svg") top/100% no-repeat;
+  /* .edits__title */
+  /* .edits__list */
+  /* .edits__item */
+  /* .edits__link */
+  /* .edits__img */
+  /* .edits__name */
+}
+.edits__title {
+  z-index: 2;
+  font-family: "Exo", "sans-serif";
+  text-transform: uppercase;
+  font-size: 60px;
+  color: #fff;
+  margin-bottom: 120px;
+  position: relative;
+  display: block;
+  max-width: 471px;
+  overflow: hidden;
+}
+.edits__title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 100%;
+  background: -webkit-gradient(linear, left top, right top, from(red), color-stop(50%, green), to(blue));
+  background: linear-gradient(to right, red, green 50%, blue);
+}
+.edits__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow-x: auto;
+  -webkit-column-gap: 40px;
+     -moz-column-gap: 40px;
+          column-gap: 40px;
+}
+.edits ::-webkit-scrollbar {
+  background-color: #ccc;
+  height: 5px;
+}
+.edits ::-webkit-scrollbar-thumb {
+  background-color: #6f00a9;
+  cursor: pointer;
+}
+.edits__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 40px;
+  -ms-flex-preferred-size: 360px;
+      flex-basis: 360px;
+  min-height: 480px;
+  position: relative;
+}
+.edits__link {
+  /* position: relative; */
+}
+.edits__link::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 75%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+.edits__img::before {
+  content: "";
+  z-index: 2;
+  width: 120px;
+  height: 120px;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  position: absolute;
+  background: url("../img/main-page-content/vector/play.svg") center/100% no-repeat;
+  cursor: pointer;
+}
+.edits__name {
+  font-family: "Exo", "sans-serif";
+  font-size: 40px;
+  text-transform: uppercase;
+  z-index: 2;
+  color: #fff;
+  text-align: center;
+}
+
+/*decomposition components edits */
 [class*=__container] {
   max-width: 1312px;
   margin: 0 auto;
