@@ -258,14 +258,22 @@ input[type=text] {
   display: flex;
 }
 
+.active .menu-icon__name {
+  opacity: 0;
+}
+
 .active .menu-icon::before {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
+  top: 50%;
+  margin-top: -1px;
 }
 
 .active .menu-icon::after {
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
+  bottom: 50%;
+  margin-bottom: -1px;
 }
 
 /*decomposition components header */
