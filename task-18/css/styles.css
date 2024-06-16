@@ -226,7 +226,7 @@ input[type=text] {
     display: none;
     position: absolute;
     left: 0;
-    top: 0;
+    top: 11px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -238,7 +238,9 @@ input[type=text] {
     z-index: 999;
   }
   .menu-icon {
-    display: block !important;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
     z-index: 999;
   }
   .menu__link {
@@ -254,6 +256,16 @@ input[type=text] {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.active .menu-icon {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.active .menu-icon::after {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 
 /*decomposition components header */
