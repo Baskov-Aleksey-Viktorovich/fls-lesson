@@ -686,7 +686,7 @@ input[type=text] {
 }
 @media (max-width: 500px) {
   .owner__title {
-    font-size: 35px;
+    font-size: 35px !important;
   }
 }
 /*decomposition components owner */
