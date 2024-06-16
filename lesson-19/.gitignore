@@ -1,0 +1,12 @@
+/.idea/
+/node_modules/
+/dist/
+/.git/
+/scss/
+/.vscode/
+/app/css/
+/css/.map/
+/.min.css.map/
+/**/_backstage
+/**/package-lock.json
+/**/*.DS_Store
