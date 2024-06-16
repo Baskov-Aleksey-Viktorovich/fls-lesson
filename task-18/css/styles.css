@@ -684,6 +684,11 @@ input[type=text] {
     display: none;
   }
 }
+@media (max-width: 500px) {
+  .owner__title {
+    font-size: 35px;
+  }
+}
 /*decomposition components owner */
 .about {
   -o-object-fit: contain;
