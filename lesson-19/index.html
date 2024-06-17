@@ -9,8 +9,20 @@
 <body>
     <h2 class="title">Im a live</h2>
     <div class="wrapper">
-        <header>im header</header>
-        <main>
+        <header>
+            <mark>Навігаційне меню</mark>
+            <nav>
+                <ul>
+                    <li><a href="#">Головна</a></li>
+                    <li><a href="#">Головна</a></li>
+                    <li><a href="#">Головна</a></li>
+                    <li><a href="#">Головна</a></li>
+                    <li><a href="#">Головна</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="main">
+            <div class="main__container">
             <base target="_blank"> <!-- Корисна штука якщо треба массово відкривати посилання в новій вкладці, і інші можливості! -->
             <a href="practice.html">i am Link</a>
         
@@ -22,7 +34,89 @@
             </dl> -->
             <!-- <img src="img/corgi-dog.webp" alt=""> -->
              <!-- <video class="video" src="video/jft.mp4" autoplay></video>--> <!-- Тег для відображення відео! -->
-        </main>
+            <figure>
+                <img src="img/corgi-dog.webp" alt="#">
+                <figcaption>Це коргік</figcaption>
+            </figure>
+            <h2>Приклад Таблиці</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Номер</th>
+                        <th>Назва</th>
+                        <th>Технологія </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Верстка</td>
+                        <td>HTML</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Верстка</td>
+                        <td>CSS</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Програмування</td>
+                        <td>JS</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <q> Lorem ipsum dolor sit amet </q> <!-- За для коротких цитат -->
+            <blockquote>Для великих цитат блочний тег</blockquote>
+            <!-- <cite>Тарас Шевченко</cite> -->
+
+            <address>
+                <dt>Олексій</dt>
+                написати листа: <a href="mailto:emptyemail@gmail.com"></a>
+                зателефонувати: <a href="tel:380505050550">+380505050550</a>
+            </address>
+            <h3>Дата публікації</h3>
+            <p>
+                <time datetime="2023-04-15">15 Квітня 2023</time>
+            </p>
+            <p>
+                <time datetime="2023-04-15">15 Квітня 2023, 14:30 (за Київським часом)</time>
+            </p>
+            
+            
+            <mark>Це марк</mark>
+            <span>Це спан</span>
+
+            <form action="#">
+                <fieldset>
+                    <legend>Особисті данні</legend>
+                    <input required type="text" placeholder="Ім'я">
+                    <input type="text" placeholder="Прізвище">
+                </fieldset>
+                <fieldset>
+                    <legend>Данні твари</legend>
+                    <input required type="text" placeholder="Вид">
+                    <input type="text" placeholder="Кличка">
+                    <input type="text" placeholder="Вік">
+                </fieldset>
+                <input type="submit" value="Надіслати">
+            </form>
+
+            <details>
+                Ця стаття призначена для навчання семантичних тегів
+                <summary>Детальніше про статтю</summary>
+            </details>
+
+            <article>
+                <h3>Заголовок статті</h3>
+                <span>Текст статті</span>
+                <ul>
+                    <li>1 список</li>
+                </ul>
+            </article>
+ 
+        </div>
+            </main>
         <footer class="footer"></footer>
     </div>
 <script src="js/script.js"></script>
