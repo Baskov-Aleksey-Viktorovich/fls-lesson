@@ -1,124 +1,263 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" href="img/semantic-web.svg">
-    <title>Lesson 19 </title>
+    <link rel="shortcut icon" href="img/hw/vector/main--logo.svg">
+    <title>E-commerces</title>
 </head>
+
 <body>
-    <h2 class="title">Im a live</h2>
     <div class="wrapper">
-        <header>
-            <mark>Навігаційне меню</mark>
-            <nav>
-                <ul>
-                    <li><a href="#">Головна</a></li>
-                    <li><a href="#">Головна</a></li>
-                    <li><a href="#">Головна</a></li>
-                    <li><a href="#">Головна</a></li>
-                    <li><a href="#">Головна</a></li>
-                </ul>
-            </nav>
+        <header class="header">
+            <div class="header__container">
+                <div class="header__top">
+                    <div class="header__search"></div>
+                    <a href="#" class="header__logo"></a>
+                    <div class="header__actions actions">
+                        <a class="actions__user" href="#">1</a>
+                        <a class="actions_cart" href="#">2</a>
+                    </div>
+                </div>
+                <div class="header__nav nav">
+                    <div class="nav__container">
+                        <nav class="nav__menu menu">
+                            <ul class="menu__items">
+                                <li class="menu__item">Jewelry & Accessories</li>
+                                <li class="menu__item">Clothing & Shoes</li>
+                                <li class="menu__item">Home & Living</li>
+                                <li class="menu__item">Wedding & Party</li>
+                                <li class="menu__item">Toys & Entertainment</li>
+                                <li class="menu__item">Art & Collectibles</li>
+                                <li class="menu__item">Craft Supplies & Tools</li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
         </header>
-        <main class="main">
-            <div class="main__container">
-            <base target="_blank"> <!-- Корисна штука якщо треба массово відкривати посилання в новій вкладці, і інші можливості! -->
-            <a href="practice.html">i am Link</a>
-        
-        <!--     <dl>
-                <dt>Тарас Шевченко</dt>
-                <dl>Видатний поет</dl>
-                <dt>Леся Українка</dt>
-                <dl>Видатна поетеса</dl>
-            </dl> -->
-            <!-- <img src="img/corgi-dog.webp" alt=""> -->
-             <!-- <video class="video" src="video/jft.mp4" autoplay></video>--> <!-- Тег для відображення відео! -->
-            <figure>
-                <img src="img/corgi-dog.webp" alt="#">
-                <figcaption>Це коргік</figcaption>
-            </figure>
-            <h2>Приклад Таблиці</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Номер</th>
-                        <th>Назва</th>
-                        <th>Технологія </th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>Верстка</td>
-                        <td>HTML</td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>Верстка</td>
-                        <td>CSS</td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>Програмування</td>
-                        <td>JS</td>
-                    </tr>
-                </tbody>
-            </table>
+        <main>
+            <section class="slider">
+                <div class="slider__container">
+                    <div class="slider__left">
+                        <h2 class="slider__title">Collections</h2>
+                        <div class="slider__text">
+                            <p class="slider__descr">
+                                you can explore ans shop many differnt collection
+                                from various barands here.
+                            </p>
+                        </div>
+                        <a class="slider__link" href="#">
+                            <img class="slider__icon" src="img/hw/vector/icon-cart.svg" alt="icon-cart">
+                            <span class="slider__name">shop now</span>
+                        </a>
+                    </div>
+                    <div class="slider__right">
+                        <a href="#">
+                            <img src="img/hw/raster/pretty-img.png" alt="pretty-woman">
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <section class="main-goods">
+                <div class="main-goods__container">
+                    <span class="main-goods__text">
+                        Explore new and popular styles
+                    </span>
+                    <div class="main-goods__category">
+                        <a href="#" class="main-goods__item">
+                            <img class="main-goods" src="img/hw/raster/category/category-banner-1.png" alt="banner 01">
+                        </a>
+                        <a href="#" class="main-goods__item">
+                            <img class="main-goods" src="img/hw/raster/category/category-banner-2.png" alt="banner 02">
+                        </a>
+                        <a href="#" class="main-goods__item">
+                            <img class="main-goods" src="img/hw/raster/category/category-banner-3.png" alt="banner 03">
+                        </a>
+                        <a href="#" class="main-goods__item">
+                            <img class="main-goods" src="img/hw/raster/category/category-banner-4.png" alt="banner 04">
+                        </a>
+                        <a href="#" class="main-goods__item">
+                            <img class="main-goods" src="img/hw/raster/category/category-banner-5.png" alt="banner 05">
+                        </a>
+                    </div>
+                </div>
+            </section>
 
-            <q> Lorem ipsum dolor sit amet </q> <!-- За для коротких цитат -->
-            <blockquote>Для великих цитат блочний тег</blockquote>
-            <!-- <cite>Тарас Шевченко</cite> -->
+            <section class="special-goods">
+                <div class="special-goods__container">
+                    <h3 class="special-goods__title">Or subscribe to the newsletter</h3>
+                    <aside class="special-goods__tabs tabs">
+                        <ul class="tabs__items">
+                            <li class="tabs__item">all products</li>
+                            <li class="tabs__item">t-shirt</li>
+                            <li class="tabs__item">hoodies</li>
+                            <li class="tabs__item">jacket</li>
+                        </ul>
+                        <div class="tabs__filter filter">
+                            <button class="filter__btn">filter</button>
+                        </div>
+                    </aside>
+                    <div class="special-goods__items">
+                        <article class="special-goods__item">
+                            <figure>
+                                <img src="img/hw/raster/goods/image-product-3.png" alt="goods photo">
+                            </figure>
+                            <div class="special-goods__text">
+                                <span class="special-goods__name">Adicolor Classics Joggers</span>
+                            </div>
 
-            <address>
-                <dt>Олексій</dt>
-                написати листа: <a href="mailto:emptyemail@gmail.com"></a>
-                зателефонувати: <a href="tel:380505050550">+380505050550</a>
-            </address>
-            <h3>Дата публікації</h3>
-            <p>
-                <time datetime="2023-04-15">15 Квітня 2023</time>
-            </p>
-            <p>
-                <time datetime="2023-04-15">15 Квітня 2023, 14:30 (за Київським часом)</time>
-            </p>
-            
-            
-            <mark>Це марк</mark>
-            <span>Це спан</span>
+                            <div class="special-goods__action">
+                                <span class="special-goods__filter">Dress</span>
+                                <div class="special-goods__price">
+                                    <span price>220</span>
+                                    <span old-price>236</span>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="special-goods__item">
+                            <figure>
+                                <img src="img/hw/raster/goods/image-product-3.png" alt="goods photo">
+                            </figure>
+                            <div class="special-goods__text">
+                                <span class="special-goods__name">Adicolor Classics Joggers</span>
+                            </div>
 
-            <form action="#">
-                <fieldset>
-                    <legend>Особисті данні</legend>
-                    <input required type="text" placeholder="Ім'я">
-                    <input type="text" placeholder="Прізвище">
-                </fieldset>
-                <fieldset>
-                    <legend>Данні твари</legend>
-                    <input required type="text" placeholder="Вид">
-                    <input type="text" placeholder="Кличка">
-                    <input type="text" placeholder="Вік">
-                </fieldset>
-                <input type="submit" value="Надіслати">
-            </form>
+                            <div class="special-goods__action">
+                                <span class="special-goods__filter">Dress</span>
+                                <div class="special-goods__price">
+                                    <span price>220</span>
+                                    <span old-price>236</span>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="special-goods__item">
+                            <figure>
+                                <img src="img/hw/raster/goods/image-product-3.png" alt="goods photo">
+                            </figure>
+                            <div class="special-goods__text">
+                                <span class="special-goods__name">Adicolor Classics Joggers</span>
+                            </div>
 
-            <details>
-                Ця стаття призначена для навчання семантичних тегів
-                <summary>Детальніше про статтю</summary>
-            </details>
+                            <div class="special-goods__action">
+                                <span class="special-goods__filter">Dress</span>
+                                <div class="special-goods__price">
+                                    <span price>220</span>
+                                    <span old-price>236</span>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="special-goods__item">
+                            <figure>
+                                <img src="img/hw/raster/goods/image-product-3.png" alt="goods photo">
+                            </figure>
+                            <div class="special-goods__text">
+                                <span class="special-goods__name">Adicolor Classics Joggers</span>
+                            </div>
 
-            <article>
-                <h3>Заголовок статті</h3>
-                <span>Текст статті</span>
-                <ul>
-                    <li>1 список</li>
-                </ul>
-            </article>
-        </div>
-            </main>
-        <footer class="footer"></footer>
+                            <div class="special-goods__action">
+                                <span class="special-goods__filter">Dress</span>
+                                <div class="special-goods__price">
+                                    <span price>220</span>
+                                    <span old-price>236</span>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="special-goods__item">
+                            <figure>
+                                <img src="img/hw/raster/goods/image-product-3.png" alt="goods photo">
+                            </figure>
+                            <div class="special-goods__text">
+                                <span class="special-goods__name">Adicolor Classics Joggers</span>
+                            </div>
+
+                            <div class="special-goods__action">
+                                <span class="special-goods__filter">Dress</span>
+                                <div class="special-goods__price">
+                                    <span price>220</span>
+                                    <span old-price>236</span>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="special-goods__item">
+                            <figure>
+                                <img src="img/hw/raster/goods/image-product-3.png" alt="goods photo">
+                            </figure>
+                            <div class="special-goods__text">
+                                <span class="special-goods__name">Adicolor Classics Joggers</span>
+                            </div>
+
+                            <div class="special-goods__action">
+                                <span class="special-goods__filter">Dress</span>
+                                <div class="special-goods__price">
+                                    <span price>220</span>
+                                    <span old-price>236</span>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="special-goods__item">
+                            <figure>
+                                <img src="img/hw/raster/goods/image-product-3.png" alt="goods photo">
+                            </figure>
+                            <div class="special-goods__text">
+                                <span class="special-goods__name">Adicolor Classics Joggers</span>
+                            </div>
+
+                            <div class="special-goods__action">
+                                <span class="special-goods__filter">Dress</span>
+                                <div class="special-goods__price">
+                                    <span price>220</span>
+                                    <span old-price>236</span>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="special-goods__item">
+                            <figure>
+                                <img src="img/hw/raster/goods/image-product-3.png" alt="goods photo">
+                            </figure>
+                            <div class="special-goods__text">
+                                <span class="special-goods__name">Adicolor Classics Joggers</span>
+                            </div>
+
+                            <div class="special-goods__action">
+                                <span class="special-goods__filter">Dress</span>
+                                <div class="special-goods__price">
+                                    <span price>220</span>
+                                    <span old-price>236</span>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section class="collections">
+                <div class="collections__container">
+                    <div class="collections__items">
+                        <img class="collections__img" src="img/hw/raster/brands/woman-zara.png" alt="collections img zara">
+                        <div class="collections__descr">
+                            <h2 class="collections__name">
+                                zara
+                                <img src="img/hw/raster/brands/zara-logo.png" alt="zara logo white color">
+                            </h2>
+                            <span class="collections__sub-title">
+                                Lustrous yet understated. The new evening
+                                wear collection exclusively offered at the
+                                reopened Giorgio Armani boutique in Los
+                                Angeles.
+                            </span>
+                            <a href="#">
+                                see collection
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">Foooter</footer>
     </div>
-<script src="js/script.js"></script>
 </body>
+
 </html>
