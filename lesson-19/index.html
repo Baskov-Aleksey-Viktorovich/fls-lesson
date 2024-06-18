@@ -13,25 +13,37 @@
     <div class="wrapper">
         <header class="header">
             <div class="header__container">
-                <div class="header__top">
-                    <div class="header__search"></div>
-                    <a href="#" class="header__logo"></a>
+                <div class="header__top header__top--bordered">
+                    <div class="header__search">
+                        <img class="header__img" src="img/hw/vector/search-icon.svg" alt="search icon">
+                        <input class="header__input" type="search" name="search" placeholder="I'm search" id="search">
+                    </div>
+                    <a href="#" class="header__logo">
+                        <img src="img/hw/vector/main--logo.svg" alt="">
+                    </a>
                     <div class="header__actions actions">
-                        <a class="actions__user" href="#">1</a>
-                        <a class="actions_cart" href="#">2</a>
+                        <a class="actions__user" href="#">
+                            <img class="actions__icon" src="img/hw/vector/man-acc.svg" alt="">
+                            <span class="actions__name">Account</span>
+                        </a>
+                        <a class="actions__cart" href="#">
+                            <img class="actions__icon" src="img/hw/vector/icon-cart.svg" alt="">
+                            <span class="actions__name">Shoping</span>
+                        </a>
+
                     </div>
                 </div>
-                <div class="header__nav nav">
+                <div class="header__nav header__nav--margin nav">
                     <div class="nav__container">
                         <nav class="nav__menu menu">
                             <ul class="menu__items">
-                                <li class="menu__item">Jewelry & Accessories</li>
-                                <li class="menu__item">Clothing & Shoes</li>
-                                <li class="menu__item">Home & Living</li>
-                                <li class="menu__item">Wedding & Party</li>
-                                <li class="menu__item">Toys & Entertainment</li>
-                                <li class="menu__item">Art & Collectibles</li>
-                                <li class="menu__item">Craft Supplies & Tools</li>
+                                <li class="menu__item"><a class="menu__link" href="#">Jewelry & Accessories</a></li>
+                                <li class="menu__item"><a class="menu__link" href="#">Clothing & Shoes</a></li>
+                                <li class="menu__item"><a class="menu__link" href="#">Home & Living</a></li>
+                                <li class="menu__item"><a class="menu__link" href="#">Wedding & Party</a></li>
+                                <li class="menu__item"><a class="menu__link" href="#">Toys & Entertainment</a></li>
+                                <li class="menu__item"><a class="menu__link" href="#">Art & Collectibles</a></li>
+                                <li class="menu__item"><a class="menu__link" href="#">Craft Supplies & Tools</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -39,25 +51,27 @@
             </div>
         </header>
         <main>
-            <section class="slider">
+            <section class="slider slider--margin">
                 <div class="slider__container">
-                    <div class="slider__left">
-                        <h2 class="slider__title">Collections</h2>
-                        <div class="slider__text">
-                            <p class="slider__descr">
-                                you can explore ans shop many differnt collection
-                                from various barands here.
-                            </p>
+                    <div class="slider__layout">
+                        <div class="slider__left">
+                            <h2 class="slider__title">Collections</h2>
+                            <div class="slider__text">
+                                <p class="slider__descr">
+                                    you can explore ans shop many differnt collection
+                                    from various barands here.
+                                </p>
+                            </div>
+                            <a class="slider__btn" href="#">
+                                <img class="slider__icon" src="img/hw/vector/cart-white.svg" alt="icon-cart">
+                                <span class="slider__name">shop now</span>
+                            </a>
                         </div>
-                        <a class="slider__link" href="#">
-                            <img class="slider__icon" src="img/hw/vector/icon-cart.svg" alt="icon-cart">
-                            <span class="slider__name">shop now</span>
-                        </a>
-                    </div>
-                    <div class="slider__right">
-                        <a href="#">
-                            <img src="img/hw/raster/pretty-img.png" alt="pretty-woman">
-                        </a>
+                        <div class="slider__right">
+                            <a class="slider__link" href="#">
+                                <img class="slider__img" src="img/hw/raster/pretty-img.png" alt="pretty-woman">
+                            </a>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -236,7 +250,8 @@
             <section class="collections">
                 <div class="collections__container">
                     <div class="collections__items">
-                        <img class="collections__img" src="img/hw/raster/brands/woman-zara.png" alt="collections img zara">
+                        <img class="collections__img" src="img/hw/raster/brands/woman-zara.png"
+                            alt="collections img zara">
                         <div class="collections__descr">
                             <h2 class="collections__name">
                                 zara
@@ -258,6 +273,7 @@
         </main>
         <footer class="footer">Foooter</footer>
     </div>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
