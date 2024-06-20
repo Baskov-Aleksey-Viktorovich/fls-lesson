@@ -381,6 +381,7 @@ body {
   width: 100%;
   color: #fff;
   text-transform: capitalize;
+  text-align: center;
 }
 .slider__name {
   font-size: 29px;
