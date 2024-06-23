@@ -1,6 +1,8 @@
 const searchIcon  = document.querySelector(".header__img");
 const searchInput = document.querySelector(".header__input");
-const upBtn       = document.querySelector('.sub__link')
+const upBtn       = document.querySelector('.sub__link');
+
+const getPrices   = document.querySelectorAll(".special-goods__price");
 
 function showSearch (){
     searchIcon.addEventListener('click', ()=>{
@@ -15,5 +17,15 @@ upBtn.addEventListener("click", () => {
       behavior: "smooth",
     });
   });
+
+  function addColor(){
+    let arr = [];
+    for(let i = 0; i < getPrices.length; i++){
+      arr.push(getPrices[i]);
+    }
+    return console.log(arr); 
+  }
+
+  addColor();
 
 showSearch();
