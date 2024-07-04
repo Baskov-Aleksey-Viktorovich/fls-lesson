@@ -450,6 +450,9 @@ input[type=text] {
   /* .special-goods__filter */
   /* .special-goods__price */
 }
+.special-goods--margin {
+  margin-bottom: 52px;
+}
 .special-goods__title {
   text-align: center;
   font-size: 50px;
@@ -471,6 +474,7 @@ input[type=text] {
   display: grid;
   grid-template: repeat(2, 1fr)/repeat(4, 1fr);
   gap: 24px;
+  cursor: pointer;
 }
 .special-goods__item {
   display: -webkit-box;
@@ -481,12 +485,13 @@ input[type=text] {
       -ms-flex-direction: column;
           flex-direction: column;
   row-gap: 20px;
-  height: 478px;
-  width: 312px;
   position: relative;
 }
 .special-goods .item {
   /* .item__action */
+}
+.special-goods .item__img {
+  width: 100%;
 }
 .special-goods .item__action {
   opacity: 0;
@@ -500,7 +505,7 @@ input[type=text] {
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
-  bottom: 15%;
+  bottom: 16%;
   left: 0;
   position: absolute;
   background-color: #1E2832;
@@ -517,6 +522,42 @@ input[type=text] {
   width: 20px;
   height: 20px;
 }
+.special-goods .special-goods {
+  /* .special-goods__label */
+}
+.special-goods .label {
+  position: absolute;
+  top: 22px;
+  /* .label__item--hot */
+  /* .label__item--special */
+  /* .label__item--sale */
+}
+.special-goods .label__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 10px;
+}
+.special-goods .label__item {
+  text-transform: capitalize;
+  min-width: 52px;
+  height: 24px;
+  padding: 4px 12px;
+  color: white;
+}
+.special-goods .label__item--hot {
+  background-color: #FF6F61;
+}
+.special-goods .label__item--special {
+  background-color: #61b25c;
+}
+.special-goods .label__item--sale {
+  background-color: #1E2832;
+}
 .special-goods__name {
   padding-left: 10px;
   color: var(--Dark, #000);
@@ -525,6 +566,9 @@ input[type=text] {
   font-weight: 600;
   line-height: normal;
   text-transform: capitalize;
+}
+.special-goods__name:hover {
+  text-decoration: underline;
 }
 .special-goods__action {
   display: -webkit-box;
@@ -579,18 +623,35 @@ input[type=text] {
   -webkit-column-gap: 41px;
      -moz-column-gap: 41px;
           column-gap: 41px;
+  row-gap: 10px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 .tabs__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   cursor: pointer;
   text-transform: capitalize;
   font-size: 16px;
   flood-color: rgba(0, 0, 0, 0.5);
   font-weight: 400;
   line-height: normal;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
+.tabs__filter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
 .filter {
   padding: 5px 15px;
   background-color: #1E2832;
@@ -620,6 +681,93 @@ input[type=text] {
     opacity: 1;
   }
 }
+@media (max-width: 1400px) {
+  .special-goods__items {
+    display: grid;
+    grid-template: repeat(2, 1fr)/repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+  }
+}
+.collections {
+  width: 100%;
+  min-height: 776px;
+  background: url("/img/hw/raster/bg-zara.webp") top/100% no-repeat;
+  -o-object-position: center;
+     object-position: center;
+  background-size: cover;
+  position: relative;
+  /* .collections__container */
+  /* .collections__items */
+  /* .collections__descr */
+  /* .collections__name */
+  /* .collections__sub-title */
+}
+.collections--margin {
+  margin-bottom: 159px;
+}
+.collections__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-column-gap: 225px;
+     -moz-column-gap: 225px;
+          column-gap: 225px;
+  padding-top: 112px;
+}
+.collections__descr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 55px;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.collections__descr::after {
+  content: "";
+  width: 732px;
+  height: 309px;
+  position: absolute;
+  background: url("/img/hw/raster/zara-logo-big.png") center/100% no-repeat;
+  top: 51px;
+  right: 0;
+}
+.collections__sub-title {
+  font-family: Roboto;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 50px;
+  text-transform: capitalize;
+  color: #fff;
+}
+.collections__link {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 237px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  color: #1e2832;
+  background-color: #fff;
+  padding: 19px 26px;
+  font-size: 29px;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
 /* Import foonts */
 body {
   font-family: "Roboto", sans-serif;

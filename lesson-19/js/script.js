@@ -2,7 +2,11 @@ const searchIcon  = document.querySelector(".header__img");
 const searchInput = document.querySelector(".header__input");
 const upBtn       = document.querySelector('.sub__link');
 
-const getPrices   = document.querySelectorAll(".special-goods__price");
+/* showSearch */
+
+/* addColor */
+const getPrice   = document.querySelectorAll(".special-goods__price");
+
 
 function showSearch (){
     searchIcon.addEventListener('click', ()=>{
@@ -18,14 +22,18 @@ upBtn.addEventListener("click", () => {
     });
   });
 
-  function addColor(){
-    let arr = [];
-    for(let i = 0; i < getPrices.length; i++){
-      arr.push(getPrices[i]);
+console.log(getPrice);
+function addRed (){
+  getPrice.forEach(elem => {
+    const oldPrice = elem.querySelector('.old-price');
+    const price    = elem.querySelector('.price');
+    if(oldPrice){
+      price.style.color = 'red';
     }
-    return console.log(arr); 
-  }
+  })
+};
 
-  addColor();
 
 showSearch();
+addRed();
+
