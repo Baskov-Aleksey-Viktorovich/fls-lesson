@@ -1,6 +1,7 @@
 const searchIcon  = document.querySelector(".header__img");
 const searchInput = document.querySelector(".header__input");
 const upBtn       = document.querySelector('.sub__link');
+const getBurger   = document.querySelector('.burger');
 
 /* showSearch */
 
@@ -32,6 +33,11 @@ function addRed (){
     }
   })
 };
+
+
+getBurger.addEventListener('click', ()=>{
+    getBurger.classList.toggle('active');
+})
 
 
 showSearch();
