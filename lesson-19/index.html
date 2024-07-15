@@ -121,10 +121,10 @@
                     <h3 class="special-goods__title">Or subscribe to the newsletter</h3>
                     <aside class="special-goods__tabs tabs">
                         <ul class="tabs__items">
-                            <li class="tabs__item active">all products</li>
-                            <li class="tabs__item">t-shirt</li>
-                            <li class="tabs__item">hoodies</li>
-                            <li class="tabs__item">jacket</li>
+                            <li class="tabs__item active" id="#all">all products</li>
+                            <li class="tabs__item" id="#dress">t-shirt</li>
+                            <li class="tabs__item" id="#hoodies">hoodies</li>
+                            <li class="tabs__item" id="#jacket">jacket</li>
                         </ul>
                         <button class="tabs__filter filter">
                             <img class="filter__img" src="img/hw/vector/filter-icon.svg" alt="icon filter">
@@ -132,7 +132,7 @@
                         </button>
                     </aside>
                     <div class="special-goods__items">
-                        <article class="special-goods__item item">
+                        <article class="special-goods__item item" role="all" data-tab="dress"  hidden>
                             <figure>
                                 <img class="item__img" src="img/hw/raster/goods/image-product-3.png" alt="goods photo">
                             </figure>
@@ -168,7 +168,7 @@
                                 </div>
                             </div>
                         </article>
-                        <article class="special-goods__item item">
+                        <article class="special-goods__item item" role="all" data-tab="hoodies" hidden>
                             <figure>
                                 <img class="item__img" src="img/hw/raster/goods/image-product-4.png" alt="goods photo">
                             </figure>
@@ -204,7 +204,7 @@
                                 </div>
                             </div>
                         </article>
-                        <article class="special-goods__item item">
+                        <article class="special-goods__item item" role="all" data-tab="hoodies" hidden>
                             <figure>
                                 <img class="item__img" src="img/hw/raster/goods/image-product-5.png" alt="goods photo">
                             </figure>
@@ -240,7 +240,7 @@
                                 </div>
                             </div>
                         </article>
-                        <article class="special-goods__item item">
+                        <article class="special-goods__item item" role="all" data-tab="dress" hidden>
                             <figure>
                                 <img class="item__img" src="img/hw/raster/goods/image-product-6.png" alt="goods photo">
                             </figure>
@@ -277,7 +277,7 @@
                                 </div>
                             </div>
                         </article>
-                        <article class="special-goods__item item">
+                        <article class="special-goods__item item" role="all" data-tab="dress" hidden>
                             <figure>
                                 <img class="item__img" src="img/hw/raster/goods/image-product-7.png" alt="goods photo">
                             </figure>
@@ -314,7 +314,7 @@
                                 </div>
                             </div>
                         </article>
-                        <article class="special-goods__item item">
+                        <article class="special-goods__item item" role="all" data-tab="jacket" hidden>
                             <figure>
                                 <img class="item__img" src="img/hw/raster/goods/image-product-8.png" alt="goods photo">
                             </figure>
@@ -351,7 +351,7 @@
                                 </div>
                             </div>
                         </article>
-                        <article class="special-goods__item item">
+                        <article class="special-goods__item item" role="all" data-tab="dress" hidden>
                             <figure>
                                 <img class="item__img" src="img/hw/raster/goods/image-product-9.png" alt="goods photo">
                             </figure>
@@ -387,7 +387,7 @@
                                 </div>
                             </div>
                         </article>
-                        <article class="special-goods__item item">
+                        <article class="special-goods__item item" role="all" data-tab="jacket" hidden>
                             <figure>
                                 <img class="item__img" src="img/hw/raster/goods/image-product-10.png" alt="goods photo">
                             </figure>

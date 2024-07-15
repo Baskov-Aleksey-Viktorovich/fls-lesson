@@ -3,6 +3,15 @@ const searchInput = document.querySelector(".header__input");
 const upBtn       = document.querySelector('.sub__link');
 const getBurger   = document.querySelector('.burger');
 
+
+
+const tabsBtn     = document.querySelectorAll(".tabs__item"); // btn tab
+
+
+
+const tabsItems   = document.querySelectorAll(".special-goods__item"); //tab element
+/* const tabsAll     = document.querySelectorAll('[role="all"]'); */
+
 /* showSearch */
 
 /* addColor */
@@ -23,7 +32,7 @@ upBtn.addEventListener("click", () => {
     });
   });
 
-console.log(getPrice);
+console.log(getPrice, tabsBtn);
 function addRed (){
   getPrice.forEach(elem => {
     const oldPrice = elem.querySelector('.old-price');
@@ -34,10 +43,25 @@ function addRed (){
   })
 };
 
-
 getBurger.addEventListener('click', ()=>{
     getBurger.classList.toggle('active');
 })
+
+tabsBtn.forEach((item)=>{
+  item.addEventListener("click",()=>{ 
+    let tabActive = item;    
+    tabsBtn.forEach((item)=>{
+      item.classList.remove('active');
+    })
+    tabsBtn.forEach((item)=>{
+      tabActive.classList.add('active');
+    })
+  })
+});
+
+
+
+
 
 
 showSearch();

@@ -505,8 +505,8 @@ input[type=text] {
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
-  bottom: 16%;
   left: 0;
+  top: 75%;
   position: absolute;
   background-color: #1E2832;
   width: 100%;
@@ -803,7 +803,9 @@ input[type=text] {
     z-index: 2;
   }
   .collections__descr::after {
-    width: 100%;
+    top: 0;
+    right: 0;
+    max-width: 100%;
     z-index: 1;
   }
 }
