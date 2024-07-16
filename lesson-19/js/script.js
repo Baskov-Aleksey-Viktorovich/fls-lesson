@@ -1,59 +1,65 @@
-const searchIcon  = document.querySelector(".header__img");
+const searchIcon = document.querySelector(".header__img");
 const searchInput = document.querySelector(".header__input");
-const upBtn       = document.querySelector('.sub__link');
-const getBurger   = document.querySelector('.burger');
+const upBtn = document.querySelector('.sub__link');
+const getBurger = document.querySelector('.burger');
+const menu = document.querySelector('.menu');
+const body = document.body;
 
 
 
-const tabsBtn     = document.querySelectorAll(".tabs__item"); // btn tab
+
+const tabsBtn = document.querySelectorAll(".tabs__item"); // btn tab
 
 
 
-const tabsItems   = document.querySelectorAll(".special-goods__item"); //tab element
+const tabsItems = document.querySelectorAll(".special-goods__item"); //tab element
 /* const tabsAll     = document.querySelectorAll('[role="all"]'); */
 
 /* showSearch */
 
 /* addColor */
-const getPrice   = document.querySelectorAll(".special-goods__price");
+const getPrice = document.querySelectorAll(".special-goods__price");
 
 
-function showSearch (){
-    searchIcon.addEventListener('click', ()=>{
-        searchInput.classList.toggle('show');
-    })
+function showSearch() {
+  searchIcon.addEventListener('click', () => {
+    searchInput.classList.toggle('show');
+  })
 }
 
 upBtn.addEventListener("click", () => {
-    window.scrollTo({
-      top: 0,
-      left: 0,
-      behavior: "smooth",
-    });
+  window.scrollTo({
+    top: 0,
+    left: 0,
+    behavior: "smooth",
   });
+});
 
-console.log(getPrice, tabsBtn);
-function addRed (){
+function addRed() {
   getPrice.forEach(elem => {
     const oldPrice = elem.querySelector('.old-price');
-    const price    = elem.querySelector('.price');
-    if(oldPrice){
+    const price = elem.querySelector('.price');
+    if (oldPrice) {
       price.style.color = 'red';
     }
   })
 };
 
-getBurger.addEventListener('click', ()=>{
-    getBurger.classList.toggle('active');
+getBurger.addEventListener('click', () => {
+  getBurger.classList.toggle('active');
+  menu.classList.toggle('show');
+  body.classList.toggle('no-scroll');
 })
 
-tabsBtn.forEach((item)=>{
-  item.addEventListener("click",()=>{ 
-    let tabActive = item;    
-    tabsBtn.forEach((item)=>{
+
+
+tabsBtn.forEach((item) => {
+  item.addEventListener("click", () => {
+    let tabActive = item;
+    tabsBtn.forEach((item) => {
       item.classList.remove('active');
     })
-    tabsBtn.forEach((item)=>{
+    tabsBtn.forEach((item) => {
       tabActive.classList.add('active');
     })
   })

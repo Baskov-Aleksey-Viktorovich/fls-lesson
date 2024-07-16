@@ -17,7 +17,7 @@
                     <button class="header__burger burger">
                         <span class="burger__item"></span>
                     </button>
-                    <div class="header__search">
+                    <div class="header__search" data-da=".menu__items,992,100">
                         <img class="header__img" src="img/hw/vector/search-icon.svg" alt="search icon">
                         <input class="header__input" type="search" name="search" placeholder="I'm search" id="search">
                     </div>
@@ -38,7 +38,7 @@
                 </div>
                 <div class="header__nav header__nav--margin nav">
                     <div class="nav__container">
-                        <nav class="nav__menu menu">
+                        <nav class="nav__menu menu ">
                             <ul class="menu__items">
                                 <li class="menu__item"><a class="menu__link" href="#">Jewelry & Accessories</a></li>
                                 <li class="menu__item"><a class="menu__link" href="#">Clothing & Shoes</a></li>
@@ -78,6 +78,7 @@
                     </div>
                 </div>
             </section>
+
             <section class="main-goods main-goods--margin">
                 <div class="main-goods__container">
                     <div class="main-goods__overlay">
@@ -451,6 +452,131 @@
                     </div>
                 </div>
             </section>
+
+            <section class="best-seller best-seller--margin">
+                <div class="best-seller__container container--hidden">
+                    <h2 class="best-seller__title">Best sellers</h2>
+                    <aside class="best-seller__tabs">
+                        <ul class="best-seller__lists lists">
+                            <li class="lists__item">all products</li>
+                            <li class="lists__item">t-shirt</li>
+                            <li class="lists__item">hoodies</li>
+                            <li class="lists__item">jacket</li>
+                        </ul>
+                        <button class="best-seller__show">show all</button>
+                    </aside>
+                    <div class="best-seller-items">
+                        <article class="goods">
+                            <figure>
+                                <img class="goods__img" src="img/hw/raster/goods/image-product-10.png"
+                                    alt="goods photo">
+                            </figure>
+                            <div class="goods__text">
+                                <a href="#">
+                                    <span class="goods__name">Nike Sportswear Futura Luxe</span>
+                                </a>
+                            </div>
+
+                            <div class="goods__action">
+                                <span class="goods__filter">Glasses</span>
+                                <div class="goods__price">
+                                    <span class="price">$160.00</span>
+                                    <span class="old_price">$260.00</span>
+                                </div>
+                            </div>
+
+                            <div class="goods__label label">
+                                <div class="label__items">
+                                    <span class="label__item label__item--hot">hot</span>
+                                    <span class="label__item label__item--special">special</span>
+                                    <span class="label__item label__item--sale">sale</span>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="goods">
+                            <figure>
+                                <img class="goods__img" src="img/hw/raster/goods/image-product-10.png"
+                                    alt="goods photo">
+                            </figure>
+                            <div class="goods__text">
+                                <a href="#">
+                                    <span class="goods__name">Nike Sportswear Futura Luxe</span>
+                                </a>
+                            </div>
+
+                            <div class="goods__action">
+                                <span class="goods__filter">Glasses</span>
+                                <div class="goods__price">
+                                    <span class="price">$160.00</span>
+                                    <span class="old_price">$260.00</span>
+                                </div>
+                            </div>
+
+                            <div class="goods__label label">
+                                <div class="label__items">
+                                    <span class="label__item label__item--hot">hot</span>
+                                    <span class="label__item label__item--special">special</span>
+                                    <span class="label__item label__item--sale">sale</span>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="goods">
+                            <figure>
+                                <img class="goods__img" src="img/hw/raster/goods/image-product-10.png"
+                                    alt="goods photo">
+                            </figure>
+                            <div class="goods__text">
+                                <a href="#">
+                                    <span class="goods__name">Nike Sportswear Futura Luxe</span>
+                                </a>
+                            </div>
+
+                            <div class="goods__action">
+                                <span class="goods__filter">Glasses</span>
+                                <div class="goods__price">
+                                    <span class="price">$160.00</span>
+                                    <span class="old_price">$260.00</span>
+                                </div>
+                            </div>
+
+                            <div class="goods__label label">
+                                <div class="label__items">
+                                    <span class="label__item label__item--hot">hot</span>
+                                    <span class="label__item label__item--special">special</span>
+                                    <span class="label__item label__item--sale">sale</span>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="goods">
+                            <figure>
+                                <img class="goods__img" src="img/hw/raster/goods/image-product-10.png"
+                                    alt="goods photo">
+                            </figure>
+                            <div class="goods__text">
+                                <a href="#">
+                                    <span class="goods__name">Nike Sportswear Futura Luxe</span>
+                                </a>
+                            </div>
+
+                            <div class="goods__action">
+                                <span class="goods__filter">Glasses</span>
+                                <div class="goods__price">
+                                    <span class="price">$160.00</span>
+                                    <span class="old_price">$260.00</span>
+                                </div>
+                            </div>
+
+                            <div class="goods__label label">
+                                <div class="label__items">
+                                    <span class="label__item label__item--hot">hot</span>
+                                    <span class="label__item label__item--special">special</span>
+                                    <span class="label__item label__item--sale">sale</span>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
         </main>
         <footer class="footer">
             <div class="footer__main footer__main--margin main">
@@ -465,7 +591,7 @@
                                     dolore magna aliqua</p>
                             </div>
 
-                            <ul class="company__items">
+                            <ul class="company__items" data-da=".menu__items,992,100">
                                 <li class="company__item">
                                     <a href="#">
                                         <img src="img/hw/vector/face.svg" alt="icon facebook">
@@ -563,6 +689,7 @@
             </div>
         </footer>
     </div>
+    <script src="js/da.js"></script>
     <script src="js/script.js"></script>
 </body>
 
