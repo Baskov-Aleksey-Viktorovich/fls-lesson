@@ -197,7 +197,11 @@ input[type=text] {
   text-transform: capitalize;
   padding: 5px;
 }
-.footer .main .catalog__item:hover {
+.footer .main .catalog__link {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.footer .main .catalog__link:hover {
   text-decoration: underline;
 }
 .footer .main .about {
@@ -225,6 +229,9 @@ input[type=text] {
 .footer .main .about__item {
   text-transform: capitalize;
   padding: 5px;
+}
+.footer .main .about__item a:hover {
+  text-decoration: underline;
 }
 .footer .main .customer {
   /* .customer__title */
@@ -398,7 +405,7 @@ input[type=text] {
 .main-goods__title {
   position: absolute;
   padding: 4px 12px;
-  background-color: #1E2832;
+  background-color: #1e2832;
   color: white;
   top: 26px;
   text-transform: uppercase;
@@ -511,7 +518,7 @@ input[type=text] {
   left: 0;
   top: 75%;
   position: absolute;
-  background-color: #1E2832;
+  background-color: #1e2832;
   width: 100%;
   padding: 10px;
   -webkit-transition: all 0.3s ease-in-out;
@@ -553,13 +560,13 @@ input[type=text] {
   color: white;
 }
 .special-goods .label__item--hot {
-  background-color: #FF6F61;
+  background-color: #ff6f61;
 }
 .special-goods .label__item--special {
   background-color: #61b25c;
 }
 .special-goods .label__item--sale {
-  background-color: #1E2832;
+  background-color: #1e2832;
 }
 .special-goods__name {
   padding-left: 10px;
@@ -657,7 +664,7 @@ input[type=text] {
 
 .filter {
   padding: 5px 15px;
-  background-color: #1E2832;
+  background-color: #1e2832;
   cursor: pointer;
   /* .filter__img */
   /* .filter__name */
