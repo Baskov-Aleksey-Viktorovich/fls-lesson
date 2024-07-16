@@ -691,7 +691,7 @@ input[type=text] {
 .collections {
   width: 100%;
   min-height: 776px;
-  background: url("../img/hw/raster/bg-zara.webp") top/100% no-repeat;
+  background: url("img/hw/raster/bg-zara.webp") top/100% no-repeat;
   -o-object-position: center;
      object-position: center;
   background-size: cover;
@@ -736,7 +736,7 @@ input[type=text] {
   width: 732px;
   height: 309px;
   position: absolute;
-  background: url("/img/hw/raster/zara-logo-big.png") center/100% no-repeat;
+  background: url("img/hw/raster/zara-logo-big.png") center/100% no-repeat;
   top: 51px;
   right: 0;
 }
