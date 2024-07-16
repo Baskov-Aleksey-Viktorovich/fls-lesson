@@ -1511,4 +1511,10 @@ body {
     font-size: 30px;
   }
 }
-/* footer *//*# sourceMappingURL=style.css.map */
+@media (max-width: 992px) {
+  .menu__items {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+  }
+}/*# sourceMappingURL=style.css.map */
