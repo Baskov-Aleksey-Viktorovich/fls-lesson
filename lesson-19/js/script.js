@@ -73,3 +73,44 @@ tabsBtn.forEach((item) => {
 showSearch();
 addRed();
 
+const swiper = new Swiper('.swiper', {
+
+  autoplay: {
+    delay: 7000,
+  },
+  watchOverflow: false,
+  slidesPerView: 1,
+  spaceBetween: '12',
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  breakpoints: {
+    400: {
+      slidesPerView: 1,
+      spaceBetween: '10',
+    },
+    536: {
+      slidesPerView: 2,
+      spaceBetween: '24',
+    },
+    802: {
+      slidesPerView: 3,
+      spaceBetween: '24',
+    },
+    1074: {
+      slidesPerView: 4,
+      spaceBetween: '24',
+    },
+    1142: {
+      slidesPerView: 4,
+      spaceBetween: '24',
+    },
+  }
+
+});

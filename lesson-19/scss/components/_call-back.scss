@@ -1,0 +1,83 @@
+.call-back {
+    min-height: 538px;
+    background-color: $callbackBackGround;
+    /* .call-back__container */
+    &--padding {
+        padding: 100px 100px;
+    }
+    &--margin {
+        margin-bottom: 108px;
+    }
+    &__container {
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    /* .call-back__title */
+
+    &__title {
+        text-align: center;
+        font-size: 50px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        text-transform: capitalize;
+        margin-bottom: 87px;
+    }
+
+    /* .call-back__instagram */
+
+    &__instagram {
+        flex-shrink: 1;
+        margin-bottom: 75px;
+    }
+
+    /* .call-back__form */
+
+    &__form {
+        display: flex;
+        justify-content: space-between;
+        column-gap: 26px;
+    }
+
+    /* .call-back__emal */
+
+    &__emal {
+        width: 586px;
+        background-color: $callbackBackGround;
+        border-bottom: 2px solid #000;
+        outline: none;
+    }
+
+    /* .call-back__btn */
+
+    &__btn {
+        padding: 10px;
+        background-color: transparent;
+        text-transform: uppercase;
+        font-size: 16px;
+        font-weight: 400;
+        border-bottom: 2px solid #000;
+        cursor: pointer;
+    }
+}
+.instagram {
+    /* .instagram__items */
+
+    &__items {
+        display: flex;
+        column-gap: 24px;
+        flex-shrink: 1;
+        justify-content: center;
+    }
+
+    /* .instagram__item */
+
+    &__item {
+    }
+}
