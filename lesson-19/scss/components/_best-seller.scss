@@ -1,0 +1,157 @@
+.best-seller {
+    /* .best-seller__title */
+
+    &__title {
+    text-align: center;
+    font-size: 50px;
+    font-weight: 500;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    }
+
+    /* .best-seller__tabs */
+
+    &__tabs {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 35px;
+    }
+
+    /* .best-seller__lists */
+
+    &__lists {
+        display: flex;
+        justify-content: space-between;
+        min-width: 373px;
+    }
+
+    /* .best-seller__show */
+
+    &__show {
+        flex-shrink: 0;
+    }
+}
+.lists {
+    
+    /* .lists__item */
+
+    &__item {
+        cursor: pointer;
+        color: var(--Dark-50, rgba(0, 0, 0, 0.50));
+        text-transform: capitalize;
+    }
+}
+.best-seller-items {
+    display: flex;
+    column-gap: 24px;
+    justify-content: space-between;
+    width: 100%; 
+}
+/* .container--hidden{
+    overflow: hidden;
+} */
+.goods {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    row-gap: 18px;
+    position: relative;
+    /* .goods__img */
+
+    &__img {
+    }
+
+    /* .goods__text */
+
+    &__text {
+    }
+
+    /* .goods__name */
+
+    &__name {
+
+    }
+
+    /* .goods__action */
+
+    &__action {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    /* .goods__filter */
+
+    &__filter {
+    }
+
+    /* .goods__price */
+
+    &__price {
+    }
+
+    /* .goods__label */
+
+    &__label {
+    }
+}
+.price {
+}
+.old {
+
+    /* .old_price */
+
+    &_price {
+    }
+}
+.label {
+
+    /* .label__items */
+
+    &__items {
+        top: 0;
+        left: 0;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        row-gap: 5px;
+    }
+
+    /* .label__item */
+
+    &__item {
+        padding: 16px;
+        font-weight: 600;
+        color: #fff;
+    }
+
+    /* .label__item--hot */
+
+    &__item--hot {
+        background-color: #ff6f61;
+    }
+
+    /* .label__item--special */
+
+    &__item--special {
+        background-color: blueviolet;
+    }
+
+    /* .label__item--sale */
+
+    &__item--sale {
+        background-color: #1e2832;
+    }
+}
+
+.best-seller--margin{
+    margin-bottom: 140px;
+}
+
+@media (max-width: 1400px) {
+    .best-seller-items {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    }
+}

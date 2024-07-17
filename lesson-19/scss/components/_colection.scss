@@ -1,0 +1,115 @@
+.collections {
+    width: 100%;
+    min-height: 776px;
+    background: url("../img/hw/raster/bg-zara.webp") top / 100% no-repeat;
+    object-position: center;
+    background-size: cover;
+    position: relative;
+
+    &--margin {
+        margin-bottom: 159px;
+    }
+    /* .collections__container */
+
+    &__container {
+    }
+
+    /* .collections__items */
+
+    &__items {
+        display: flex;
+        justify-content: space-between;
+        column-gap: 225px;
+        padding-top: 112px;
+    }
+
+    /* .collections__descr */
+
+    &__descr {
+        display: flex;
+        flex-direction: column;
+        row-gap: 55px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    &__descr::after {
+        content: "";
+        width: 732px;
+        height: 309px;
+        position: absolute;
+        background: url("../img/hw/raster/zara-logo-big.png") center / 100% no-repeat;
+        top: 51px;
+        right: 0;
+    }
+
+    /* .collections__name */
+
+    &__name {
+    }
+
+    /* .collections__sub-title */
+
+    &__sub-title {
+        font-family: Roboto;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 50px;
+        text-transform: capitalize;
+        color: #fff;
+    }
+    &__link {
+        display: inline-flex;
+        justify-content: center;
+        max-width: 237px;
+        flex-shrink: 0;
+        color: #1e2832;
+        background-color: #fff;
+        padding: 19px 26px;
+        font-size: 29px;
+        font-style: normal;
+        font-weight: 400;
+        text-transform: capitalize;
+    }
+}
+
+@media (max-width: 1199px) {
+    .collections__items {
+        column-gap: 15px;
+    }
+}
+
+@media (max-width: 992px) {
+    .collections__items {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .collections__descr {
+        align-self: center;
+        justify-content: center;
+        text-align: center;
+        padding: 10px;
+    }
+    .collections__link {
+        margin: 0 auto;
+    }
+
+    .collections--margin {
+        margin-bottom: 20px;
+    }
+
+    .left {
+        &__img {
+            width: 100%;
+            z-index: 2;
+        }
+    }
+
+    .collections__descr::after {
+        top: 0;
+        right: 0;
+        max-width: 100%;
+        z-index: 1;
+    }
+}
