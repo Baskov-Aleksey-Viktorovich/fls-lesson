@@ -2,11 +2,11 @@
     /* .best-seller__title */
 
     &__title {
-        text-align: center;
-        font-size: 50px;
-        font-weight: 500;
-        text-transform: capitalize;
-        margin-bottom: 35px;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 500;
+    text-transform: capitalize;
+    margin-bottom: 35px;
     }
 
     /* .best-seller__tabs */
@@ -22,7 +22,8 @@
     &__lists {
         display: flex;
         justify-content: space-between;
-        min-width: 373px;
+        width: 100%;
+        align-self: center;
     }
 
     /* .best-seller__show */
@@ -38,11 +39,12 @@
     }
 }
 .lists {
+    
     /* .lists__item */
 
     &__item {
         cursor: pointer;
-        color: var(--Dark-50, rgba(0, 0, 0, 0.5));
+        color: var(--Dark-50, rgba(0, 0, 0, 0.50));
         text-transform: capitalize;
     }
 }
@@ -51,7 +53,7 @@
 } */
 .goods {
     display: flex;
-    width: 312px !important;
+    width: 100%;
     flex-direction: column;
     gap: clamp(0.75rem, 0.6061rem + 0.6141vw, 1.125rem);
     position: relative;
@@ -59,6 +61,8 @@
     /* .goods__img */
 
     &__img {
+        width: 100%;
+        object-fit: cover;
     }
 
     /* .goods__text */
@@ -107,6 +111,7 @@
     }
 }
 .label {
+
     /* .label__items */
 
     &__items {
@@ -147,7 +152,7 @@
     }
 }
 
-.best-seller--margin {
+.best-seller--margin{
     margin-bottom: 140px;
 }
 
@@ -157,26 +162,28 @@
     height: 100%;
 }
 
-.swiper-slide {
+.swiper-slide{
 }
+
 
 [class*="--mod"] {
     color: #ccc !important;
 }
 
-@media (max-width: 500px) {
-    .goods__text,
-    .goods__action {
-        text-align: center;
+@media (max-width:500px) {
+    .goods__text, .goods__action{
+        text-align:center;
         width: 80%;
     }
-    .best-seller__tabs {
-        display: none;
-    }
-    .best-seller--margin {
-        margin-bottom: 20px;
-    }
-}
 
-@media (any-hover) {
+    .best-seller--margin{
+        margin-bottom: 20px !important;
+    }
+    .best-seller__lists{
+        column-gap: 10px;
+        justify-content: start;
+    }
+    .best-seller__tabs{
+        justify-content: start;
+    }
 }

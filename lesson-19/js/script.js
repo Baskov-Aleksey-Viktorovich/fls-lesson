@@ -65,26 +65,22 @@ tabsBtn.forEach((item) => {
   })
 });
 
-
-
-
-
-
 showSearch();
 addRed();
 
 const swiper = new Swiper('.swiper', {
 
   autoplay: {
-    delay: 7000,
+    delay: 5000,
   },
+
   watchOverflow: false,
-  slidesPerView: 1,
-  spaceBetween: '12',
+  spaceBetween: '15',
   slidesPerView: 'auto',
   centeredSlides: true,
   // Optional parameters
   direction: 'horizontal',
+  initialSlide: 0,
   loop: true,
 
   navigation: {
@@ -100,7 +96,6 @@ const swiper = new Swiper('.swiper', {
     536: {
       slidesPerView: 2,
       spaceBetween: '24',
-      centeredSlides: true,
     },
     802: {
       slidesPerView: 3,
