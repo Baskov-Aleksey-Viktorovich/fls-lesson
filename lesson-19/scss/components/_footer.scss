@@ -142,8 +142,10 @@
     .company {
         /* .company__img */
 
-        &__img {
-            width: 180px;
+        &__link {
+            display: block;
+            max-width: 180px;
+            object-fit: contain;
         }
 
         /* .company__text */
@@ -172,6 +174,8 @@
         /* .company__item */
 
         &__item {
+            transition: all .3s ease-in-out;
+            border-bottom: 4px solid transparent;
         }
     }
 
@@ -251,10 +255,35 @@
     }
 }
 
+@media (any-hover) {
+    .company__item:hover{
+        border-color: $sale-price;
+    }
+}
+
 @media (max-width:992px) {
     .company__items {
         display: flex;
         justify-content: space-between;
         gap: 25px;
+    }
+    .company__link {
+        margin: 0 auto;
+    }
+
+    .footer__main--margin{
+        margin-bottom: 20px !important;
+    }
+}
+
+@media (max-width:500px) {
+    .sub__pay{
+        display: none;
+    }
+    .sub__date{
+        font-size: 11px;
+    }
+    .link__name{
+        font-size: 11px;
     }
 }

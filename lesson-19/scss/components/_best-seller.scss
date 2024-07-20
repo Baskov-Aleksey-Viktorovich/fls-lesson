@@ -28,7 +28,13 @@
     /* .best-seller__show */
 
     &__show {
+        padding: 5px 15px;
+        background-color: #1e2832;
+        cursor: pointer;
         flex-shrink: 0;
+        text-transform: capitalize;
+        color: #fff;
+        letter-spacing: 1px;
     }
 }
 .lists {
@@ -168,6 +174,9 @@
     }
     .best-seller__tabs{
         display: none;
+    }
+    .best-seller--margin{
+        margin-bottom: 20px;
     }
 }
 

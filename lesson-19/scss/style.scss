@@ -441,10 +441,15 @@ body {
 	.menu__link{
 		font-size: 30px;
 	}
-}
-
-@media (max-width:992px) {
 	.menu__items{
 		align-items: start;
+	}
+
+	.header__nav--margin{
+		margin-bottom: 20px;
+	}
+	[class*="__container"]{
+		padding-left: 10px;
+		padding-right: 10px;
 	}
 }

@@ -261,5 +261,18 @@
 }
 
 @media (max-width: 992px) {
-    .special-goods__title{}
+    .special-goods__title{
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+
+    .tabs__items{
+        column-gap: 10px;
+    }
+    .tabs__item {
+        font-size: 11px;
+    }
+    .special-goods__tabs{
+        margin-bottom: 20px;
+    }
 }

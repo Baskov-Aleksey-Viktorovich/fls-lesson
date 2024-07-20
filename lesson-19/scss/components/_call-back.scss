@@ -3,7 +3,7 @@
     background-color: $callbackBackGround;
     /* .call-back__container */
     &--padding {
-        padding: 100px 100px;
+        padding: 10px 10px;
     }
     &--margin {
         margin-bottom: 108px;
@@ -16,6 +16,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
+        width: 100%;
     }
 
     /* .call-back__title */
@@ -33,7 +34,6 @@
     /* .call-back__instagram */
 
     &__instagram {
-        flex-shrink: 1;
         margin-bottom: 75px;
     }
 
@@ -64,20 +64,81 @@
         font-weight: 400;
         border-bottom: 2px solid #000;
         cursor: pointer;
+        color: $black;
     }
 }
 .instagram {
+    width: 100%;
     /* .instagram__items */
 
     &__items {
         display: flex;
-        column-gap: 24px;
-        flex-shrink: 1;
-        justify-content: center;
+        gap: 24px;
+        overflow-x: auto;
+        margin: 0 auto;
     }
 
     /* .instagram__item */
 
     &__item {
+        position: relative;
+        width: 100%;
+        border-bottom: 4px solid transparent;
+        transition: all .3s ease-in-out;
     }
+/*     &__item img{
+        object-fit: cover;
+        width: 100%;
+    } */
+}
+
+
+@media (any-hover) {
+    .instagram__item:hover{
+        filter: blur(2px);
+    }
+}
+
+@media (max-width:992px) {
+    .call-back--margin{
+        margin-bottom: 20px;
+    }
+    .call-back__title{
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    .call-back__instagram{
+        margin-bottom: 5px;
+    }
+    .call-back{
+        min-height: 420px;
+    }
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: $sale-price; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #E1306C; 
+  }
+
+/* placeholder */
+input :placeholder{
+color: $black-50;
+font-size: 16px;
+font-weight: 600;
+text-transform: capitalize;
 }
