@@ -84,33 +84,32 @@
         position: relative;
         width: 100%;
         border-bottom: 4px solid transparent;
-        transition: all .3s ease-in-out;
+        transition: all 0.3s ease-in-out;
     }
-/*     &__item img{
+    /*     &__item img{
         object-fit: cover;
         width: 100%;
     } */
 }
 
-
 @media (any-hover) {
-    .instagram__item:hover{
+    .instagram__item:hover {
         filter: blur(2px);
     }
 }
 
-@media (max-width:992px) {
-    .call-back--margin{
+@media (max-width: 992px) {
+    .call-back--margin {
         margin-bottom: 20px;
     }
-    .call-back__title{
+    .call-back__title {
         font-size: 20px;
         margin-bottom: 20px;
     }
-    .call-back__instagram{
+    .call-back__instagram {
         margin-bottom: 5px;
     }
-    .call-back{
+    .call-back {
         min-height: 420px;
     }
 }
@@ -118,27 +117,27 @@
 ::-webkit-scrollbar {
     width: 10px;
     height: 10px;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 5px grey; 
-  }
-   
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: $sale-price; 
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: #E1306C; 
-  }
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: $sale-price;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #e1306c;
+}
 
 /* placeholder */
-input :placeholder{
-color: $black-50;
-font-size: 16px;
-font-weight: 600;
-text-transform: capitalize;
+input :placeholder {
+    color: $black-50;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: capitalize;
 }

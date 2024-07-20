@@ -81,6 +81,8 @@ const swiper = new Swiper('.swiper', {
   watchOverflow: false,
   slidesPerView: 1,
   spaceBetween: '12',
+  slidesPerView: 'auto',
+  centeredSlides: true,
   // Optional parameters
   direction: 'horizontal',
   loop: true,
@@ -93,11 +95,12 @@ const swiper = new Swiper('.swiper', {
   breakpoints: {
     400: {
       slidesPerView: 1,
-      spaceBetween: '10',
+      spaceBetween: '15',
     },
     536: {
       slidesPerView: 2,
       spaceBetween: '24',
+      centeredSlides: true,
     },
     802: {
       slidesPerView: 3,

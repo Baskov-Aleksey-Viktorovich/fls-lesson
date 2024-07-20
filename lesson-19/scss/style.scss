@@ -9,7 +9,6 @@
 @import "../scss/components/best-seller";
 @import "../scss/components/call-back";
 
-
 /* Import foonts */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
 
@@ -393,7 +392,7 @@ body {
 	.slider__img {
 		width: 100%;
 	}
-	.slider__name{
+	.slider__name {
 		margin: 0 auto;
 		font-size: 17px;
 		text-align: center;
@@ -421,7 +420,7 @@ body {
 		left: -100%;
 	}
 
-	.show{
+	.show {
 		left: 0;
 	}
 	.no-scroll {
@@ -436,19 +435,18 @@ body {
 		row-gap: 20px;
 		align-items: center;
 		flex-direction: column;
-		
 	}
-	.menu__link{
+	.menu__link {
 		font-size: 30px;
 	}
-	.menu__items{
+	.menu__items {
 		align-items: start;
 	}
 
-	.header__nav--margin{
+	.header__nav--margin {
 		margin-bottom: 20px;
 	}
-	[class*="__container"]{
+	[class*="__container"] {
 		padding-left: 10px;
 		padding-right: 10px;
 	}

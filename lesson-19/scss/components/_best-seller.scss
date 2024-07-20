@@ -2,11 +2,11 @@
     /* .best-seller__title */
 
     &__title {
-    text-align: center;
-    font-size: 50px;
-    font-weight: 500;
-    text-transform: capitalize;
-    margin-bottom: 35px;
+        text-align: center;
+        font-size: 50px;
+        font-weight: 500;
+        text-transform: capitalize;
+        margin-bottom: 35px;
     }
 
     /* .best-seller__tabs */
@@ -38,12 +38,11 @@
     }
 }
 .lists {
-    
     /* .lists__item */
 
     &__item {
         cursor: pointer;
-        color: var(--Dark-50, rgba(0, 0, 0, 0.50));
+        color: var(--Dark-50, rgba(0, 0, 0, 0.5));
         text-transform: capitalize;
     }
 }
@@ -108,7 +107,6 @@
     }
 }
 .label {
-
     /* .label__items */
 
     &__items {
@@ -149,7 +147,7 @@
     }
 }
 
-.best-seller--margin{
+.best-seller--margin {
     margin-bottom: 140px;
 }
 
@@ -159,27 +157,26 @@
     height: 100%;
 }
 
-.swiper-slide{
+.swiper-slide {
 }
-
 
 [class*="--mod"] {
     color: #ccc !important;
 }
 
-@media (max-width:500px) {
-    .goods__text, .goods__action{
-        text-align:center;
+@media (max-width: 500px) {
+    .goods__text,
+    .goods__action {
+        text-align: center;
         width: 80%;
     }
-    .best-seller__tabs{
+    .best-seller__tabs {
         display: none;
     }
-    .best-seller--margin{
+    .best-seller--margin {
         margin-bottom: 20px;
     }
 }
 
 @media (any-hover) {
-
 }
