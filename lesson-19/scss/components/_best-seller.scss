@@ -21,8 +21,8 @@
 
     &__lists {
         display: flex;
-        justify-content: space-between;
         width: 100%;
+        column-gap: 41px;
         align-self: center;
     }
 
