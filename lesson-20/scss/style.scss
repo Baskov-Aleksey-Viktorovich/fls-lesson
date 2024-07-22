@@ -1,0 +1,44 @@
+/* import styles */
+@import "components/reset.scss";
+@import "components/practice.scss";
+
+
+/* Import foonts */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+
+
+
+[class*="__container"] {
+	max-width: 82.5rem;
+	margin: 0 auto;
+	padding-right: 1.25rem;
+	padding-left: 1.25rem;
+}
+
+.practice {}
+
+.practice__name {
+	font-size: 2rem;
+	@media (max-width:996px){
+		line-height: 1.2;
+		font-size: 2.5rem;
+		margin-bottom: 5em;
+	}
+}
+
+.practice__sun-box {}
+
+.sun-box {
+	/* Коли використовувати? 
+	 1 Всі медіа запити використовуєм (em)
+	 2 При привязці до розміру шрифту. Або при поточному або успадкованому.
+	*/
+	width: 10em;
+}
+
+.sun-box__text {
+	font-size: 2rem;
+	line-height: 1.2;
+}
+
+
