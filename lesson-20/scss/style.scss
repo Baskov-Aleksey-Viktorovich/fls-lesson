@@ -1,10 +1,21 @@
+
+
 /* import styles */
 @import "components/reset.scss";
 @import "components/practice.scss";
-
+/* @import "mixins.scss";
+ */
 
 /* Import foonts */
+
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+
+
+/* Змінні */
+/* Пишемо всі змінні в рут  (рахується як глобальна змінна)*/
+:root{
+	--colorMain: #0b45bb; //так записуємо саме змінну))
+}
 
 
 
@@ -15,30 +26,66 @@
 	padding-left: 1.25rem;
 }
 
-.practice {}
+.practice {
+}
 
 .practice__name {
 	font-size: 2rem;
+	margin-bottom: 1.5em;
+	transition: all .3s ease-in-out;
 	@media (max-width:996px){
 		line-height: 1.2;
 		font-size: 2.5rem;
-		margin-bottom: 5em;
+		margin-bottom: 3em;
 	}
 }
 
-.practice__sun-box {}
+/* Одиниці вьюпорту 
+   VH - відносно ширини
+   WH - відносно висоти
+   VMAX - більший
+   VMIN - меньший
+*/
+
+.practice__sun-box {
+	height: 100vh;
+	border: 12px dotted #5e5372;
+	display: flex;
+	flex-direction: column;
+}
 
 .sun-box {
 	/* Коли використовувати? 
 	 1 Всі медіа запити використовуєм (em)
 	 2 При привязці до розміру шрифту. Або при поточному або успадкованому.
 	*/
-	width: 10em;
 }
 
 .sun-box__text {
-	font-size: 2rem;
+	font-size: 2em;
 	line-height: 1.2;
 }
 
+.hero {
+	font-size: 30px;
+	height: 20vh;
+	width: 50vmin; // береться від меншої ширини або висоти vmax береться від більшої сторони. 
+	background-color: var(--colorMain);
+	/* .hero__title */
 
+	&__title {
+		text-align: center;
+		color: #fff;
+		font-size: 1em; //24px
+	}
+}
+
+.calc{
+	height: calc(50% - 10px);
+	width: calc(100% - 20px);
+	background-color: red;
+}
+
+.clamp{
+	font-size: clamp(1rem, 2.5vw, 2rem);
+}

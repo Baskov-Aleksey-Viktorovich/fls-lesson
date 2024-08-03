@@ -54,7 +54,15 @@ input[type=text] {
   margin: 0; /* 2 */
 }
 
+/* @import "mixins.scss";
+ */
 /* Import foonts */
+/* Змінні */
+/* Пишемо всі змінні в рут  (рахується як глобальна змінна)*/
+:root {
+  --colorMain: #0b45bb;
+}
+
 [class*=__container] {
   max-width: 82.5rem;
   margin: 0 auto;
@@ -64,13 +72,34 @@ input[type=text] {
 
 .practice__name {
   font-size: 2rem;
+  margin-bottom: 1.5em;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 @media (max-width: 996px) {
   .practice__name {
     line-height: 1.2;
     font-size: 2.5rem;
-    margin-bottom: 5em;
+    margin-bottom: 3em;
   }
+}
+
+/* Одиниці вьюпорту 
+   VH - відносно ширини
+   WH - відносно висоти
+   VMAX - більший
+   VMIN - меньший
+*/
+.practice__sun-box {
+  height: 100vh;
+  border: 12px dotted #5e5372;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .sun-box {
@@ -78,10 +107,32 @@ input[type=text] {
    1 Всі медіа запити використовуєм (em)
    2 При привязці до розміру шрифту. Або при поточному або успадкованому.
   */
-  width: 10em;
 }
 
 .sun-box__text {
-  font-size: 2rem;
+  font-size: 2em;
   line-height: 1.2;
+}
+
+.hero {
+  font-size: 30px;
+  height: 20vh;
+  width: 50vmin;
+  background-color: var(--colorMain);
+  /* .hero__title */
+}
+.hero__title {
+  text-align: center;
+  color: #fff;
+  font-size: 1em;
+}
+
+.calc {
+  height: calc(50% - 10px);
+  width: calc(100% - 20px);
+  background-color: red;
+}
+
+.clamp {
+  font-size: clamp(1rem, 2.5vw, 2rem);
 }/*# sourceMappingURL=style.css.map */
