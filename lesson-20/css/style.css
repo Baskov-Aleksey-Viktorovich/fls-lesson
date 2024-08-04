@@ -54,13 +54,20 @@ input[type=text] {
   margin: 0; /* 2 */
 }
 
-/* @import "mixins.scss";
- */
-/* Import foonts */
+/* reset default */
 /* Змінні */
 /* Пишемо всі змінні в рут  (рахується як глобальна змінна)*/
 :root {
-  --colorMain: #0b45bb;
+  --colorMain: #0b45;
+}
+
+.calc {
+  height: calc(50% - 10px);
+  width: calc(100% - 20px);
+  background: var(--colorMain);
+  /* локальна змінна */
+  --localVar: #444;
+  border: 12px dotted var(--localVar);
 }
 
 [class*=__container] {
@@ -68,6 +75,7 @@ input[type=text] {
   margin: 0 auto;
   padding-right: 1.25rem;
   padding-left: 1.25rem;
+  cursor: url(../img/semantic-web.svg);
 }
 
 .practice__name {
@@ -80,7 +88,7 @@ input[type=text] {
   .practice__name {
     line-height: 1.2;
     font-size: 2.5rem;
-    margin-bottom: 3em;
+    margin-bottom: 2em;
   }
 }
 
@@ -92,7 +100,7 @@ input[type=text] {
 */
 .practice__sun-box {
   height: 100vh;
-  border: 12px dotted #5e5372;
+  /* local var */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -112,6 +120,10 @@ input[type=text] {
 .sun-box__text {
   font-size: 2em;
   line-height: 1.2;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .hero {
@@ -127,12 +139,49 @@ input[type=text] {
   font-size: 1em;
 }
 
-.calc {
-  height: calc(50% - 10px);
-  width: calc(100% - 20px);
-  background-color: red;
-}
-
 .clamp {
   font-size: clamp(1rem, 2.5vw, 2rem);
+}
+
+/* Вимика взаємодію з обьєктом pointer-events */
+.pointer-events a {
+  /* pointer-events: none; */
+  /* cursor: move; */
+}
+
+.inset {
+  width: 1.25rem;
+  height: 1.25rem;
+  background-color: red;
+  inset: 20px;
+}
+
+/* Color Fonts */
+/* Color Hover */
+/* Background Color */
+/* Import foonts */
+.header--margin {
+  margin-bottom: 5.0625rem;
+}
+
+.top {
+  /* .top__container */
+  /* .top__action */
+}
+.search {
+  /* .search__input */
+  /* .search__btn */
+}
+.logo {
+  /* .logo__img */
+}
+.action {
+  /* .action__icon */
+  /* .action__name */
+}
+.bottom {
+  /* .bottom__container */
+}
+.menu {
+  /* .menu__item */
 }/*# sourceMappingURL=style.css.map */

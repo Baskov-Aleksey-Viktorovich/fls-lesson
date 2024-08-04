@@ -7,15 +7,84 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="img/hw/vector/main--logo.svg">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <title>E-commerces</title>
+    <title>E-commerces - Lesson-20</title>
 </head>
 
 <body>
     <div class="wrapper">
-        <header class="header"></header>
-        <main></main>
-        <footer></footer>
+        <header class="header header--margin">
+            <div class="header__container">
+                <div class="header-top top">
+                    <div class="top__container">
+                        <form class="search" action="search">
+                            <input class="search__input" type="search" required>
+                            <button class="search__btn">search</button>
+                        </form>
+
+                        <a class="logo" href="#">
+                            <img class="logo__img" src="img/hw/vector/main--logo.svg" alt="main logo CORAL svg format">
+                        </a>
+
+                        <div class="top__action action">
+                            <a href="action__user">
+                                <img class="action__icon" src="img/hw/vector/man-acc.svg" alt="man icon">
+                                <span class="action__name">Account</span>
+                            </a>
+                            <a href="action__cart">
+                                <img class="action__icon" src="img/hw/vector/icon-cart.svg" alt="cart icon">
+                                <span class="action__name">Shoping</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="divider"></div>
+                <nav class="header-bottom bottom">
+                    <ul class="bottom-menu menu">
+                        <li class="menu__item">Jewelry & Accessories</li>
+                        <li class="menu__item">Clothing & Shoes</li>
+                        <li class="menu__item">Home & Living</li>
+                        <li class="menu__item">Wedding & Party</li>
+                        <li class="menu__item">Toys & Entertainment</li>
+                        <li class="menu__item">Art & Collectibles</li>
+                        <li class="menu__item">Craft Supplies & Tools</li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main class="main">
+            <section class="baners baners--margin">
+                <div class="baners__container">
+                    <div class="baners__overlay overlay">
+                        <div class="overlay__content">
+                            <h2 class="overlay__title">Collections</h2>
+                            <span class="overlay__descr">you can explore ans shop many differnt collection from various barands here.</span>
+                            <a class="overlay__link link" href="#">
+                                <img class="link__icon" src="img/hw/vector/cart-white.svg" alt="in link white cart icon">
+                                <span class="link__name">shop now</span>
+                            </a>
+                        </div>
+                        <div class="overlay__design design">
+                            <a class="design__link" href="#">
+                                <img src="img/hw/raster/pretty-img.png" alt="img in a banner">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="brands">
+                <ul class="brands__lists">
+                    <li class="baners__item">
+                        <a class="brands__link" href="#">
+                            <img src="img/hw/raster/brands/" alt="logo brand">
+                        </a>
+                    </li>
+                </ul>
+            </section>
+            
+        </main>
     </div>
 </body>
 <script src="js/script.js"></script>
+
 </html>
