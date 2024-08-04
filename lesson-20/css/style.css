@@ -160,6 +160,14 @@ input[type=text] {
 /* Color Hover */
 /* Background Color */
 /* Import foonts */
+[class*=__container] {
+  inline-size: 82.5rem;
+}
+
+.header {
+  background-color: #f4f4f5;
+  /* .header__container */
+}
 .header--margin {
   margin-bottom: 5.0625rem;
 }
@@ -179,9 +187,49 @@ input[type=text] {
   /* .action__icon */
   /* .action__name */
 }
-.bottom {
-  /* .bottom__container */
-}
 .menu {
   /* .menu__item */
+}
+.baners {
+  background-color: #f4f4f5;
+  /* .baners__container */
+  /* .baners__overlay */
+  /* .baners__item */
+}
+.baners--margin {
+  margin-bottom: 9.375rem;
+}
+
+.overlay {
+  /* .overlay__content */
+  /* .overlay__title */
+  /* .overlay__descr */
+  /* .overlay__link */
+  /* .overlay__design */
+}
+.link {
+  /* .link__icon */
+  /* .link__name */
+}
+.design {
+  /* .design__link */
+}
+.brands {
+  /* .brands__container */
+  /* .brands__lists */
+  /* .brands__link */
+}
+.brands--margin {
+  margin-bottom: 5.625rem;
+}
+
+.category {
+  /* .category__container */
+  /* .category__text */
+  /* .category__list */
+}
+.list {
+  /* .list__item */
+  /* .list__link */
+  /* .list__img */
 }/*# sourceMappingURL=style.css.map */

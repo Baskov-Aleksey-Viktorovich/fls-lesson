@@ -10,75 +10,203 @@
 /* Import foonts */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
 
-.header {
-	
-	&--margin{
-		margin-bottom: 5.0625rem;
-	}
+
+[class*="__container"]{
+	inline-size: 82.5rem;
 }
 
+
+.header {
+	background-color: $bgc-header;
+
+	/* .header__container */
+
+	&__container {
+	}
+}
+.header--margin {
+	margin-bottom: 5.0625rem;
+}
 .header-top {
 }
 .top {
 
-		/* .top__container */
+	/* .top__container */
 
-		&__container {
-		}
+	&__container {
+	}
 
-		/* .top__action */
+	/* .top__action */
 
-		&__action {
-		}
+	&__action {
+	}
 }
 .search {
 
-		/* .search__input */
+	/* .search__input */
 
-		&__input {
-		}
+	&__input {
+	}
 
-		/* .search__btn */
+	/* .search__btn */
 
-		&__btn {
-		}
+	&__btn {
+	}
 }
 .logo {
 
-		/* .logo__img */
+	/* .logo__img */
 
-		&__img {
-		}
+	&__img {
+	}
 }
 .action {
 
-		/* .action__icon */
+	/* .action__icon */
 
-		&__icon {
-		}
+	&__icon {
+	}
 
-		/* .action__name */
+	/* .action__name */
 
-		&__name {
-		}
+	&__name {
+	}
 }
 .divider {
 }
 .header-bottom {
 }
 .bottom {
-
-		/* .bottom__container */
-
-		&__container {
-		}
 }
 .bottom-menu {
 }
 .menu {
 
-		/* .menu__item */
+	/* .menu__item */
 
-		&__item {
-		}
+	&__item {
+	}
+}
+.main {
+}
+.baners {
+	background-color: $bgc-header;
+
+	/* .baners__container */
+
+	&__container {
+	}
+
+	/* .baners__overlay */
+
+	&__overlay {
+	}
+
+	/* .baners__item */
+
+	&__item {
+	}
+}
+.baners--margin {
+	margin-bottom: 9.375rem;
+}
+.overlay {
+
+	/* .overlay__content */
+
+	&__content {
+	}
+
+	/* .overlay__title */
+
+	&__title {
+	}
+
+	/* .overlay__descr */
+
+	&__descr {
+	}
+
+	/* .overlay__link */
+
+	&__link {
+	}
+
+	/* .overlay__design */
+
+	&__design {
+	}
+}
+.link {
+
+	/* .link__icon */
+
+	&__icon {
+	}
+
+	/* .link__name */
+
+	&__name {
+	}
+}
+.design {
+
+	/* .design__link */
+
+	&__link {
+	}
+}
+.brands {
+
+	/* .brands__container */
+
+	&__container {
+	}
+
+	/* .brands__lists */
+
+	&__lists {
+	}
+
+	/* .brands__link */
+
+	&__link {
+	}
+}
+.brands--margin {
+	margin-bottom: 5.625rem;
+}
+.category {
+
+	/* .category__container */
+
+	&__container {
+	}
+
+	/* .category__text */
+
+	&__text {
+	}
+
+	/* .category__list */
+
+	&__list {
+	}
+}
+.list {
+
+	/* .list__item */
+
+	&__item {
+	}
+
+	/* .list__link */
+
+	&__link {
+	}
+
+	/* .list__img */
+
+	&__img {
+	}
 }
