@@ -1,0 +1,49 @@
+.search {
+    top: -100%;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: $bgc-header;
+    display: flex;
+    justify-content: center;
+    transition: all .6s ease-in-out;
+    /* .search__form */
+
+    &__form {
+        display: flex;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    /* .search__input */
+
+    &__input {
+        height: 1.5625rem;
+        width: 35rem;
+        outline-color: $bgc-sale-sticker;
+        align-self: center;
+        border-radius: 0.3125rem;
+        padding: 1rem;
+        color: $main-color-fonts;
+    }
+
+    &__close{
+        height: 1.5625rem;
+        width: 1.5625rem;
+        position: absolute;
+        right: 0;
+        top: 0;
+        cursor: pointer;
+        background: url("/img/hw/vector/close.svg") center / 25px no-repeat;
+    }
+
+    ::placeholder {
+        color: $main-color-fonts;
+        padding-left: 0.3125rem;
+        font-size: 0.875rem;
+        font-family: "Roboto", sans-serif;
+      }
+}

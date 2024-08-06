@@ -14,43 +14,52 @@
     <div class="wrapper">
         <header class="header header--margin">
             <div class="header__container">
-                <div class="header-top top">
+                <div class="header__top top top--margin">
                     <div class="top__container">
-                        <form class="search" action="search">
-                            <input class="search__input" type="search" required>
-                            <button class="search__btn">search</button>
-                        </form>
+                        <div class="top__overlay">
+                                <button class="search-btn"></button>
 
-                        <a class="logo" href="#">
-                            <img class="logo__img" src="img/hw/vector/main--logo.svg" alt="main logo CORAL svg format">
-                        </a>
+                            <a class="logo" href="#">
+                                <img class="logo__img" src="img/hw/vector/main--logo.svg"
+                                    alt="main logo CORAL svg format">
+                            </a>
 
-                        <div class="top__action action">
-                            <a href="action__user">
-                                <img class="action__icon" src="img/hw/vector/man-acc.svg" alt="man icon">
-                                <span class="action__name">Account</span>
-                            </a>
-                            <a href="action__cart">
-                                <img class="action__icon" src="img/hw/vector/icon-cart.svg" alt="cart icon">
-                                <span class="action__name">Shoping</span>
-                            </a>
+                            <div class="top__action action">
+                                <a class="action__user" href="#">
+                                    <img class="action__icon" src="img/hw/vector/man-acc.svg" alt="man icon">
+                                    <span class="action__name">Account</span>
+                                </a>
+                                <a class="action__cart" href="#">
+                                    <img class="action__icon" src="img/hw/vector/icon-cart.svg" alt="cart icon">
+                                    <span class="action__name">Shoping</span>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="divider"></div>
-                <nav class="header-bottom bottom">
-                    <ul class="bottom-menu menu">
-                        <li class="menu__item">Jewelry & Accessories</li>
-                        <li class="menu__item">Clothing & Shoes</li>
-                        <li class="menu__item">Home & Living</li>
-                        <li class="menu__item">Wedding & Party</li>
-                        <li class="menu__item">Toys & Entertainment</li>
-                        <li class="menu__item">Art & Collectibles</li>
-                        <li class="menu__item">Craft Supplies & Tools</li>
+                <div class="divider divider--margin"></div>
+                <nav class="header__bottom bottom">
+                    <ul class="bottom__menu menu">
+                        <li class="menu__item"><a class="menu__link" href="#">Jewelry & Accessories</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#">Clothing & Shoes</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#">Home & Living</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#">Wedding & Party</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#">Toys & Entertainment</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#">Art & Collectibles</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#">Craft Supplies & Tools</a></li>
                     </ul>
                 </nav>
             </div>
         </header>
+        <div class="search">
+            <div class="search__container">
+                <button class="search__close"></button>
+                <form class="search__form" action="">
+                    <input class="search__input show" type="search" placeholder="Nike Air" required>
+                    <button class="search-btn" type="submit"></button>
+                </form>
+            </div>
+        </div>
         <main class="main">
             <section class="baners baners--margin">
                 <div class="baners__container">
@@ -77,27 +86,27 @@
             <section class="brands brands--margin">
                 <div class="brands__container">
                     <ul class="brands__lists">
-                        <li class="baners__item">
+                        <li class="brands__item">
                             <a class="brands__link" href="#">
                                 <img src="img/hw/vector/brands/01.png" alt="logo brand 01">
                             </a>
                         </li>
-                        <li class="baners__item">
+                        <li class="brands__item">
                             <a class="brands__link" href="#">
                                 <img src="/img/hw/vector/brands/02.svg" alt="logo brand 02">
                             </a>
                         </li>
-                        <li class="baners__item">
+                        <li class="brands__item">
                             <a class="brands__link" href="#">
                                 <img src="img/hw/vector/brands/03.svg" alt="logo brand 03">
                             </a>
                         </li>
-                        <li class="baners__item">
+                        <li class="brands__item">
                             <a class="brands__link" href="#">
                                 <img src="img/hw/vector/brands/04.svg" alt="logo brand 04">
                             </a>
                         </li>
-                        <li class="baners__item">
+                        <li class="brands__item">
                             <a class="brands__link" href="#">
                                 <img src="img/hw/vector/brands/05.svg" alt="logo brand 05">
                             </a>
@@ -112,31 +121,36 @@
                     <ul class="category__list list">
                         <li class="list__item">
                             <a class="list__link" href="#">
-                                <img class="list__img" src="img/hw/raster/category/category-banner-1.png" alt="img category 01">
+                                <img class="list__img" src="img/hw/raster/category/category-banner-1.png"
+                                    alt="img category 01">
                             </a>
                         </li>
                         <li class="list__item">
                             <a class="list__link" href="#">
-                                <img class="list__img" src="img/hw/raster/category/category-banner-2.png" alt="img category 02">
+                                <img class="list__img" src="img/hw/raster/category/category-banner-2.png"
+                                    alt="img category 02">
                             </a>
                         </li>
                         <li class="list__item">
                             <a class="list__link" href="#">
-                                <img class="list__img" src="img/hw/raster/category/category-banner-3.png" alt="img category 03">
+                                <img class="list__img" src="img/hw/raster/category/category-banner-3.png"
+                                    alt="img category 03">
                             </a>
                         </li>
                         <li class="list__item">
                             <a class="list__link" href="#">
-                                <img class="list__img" src="img/hw/raster/category/category-banner-4.png" alt="img category 04">
+                                <img class="list__img" src="img/hw/raster/category/category-banner-4.png"
+                                    alt="img category 04">
                             </a>
                         </li>
                         <li class="list__item">
                             <a class="list__link" href="#">
-                                <img class="list__img" src="img/hw/raster/category/category-banner-5.png" alt="img category 05">
+                                <img class="list__img" src="img/hw/raster/category/category-banner-5.png"
+                                    alt="img category 05">
                             </a>
                         </li>
                     </ul>
-                </div> 
+                </div>
             </section>
         </main>
     </div>
