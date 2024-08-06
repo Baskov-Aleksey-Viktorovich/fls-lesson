@@ -316,7 +316,7 @@ body {
 }
 
 /* .search__btn */
-.search-btn {
+.button-search {
   background: url("../img/hw/vector/search-icon.svg") center/1.5625rem no-repeat;
   padding: 25px;
   cursor: pointer;
@@ -442,12 +442,14 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-column-gap: 5rem;
-     -moz-column-gap: 5rem;
-          column-gap: 5rem;
+  -webkit-column-gap: 4rem;
+     -moz-column-gap: 4rem;
+          column-gap: 4rem;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 .brands--margin {
   margin-bottom: 5.625rem;

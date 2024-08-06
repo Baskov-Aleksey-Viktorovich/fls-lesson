@@ -1,4 +1,4 @@
-const search = document.querySelector(".search-btn");
+const search = document.querySelector(".button-search");
 const searchBlock = document.querySelector(".search");
 const closeBtn = document.querySelector('.search__close');
 const wrapper  = document.querySelector('.wrapper');

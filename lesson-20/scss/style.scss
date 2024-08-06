@@ -82,7 +82,7 @@ body {
 
 /* .search__btn */
 
-.search-btn {
+.button-search {
 	background: url("../img/hw/vector/search-icon.svg") center / 1.5625rem no-repeat;
 	padding: 25px;
 	cursor: pointer;
@@ -228,8 +228,9 @@ body {
 
 	&__lists {
 		display: flex;
-		column-gap: 5rem;
+		column-gap: 4rem;
 		justify-content: space-between;
+		flex-wrap: wrap;
 	}
 
 	/* .brands__item */
