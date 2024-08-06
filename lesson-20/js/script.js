@@ -1,28 +1,32 @@
-const search      = document.querySelector(".search-btn");
+const search = document.querySelector(".search-btn");
 const searchBlock = document.querySelector(".search");
-const closeBtn    = document.querySelector('.search__close');
+const closeBtn = document.querySelector('.search__close');
+const wrapper  = document.querySelector('.wrapper');
 
-function show (){
-    search.addEventListener('click', ()=>{
-        searchBlock.style.display = 'block';
-        searchBlock.style.top = '0';
+function show() {
+    search.addEventListener('click', () => {
+        searchBlock.classList.toggle('search--show')
     })
+    if(searchBlock.classList.contains("search--show")){
+        console.log('wwwww');
+        wrapper.addEventListener('scroll',()=>{
+            wrapper.scrollTo({top:0});
+        })
+    }
 }
 
-function closeSearchBlock (){
-    closeBtn.addEventListener('click', ()=>{
-        /* searchBlock.style.display = 'none'; */
-        searchBlock.style.top = '-100%';
+function closeSearchBlock() {
+    closeBtn.addEventListener('click', () => {
+        searchBlock.classList.remove('search--show');
     })
-    console.log('work-close')
 };
 
 /* document.querySelector('form').addEventListener('submit', function(event) {
     event.preventDefault(); 
   }); */
-  
 
 
 
-  show();
-  closeSearchBlock();
+
+show();
+closeSearchBlock();

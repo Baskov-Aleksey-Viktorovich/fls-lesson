@@ -9,6 +9,10 @@
     justify-content: center;
     transition: all .6s ease-in-out;
     /* .search__form */
+    
+    &--show{
+        top: 0;
+    }
 
     &__form {
         display: flex;

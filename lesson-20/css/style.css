@@ -178,6 +178,9 @@ input[type=text] {
   /* .search__form */
   /* .search__input */
 }
+.search--show {
+  top: 0;
+}
 .search__form {
   display: -webkit-box;
   display: -ms-flexbox;
