@@ -7,12 +7,12 @@ function show() {
     search.addEventListener('click', () => {
         searchBlock.classList.toggle('search--show')
     })
-    if(searchBlock.classList.contains("search--show")){
+/*     if(searchBlock.classList.contains("search--show")){
         console.log('wwwww');
         wrapper.addEventListener('scroll',()=>{
             wrapper.scrollTo({top:0});
         })
-    }
+    } */
 }
 
 function closeSearchBlock() {

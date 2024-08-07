@@ -176,21 +176,42 @@ body {
 	/* .overlay__content */
 
 	&__content {
+		display: flex;
+		flex-direction: column;
+		row-gap: 4.125rem;
+		justify-content: center;
 	}
 
 	/* .overlay__title */
 
 	&__title {
+		transition: all .4s ease-in-out;
+		font-size: calc(4.625rem + 1 * (100vw / 1320));
 	}
 
 	/* .overlay__descr */
 
 	&__descr {
+		text-transform: capitalize;
+		font-size: 1.875rem;
+		font-size: calc(0.875rem + 0.875 * (100vw / 1320));
+		line-height: 55px; /* 55px/100 */
+		text-align: left;
+		font-weight: 500;
 	}
 
 	/* .overlay__link */
 
 	&__link {
+		max-width: 13.9375rem;
+		text-align: center;
+		padding: 1.1875rem;
+		background-color: $bgc-button;
+		color: $color-for-btn;
+		text-transform: capitalize;
+		display: flex;
+		justify-content: center;
+		column-gap: 0.5rem;
 	}
 
 	/* .overlay__design */
@@ -202,21 +223,45 @@ body {
 	/* .link__icon */
 
 	&__icon {
+		align-self: center;
 	}
 
 	/* .link__name */
 
 	&__name {
+		font-size: 1.8125rem;
+		align-self: center;
 	}
 }
 .design {
 	/* .design__link */
 
 	&__link {
+		display: block;
+		border: 0.1875rem solid $bgc-border-banner;
+		border-radius: 37.73% 0 37.73% 0 / 29.46% 0 29.46% 0;
+		position: relative;
 	}
 	&__img{
-
+		aspect-ratio: 424 / 542;
+		width: 100%;
+		height: 100%;
+		object-fit: contain;
+		border-radius: 37.73% 0 37.73% 0 / 29.46% 0 29.46% 0;
+		z-index: 1;
+		transform: translate(-1.125rem, -1.25rem);
 	}
+}
+.design__img::after{
+	content: "";
+	top: 0;
+	left: 10px;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	border: 2px solid black;
+	z-index: 2;
+	border-radius: 160px 0 160px 0;
 }
 .brands {
 	/* .brands__container */
@@ -241,6 +286,12 @@ body {
 	/* .brands__link */
 
 	&__link {
+	}
+
+	&__img{
+		width: 100%;
+		height: 100%;
+		object-fit: contain;
 	}
 }
 .brands--margin {
@@ -282,5 +333,16 @@ body {
 		width: 100%;
 		height: 100%;
 		object-fit: contain;
+	}
+}
+
+
+@media (max-width: 768px) {
+	.overlay__title{
+		font-size: calc(2.5625rem + (1 + 1 * 0.7) * ((100vw - 20rem) / 1320));
+	}
+
+	.overlay__descr{
+		font-size: calc(0.875rem + (1 + 1 * 0.7) * ((100vw - 20rem) / 1320));
 	}
 }
