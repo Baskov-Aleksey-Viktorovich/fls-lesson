@@ -1,3 +1,9 @@
 @media (any-hover){
-    
+    [class*="__link"]:hover{
+        color: $main-hover-color;
+    }
+
+    .action__user:hover, .action__cart:hover{
+        filter: invert(44%) sepia(87%) saturate(2640%) hue-rotate(342deg) brightness(94%) contrast(92%);
+    }
 }

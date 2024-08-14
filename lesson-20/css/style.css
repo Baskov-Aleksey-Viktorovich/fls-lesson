@@ -242,6 +242,15 @@ input[type=text] {
   font-family: "Roboto", sans-serif;
 }
 
+@media (any-hover) {
+  [class*=__link]:hover {
+    color: #ff6f61;
+  }
+  .action__user:hover, .action__cart:hover {
+    -webkit-filter: invert(44%) sepia(87%) saturate(2640%) hue-rotate(342deg) brightness(94%) contrast(92%);
+            filter: invert(44%) sepia(87%) saturate(2640%) hue-rotate(342deg) brightness(94%) contrast(92%);
+  }
+}
 /* Import foonts */
 body {
   font-family: "Roboto", sans-serif;
@@ -262,7 +271,6 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   position: relative;
-  background-color: #f4f4f5;
 }
 
 .wrapper > main {
@@ -397,7 +405,13 @@ body {
   /* .menu__item */
   /* .menu__link */
 }
+.menu__link {
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
 .baners {
+  background-color: #f4f4f5;
   /* .baners__container */
   position: relative;
   /* .baners__overlay */
@@ -436,6 +450,7 @@ body {
 
 .baners--margin {
   margin-bottom: 5.625rem;
+  margin-top: 5.0625rem;
 }
 
 .overlay {
@@ -459,6 +474,7 @@ body {
           justify-content: center;
 }
 .overlay__title {
+  font-weight: lighter;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
   font-size: calc(4.625rem + 0.0757575758vw);
@@ -533,6 +549,7 @@ body {
 }
 
 .brands {
+  background-color: #fff;
   /* .brands__container */
   /* .brands__lists */
   /* .brands__item */
@@ -563,9 +580,32 @@ body {
 }
 
 .category {
+  background-color: #fff;
   /* .category__container */
   /* .category__text */
   /* .category__list */
+}
+.category__owerlay {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.category__text {
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  text-align: center;
+  font-size: 34px;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  padding-left: 20px;
+  pointer-events: none;
 }
 .list {
   display: grid;
@@ -584,8 +624,9 @@ body {
      object-fit: contain;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
   .overlay__title {
+    font-weight: lighter;
     font-size: calc(2.5625rem + 1.7 * (100vw - 20rem) / 1320);
   }
   .overlay__descr {

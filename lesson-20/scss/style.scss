@@ -6,6 +6,7 @@
 @import "components/variables";
 @import "mixins";
 @import "components/_search";
+@import "components/_hover";
 
 /* Import foonts */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
@@ -25,7 +26,6 @@ body {
 	display: flex;
 	flex-direction: column;
 	position: relative;
-	background-color: $bgc-header;
 }
 
 .wrapper > main {
@@ -150,11 +150,13 @@ body {
 	/* .menu__link */
 
 	&__link {
+		transition: all .2s ease-in-out;
 	}
 }
 .main {
 }
 .baners {
+	background-color: $bgc-header;
 	/* .baners__container */
 	position: relative;
 
@@ -193,6 +195,7 @@ body {
 
 .baners--margin {
 	margin-bottom: 5.625rem;
+	margin-top: 5.0625rem;
 }
 .overlay {
 	/* .overlay__content */
@@ -207,6 +210,7 @@ body {
 	/* .overlay__title */
 
 	&__title {
+		font-weight: lighter;
 		transition: all .4s ease-in-out;
 		font-size: calc(4.625rem + 1 * (100vw / 1320));
 	}
@@ -283,6 +287,7 @@ body {
 	border-radius: 160px 0 160px 0;
 }
 .brands {
+	background-color: $bgc-main;
 	/* .brands__container */
 
 	&__container {
@@ -317,14 +322,29 @@ body {
 	margin-bottom: 5.625rem;
 }
 .category {
+	background-color: $bgc-main;
 	/* .category__container */
 
 	&__container {
 	}
 
+	&__owerlay{
+		display: flex;
+		justify-content: center;
+	}
+
 	/* .category__text */
 
 	&__text {
+		writing-mode: vertical-lr;
+		transform: rotate(180deg);
+		text-align: center;
+		font-size: 34px;
+		font-weight: 400;
+		line-height: normal;
+		text-transform: uppercase;
+		padding-left: 20px;
+		pointer-events: none;
 	}
 
 	/* .category__list */
@@ -356,8 +376,9 @@ body {
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
 	.overlay__title{
+		font-weight: lighter;
 		font-size: calc(2.5625rem + (1 + 1 * 0.7) * ((100vw - 20rem) / 1320));
 	}
 
