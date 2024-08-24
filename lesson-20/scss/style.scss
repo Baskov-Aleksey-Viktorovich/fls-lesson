@@ -341,11 +341,11 @@ body {
 		writing-mode: vertical-lr;
 		transform: rotate(180deg);
 		text-align: center;
-		font-size: 34px;
+		font-size: 2.125rem;
 		font-weight: 400;
 		line-height: normal;
 		text-transform: uppercase;
-		padding-left: 20px;
+		padding-left: 1.25rem;
 		pointer-events: none;
 	}
 
@@ -357,7 +357,7 @@ body {
 .list {
 	display: grid;
     grid-template: repeat(2, 1fr) / repeat(auto-fill, minmax(250px, 1fr));
-    gap: 24px;
+    gap: 1.5rem;
 	width: 100%;
 	/* .list__item */
 	&__item {
