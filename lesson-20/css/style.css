@@ -344,6 +344,14 @@ body {
 }
 
 .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   /* .logo__img */
 }
 .action {
@@ -412,6 +420,7 @@ body {
   /* .menu__link */
 }
 .menu__link {
+  font-size: 1rem;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
@@ -640,6 +649,33 @@ body {
   aspect-ratio: 1/1;
 }
 
+/* media query */
+@media (max-width: 87.5rem) {
+  .bottom__menu {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-column-gap: 1.2625rem;
+       -moz-column-gap: 1.2625rem;
+            column-gap: 1.2625rem;
+    font-size: 0.875rem;
+  }
+  .top__overlay {
+    -webkit-column-gap: 1rem;
+       -moz-column-gap: 1rem;
+            column-gap: 1rem;
+  }
+}
+@media (max-width: 75rem) {
+  .brands__lists {
+    -webkit-column-gap: 1rem;
+       -moz-column-gap: 1rem;
+            column-gap: 1rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
 @media (max-width: 48rem) {
   .overlay__title {
     font-weight: lighter;
