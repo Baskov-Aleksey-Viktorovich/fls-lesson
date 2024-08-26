@@ -553,9 +553,6 @@ input[type=text] {
 .special-goods .item {
   /* .item__action */
 }
-.special-goods .item__img {
-  width: 100%;
-}
 .special-goods .item__action {
   opacity: 0;
   display: -webkit-box;
@@ -587,6 +584,9 @@ input[type=text] {
 }
 .special-goods .special-goods {
   /* .special-goods__label */
+}
+.special-goods .special-goods__img {
+  width: 100%;
 }
 .special-goods .label {
   position: absolute;

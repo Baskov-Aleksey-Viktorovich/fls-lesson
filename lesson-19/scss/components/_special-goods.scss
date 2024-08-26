@@ -46,9 +46,6 @@
     }
 
     .item {
-        &__img {
-            width: 100%;
-        }
 
         /* .item__action */
 
@@ -87,6 +84,9 @@
         /* .special-goods__label */
 
         &__label {
+        }
+        &__img{
+            width: 100%;
         }
     }
     .label {
