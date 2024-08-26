@@ -535,6 +535,7 @@ body {
   width: 8.25rem;
   height: 4.1875rem;
   background: url("../img/hw/vector/before-frame.svg") center/100% no-repeat;
+  z-index: 1;
 }
 
 .baners::after {
@@ -800,9 +801,27 @@ body {
     font-size: 38px;
     font-weight: 700;
   }
+  .baners--margin {
+    margin-top: 0.9375rem;
+    margin-bottom: 0.9375rem;
+  }
+  .header--margin {
+    margin-bottom: 0.9375rem;
+  }
+  .brands--margin {
+    margin-bottom: 0.9375rem;
+  }
+  .top__overlay {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .overlay__content {
+    row-gap: 1.25rem;
+  }
 }
 .menu.active {
   left: 0;
+  z-index: 98;
 }
 
 @media (max-width: 48rem) {
@@ -812,9 +831,34 @@ body {
   }
   .overlay__descr {
     font-size: calc(0.875rem + 1.7 * (100vw - 20rem) / 1320);
+    line-height: 20px;
   }
   .action__name {
     display: none;
+  }
+}
+@media (max-width: 34.375rem) {
+  .logo {
+    max-width: 5.9375rem;
+  }
+  .logo__img {
+    width: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .top__overlay {
+    -webkit-column-gap: 0.3125rem;
+       -moz-column-gap: 0.3125rem;
+            column-gap: 0.3125rem;
+  }
+  .overlay__content {
+    text-align: center;
+  }
+  .overlay__descr {
+    text-align: center;
+  }
+  .overlay__link {
+    margin: 0 auto;
   }
 }
 @media (min-width: 34.375rem) {

@@ -251,6 +251,7 @@ body {
 	width: 8.25rem;
 	height: 4.1875rem;
 	background: url("../img/hw/vector/before-frame.svg") center / 100% no-repeat;
+	z-index: 1;
 }
 
 .baners::after {
@@ -506,10 +507,31 @@ body {
 		font-size: 38px;
 		font-weight: 700;
 	}
+
+	.baners--margin{
+		margin-top: $margin-bottom-var;
+		margin-bottom: $margin-bottom-var;
+	}
+	.header--margin{
+		margin-bottom: $margin-bottom-var;
+	}
+
+	.brands--margin{
+		margin-bottom: $margin-bottom-var;
+	}
+
+	.top__overlay{
+		justify-content: space-around;
+	}
+	
+	.overlay__content{
+		row-gap: 1.25rem;
+	}
 }
 
 .menu.active{
 	left: 0;
+	z-index: 98;
 }
 
 //770px
@@ -521,13 +543,42 @@ body {
 
 	.overlay__descr {
 		font-size: calc(0.875rem + (1 + 1 * 0.7) * ((100vw - 20rem) / 1320));
+		line-height: 20px;
 	}
 
 	.action__name {
 		display: none;
 	}
 }
+
 //550px
+@media (max-width:34.375rem) {
+	.logo{
+		max-width: 5.9375rem;
+	}
+
+	.logo__img{
+		width: 100%;
+		object-fit: contain;
+	}
+
+	.top__overlay{
+		column-gap: 0.3125rem;
+	}
+	
+	.overlay__content{
+		text-align: center;
+	}
+	.overlay__descr{
+		text-align: center;
+	}
+	.overlay__link{
+		margin: 0 auto;
+	}
+}
+
+
+//550px MIN-WIDTH Attention
 @media (min-width: 34.375rem) {
 	.list__item:first-child {
 		grid-column: span 2;
