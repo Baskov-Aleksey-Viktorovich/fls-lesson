@@ -88,12 +88,15 @@ body {
 	cursor: pointer;
 	align-items: center;
 	align-self: center;
+	transition: all .4s ease;
+	z-index: 99;
 	/* .burger__item */
 
 	&__item {
 		width: 30px;
 		height: 3px;
 		background-color: $bgc-button;
+		transition: all .6s ease;
 	}
 }
 .burger.active{
@@ -112,12 +115,14 @@ body {
 	width: 30px;
 	height: 3px;
 	background-color: $bgc-button;
+	transition: all .4s ease;
 }
 .burger::after {
 	content: "";
 	width: 30px;
 	height: 3px;
 	background-color: $bgc-button;
+	transition: all .3s ease;
 }
 
 .active.burger::after{
@@ -125,6 +130,7 @@ body {
 	top: 50%;
 	transform: translate(-50%);
 	transform: rotate(45deg);
+	transition: all .5s ease;
 } 
 
 .active.burger::before{
@@ -132,6 +138,7 @@ body {
 	top: 50%;
 	transform: translate(-50%);
 	transform: rotate(-45deg);
+	transition: all .5s ease;
 } 
 
 .active .burger__item{
@@ -493,11 +500,16 @@ body {
 		top: 0;
 		left: -100%;
 		text-align: center;
+		transition: all .4s ease-in;
 	}
 	.menu__link{
 		font-size: 38px;
 		font-weight: 700;
 	}
+}
+
+.menu.active{
+	left: 0;
 }
 
 //770px

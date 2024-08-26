@@ -3,7 +3,7 @@ const searchBlock = document.querySelector(".search");
 const closeBtn = document.querySelector('.search__close');
 const wrapper  = document.querySelector('.wrapper');
 const burger   = document.querySelector('.burger');
-
+const getMenu  = document.querySelector(".menu");
 
 
 function show() {
@@ -27,6 +27,7 @@ function closeSearchBlock() {
 function menuShow(){
     burger.addEventListener('click', ()=>{
         burger.classList.toggle('active');
+        getMenu.classList.toggle('active');
     })
 }
 
