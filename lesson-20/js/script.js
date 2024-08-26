@@ -2,6 +2,9 @@ const search = document.querySelector(".button-search");
 const searchBlock = document.querySelector(".search");
 const closeBtn = document.querySelector('.search__close');
 const wrapper  = document.querySelector('.wrapper');
+const burger   = document.querySelector('.burger');
+
+
 
 function show() {
     search.addEventListener('click', () => {
@@ -21,6 +24,12 @@ function closeSearchBlock() {
     })
 };
 
+function menuShow(){
+    burger.addEventListener('click', ()=>{
+        burger.classList.toggle('active');
+    })
+}
+
 /* document.querySelector('form').addEventListener('submit', function(event) {
     event.preventDefault(); 
   }); */
@@ -30,3 +39,4 @@ function closeSearchBlock() {
 
 show();
 closeSearchBlock();
+menuShow();
