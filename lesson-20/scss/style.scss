@@ -15,6 +15,10 @@ body {
 	font-family: "Roboto", sans-serif;
 }
 
+no-scroll{
+	overflow: hidden;
+}
+
 [class*="__container"] {
 	max-width: 82.5rem;
 }
@@ -530,8 +534,12 @@ body {
 }
 
 .menu.active{
+	display: flex;
+	flex-direction: column;
 	left: 0;
 	z-index: 98;
+	position: fixed;
+	overflow: scroll;
 }
 
 //770px
