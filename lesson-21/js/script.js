@@ -1,4 +1,4 @@
-'use strict'; //
+console.log(useAGE);
 
 let userAge = 26;
 
@@ -10,4 +10,6 @@ let userData = {
     favoriteColor: "Grey",
 }
 
-console.log(userAge, userData)
+console.log(userAge, userData);
+
+var useAGE = 1;
