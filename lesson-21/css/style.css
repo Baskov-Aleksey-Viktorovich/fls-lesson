@@ -10,7 +10,7 @@
 }
 
 .header {
-    min-height: 50px;
+    min-height: 100vh;
     background-color: #f7df1e;
     text-align: center;
 }
@@ -31,6 +31,15 @@
     min-height: 100%;
     overflow: clip;
 
+    display: flex;
+    flex-direction: column;
+}
+
+.list{
+    display: flex;
+}
+
+.list__item{
     display: flex;
     flex-direction: column;
 }
