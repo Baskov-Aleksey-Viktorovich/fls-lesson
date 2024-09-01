@@ -11,20 +11,20 @@
 
 .header {
     min-height: 50px;
-    background-color: orangered;
+    background-color: #f7df1e;
     text-align: center;
 }
 
 .header__title {
     font-size: 36px;
-    color: white;
+    color: #000;
     text-align: center;
 }
 
 .header__descr{
     text-align: center;
     font-size: 36px;
-    color: white;
+    color: #000;
 }
 
 .wrapper {
@@ -42,7 +42,7 @@
 .footer{
     font-size: 24px;
     text-align: center;
-    color: white;
+    color: #000;
     min-height: 50px;
-    background-color: orangered;
+    background-color: #f7df1e;
 }
