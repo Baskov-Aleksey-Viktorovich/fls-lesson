@@ -62,3 +62,9 @@ for(let number = 0; number < randomInteger.length; number++){
 }
 console.log(randomInteger, 'Массив до сортування');
 console.log(sortNumber, 'Відсортований массив за допомогою Циклу for');
+
+console.log(dataName.join(), 'Метод join');
+
+let arrToString = dataName.join();
+let reverseString = arrToString.split(',').reverse().join();
+console.log(reverseString, 'Розвернутий массив. Використовуємо split reverse join');
