@@ -36,4 +36,29 @@ let dataObject = {
 for(let i = 0; dataObject.name.length > i; i++){
     console.log(dataObject.name[i],i);
 }
-console.log('Виведено данні в консоль за допомогою циклу')
+console.log('Виведено данні в консоль за допомогою циклу');
+
+let newArr = [];
+
+console.log(newArr, 'emptyArr');
+
+newArr.push(10);
+
+console.log(newArr, 'метод push');
+let dataName = ['Skoda', "BMW", "Porshe", "Audi"];
+
+for(let i = 0; i < dataName.length; i++){
+    newArr.push(dataName[i]);
+}
+
+console.log(newArr, 'метод push, за допомогою циклу for');
+
+let randomInteger = [10, 50, 33, 11, 54, 55, 60];
+let sortNumber    = [];
+for(let number = 0; number < randomInteger.length; number++){
+    if(randomInteger[number] > 20){
+        sortNumber.push(randomInteger[number]);
+    }
+}
+console.log(randomInteger, 'Массив до сортування');
+console.log(sortNumber, 'Відсортований массив за допомогою Циклу for');
