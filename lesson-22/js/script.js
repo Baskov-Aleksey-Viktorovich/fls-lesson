@@ -67,4 +67,4 @@ console.log(dataName.join(), 'Метод join');
 
 let arrToString = dataName.join();
 let reverseString = arrToString.split(',').reverse().join();
-console.log(reverseString, 'Розвернутий массив. Використовуємо split reverse join');
+console.log(reverseString, 'Розвернутий рядок. Використовуємо split reverse join');
