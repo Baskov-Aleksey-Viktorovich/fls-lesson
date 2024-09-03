@@ -10,7 +10,7 @@
 }
 
 .header {
-    min-height: 100vh;
+    min-height: 50vh;
     background-color: #f7df1e;
     text-align: center;
 }
@@ -54,4 +54,30 @@
     color: #000;
     min-height: 50px;
     background-color: #f7df1e;
+}
+
+.main{
+    background-color: #f7df1e;
+    text-align: center;
+    width: 100%;
+}
+.main span{
+    opacity: 0;
+    display: inline-block;
+    font-size: 25px;
+    animation: animate 1s forwards;
+    padding: 25px;
+    font-weight: 900;
+}
+
+@keyframes animate {
+    0% {
+        opacity: 0;
+        transform: rotate(-30deg) translate(0, 10%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: rotate(0deg) translate(0, 0%);
+    }
 }

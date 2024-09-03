@@ -75,7 +75,28 @@ console.log('FUNCTION');
 
 function plus (first, second){
     let res = first + second;
-    return +res;
+    console.log('функція яка виконує додавання цих двох чисел', `${first}, ${second}`, "результат:", res);
 }
 
-console.log(plus(10, 10), 'функція яка виконує додавання 10 + 10');
+plus(10, 10);
+plus(20, 20);
+plus(2, 20);
+
+
+/* Practice */
+
+let getMain = document.querySelector(".main");
+
+let typeText = "Hello World by JS !!!";
+let template = ``;
+
+function initText(typeText){
+    for(let i = 0; i < typeText.length; i++){
+        let item = typeText[i];
+
+        template += `<span style="animation-delay: ${i * 0.2}s;">${item}</span>`;
+    }
+    getMain.innerHTML = template;
+};
+
+initText(typeText);
