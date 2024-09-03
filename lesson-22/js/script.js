@@ -30,7 +30,7 @@ let dataObject = {
     age: 26,
     favorite: 'red',
     gender: 'man',
-}
+};
 
 
 for(let i = 0; dataObject.name.length > i; i++){
@@ -68,3 +68,14 @@ console.log(dataName.join(), 'Метод join');
 let arrToString = dataName.join();
 let reverseString = arrToString.split(',').reverse().join();
 console.log(reverseString, 'Розвернутий рядок. Використовуємо split reverse join');
+
+/* FUNCTION */
+
+console.log('FUNCTION');
+
+function plus (first, second){
+    let res = first + second;
+    return +res;
+}
+
+console.log(plus(10, 10), 'функція яка виконує додавання 10 + 10');
