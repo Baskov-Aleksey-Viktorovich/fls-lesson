@@ -68,7 +68,6 @@ const getList   = document.querySelector(".list");
 for (let item of liElement){
     if(item != null){
         item.style = `font-size:24px;
-        text-decoration:line-through;
         color:red;
         font-weight:700;
         `;
@@ -87,6 +86,46 @@ console.log(parent , 'дістаю за допомогою parentElement бат�
 
 const listItem = document.querySelector('.list__item');
 let listItemParent = listItem.closest(".wrapper");
-console.log(listItemParent, 'Перевірка наявності чи є вказаний селектор у самого обьєкта. Якщо елемент має у батькіських елементах в будь якій вкладеності. Тобто починаючи з самого себе і так далі!')
+console.log(listItemParent, 'Перевірка наявності чи є вказаний селектор у самого обьєкта. Якщо елемент має у батькіських елементах в будь якій вкладеності. Тобто починаючи з самого себе і так далі!');
 
 
+/* Взаємодія з документом */
+
+console.log("Взаємодія з документом");
+
+console.log('innerHTML - ');
+
+
+liElement.forEach((item, index) => {
+    console.log(item.innerHTML, 'SHOW');
+    item.textContent = `Sale Price ${item.innerHTML}`
+});
+
+/* Try Create Element */
+
+let getMain = document.querySelector('.main')
+let createElement = document.createElement('div');
+createElement.innerHTML = "<h1>This new element form CREATEelement method</h1>";
+console.log(createElement);
+
+
+getMain.prepend(createElement);
+
+/* Test insertAdjacentHTML */
+
+let car = ['bmw', 'audi', 'seat', 'opel', 'opel2', "Виведений елемент за допомогою js"];
+let makeHTML = "";
+let ul = "<ul>";
+let ulC = "</ul>";
+
+
+for(let i = 0; i < car.length; i++){
+    
+    makeHTML += `<li>${car[i]}</li>`;
+    console.log(makeHTML)
+}
+
+let makeUL = ul+=makeHTML;
+makeUL+=ulC;
+
+getMain.insertAdjacentHTML("beforebegin", makeUL);
