@@ -63,15 +63,30 @@ let prevElement = bodyElement.previousElementSibling;
 console.log(prevElement)
 
 const liElement = document.querySelectorAll("li.list__item.active");
+const getList   = document.querySelector(".list");
 
 for (let item of liElement){
     if(item != null){
-        item.style.color = "red";
-        item.style.fontSize  =  "25px";
+        item.style = `font-size:24px;
+        text-decoration:line-through;
+        color:red;
+        font-weight:700;
+        `;
         console.log(item, "виводимо item елементи які мають класс active  li.list__item.active ")
     }
 }
 
+console.log(getList, "Тут дістаю сам .list")
+
 /* Отримання батькіського елементу)) */
+let parent = getList.parentElement;
+
+console.log(parent , 'дістаю за допомогою parentElement батьківський елементу list');
+
+/* Перевірка наявності чи є вказаний селектор у самого обьєкта */
+
+const listItem = document.querySelector('.list__item');
+let listItemParent = listItem.closest(".wrapper");
+console.log(listItemParent, 'Перевірка наявності чи є вказаний селектор у самого обьєкта. Якщо елемент має у батькіських елементах в будь якій вкладеності. Тобто починаючи з самого себе і так далі!')
 
 

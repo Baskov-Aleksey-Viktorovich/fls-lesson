@@ -41,11 +41,12 @@ li{
 
 .list{
     display: flex;
+    justify-content: center;
+    gap: 20px;
 }
 
 .list__item{
-    display: flex;
-    flex-direction: column;
+    align-self: center;
 }
 
 .wrapper>main {
