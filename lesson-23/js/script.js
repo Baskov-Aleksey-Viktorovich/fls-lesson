@@ -61,3 +61,17 @@ console.log(getCollection);
 
 let prevElement = bodyElement.previousElementSibling;
 console.log(prevElement)
+
+const liElement = document.querySelectorAll("li.list__item.active");
+
+for (let item of liElement){
+    if(item != null){
+        item.style.color = "red";
+        item.style.fontSize  =  "25px";
+        console.log(item, "виводимо item елементи які мають класс active  li.list__item.active ")
+    }
+}
+
+/* Отримання батькіського елементу)) */
+
+
