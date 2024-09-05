@@ -129,3 +129,14 @@ let makeUL = ul+=makeHTML;
 makeUL+=ulC;
 
 getMain.insertAdjacentHTML("beforebegin", makeUL);
+
+
+let getHeader = document.querySelector('.header');
+console.log(getHeader);
+
+getHeader.insertAdjacentElement('beforeend', getBtn);
+
+console.log(`let getHeader = document.querySelector('.header');
+console.log(getHeader);
+
+getHeader.insertAdjacentElement('beforeend', getBtn); Перенос елементів`)
