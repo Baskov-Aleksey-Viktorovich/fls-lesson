@@ -7,6 +7,8 @@
 const windowWidth = window.innerWidth;
 console.log(windowWidth, 'це ширина екрану за домогою window.innerWidth');
 
+console.log(`${windowWidth}`);
+
 /* BOM */
 //Navigator can support get information about user system and another information
 console.log(navigator.userAgent, 'Який використовується браузер');
@@ -139,4 +141,5 @@ getHeader.insertAdjacentElement('beforeend', getBtn);
 console.log(`let getHeader = document.querySelector('.header');
 console.log(getHeader);
 
-getHeader.insertAdjacentElement('beforeend', getBtn); Перенос елементів`)
+getHeader.insertAdjacentElement('beforeend', getBtn); Перенос елементів`);
+
