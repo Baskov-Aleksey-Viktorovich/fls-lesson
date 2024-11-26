@@ -34,6 +34,7 @@ li{
 .wrapper {
     min-height: 100%;
     overflow: clip;
+    position: relative;
 
     display: flex;
     flex-direction: column;
@@ -89,7 +90,7 @@ li{
 
 .dialog{
     position: absolute;
-    top: 50%;
+    top: 20%;
     left: 0;
     transform: translateY(-50%);
     max-width: 400px;

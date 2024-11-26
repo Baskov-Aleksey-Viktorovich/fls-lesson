@@ -7,12 +7,15 @@
 const windowWidth = window.innerWidth;
 console.log(windowWidth, 'це ширина екрану за домогою window.innerWidth');
 
-console.log(`${windowWidth}`);
+
+// how to get height object window
+const windowHeight = window.innerHeight;
+console.log(windowHeight, "це висота екрану за допомогою windowHeight")
 
 /* BOM */
 //Navigator can support get information about user system and another information
 console.log(navigator.userAgent, 'Який використовується браузер');
-console.log(navigator.userAgentData.platform, '- System (Platform)');
+console.log(navigator.userAgentData.platform, '- System (Platform) Можемо дістати з якого пристрою ви зараз відкриваєте сторінку');
 
 
 /* Location */
@@ -62,10 +65,13 @@ console.log(getCollection);
 /* Навігація до батьківських або сусідніх елементів */
 
 let prevElement = bodyElement.previousElementSibling;
-console.log(prevElement)
+console.log(prevElement, '%cтут за допомогою previousElementSibling дістаємо  елемент який йде перед body',);
 
 const liElement = document.querySelectorAll("li.list__item.active");
 const getList   = document.querySelector(".list");
+
+
+// use for of 
 
 for (let item of liElement){
     if(item != null){
@@ -76,6 +82,7 @@ for (let item of liElement){
         console.log(item, "виводимо item елементи які мають класс active  li.list__item.active ")
     }
 }
+
 
 console.log(getList, "Тут дістаю сам .list")
 
@@ -103,7 +110,7 @@ liElement.forEach((item, index) => {
     item.textContent = `Sale Price ${item.innerHTML}`
 });
 
-/* Try Create Element */
+/* Try Create Element ;*/
 
 let getMain = document.querySelector('.main')
 let createElement = document.createElement('div');
@@ -142,4 +149,3 @@ console.log(`let getHeader = document.querySelector('.header');
 console.log(getHeader);
 
 getHeader.insertAdjacentElement('beforeend', getBtn); Перенос елементів`);
-
