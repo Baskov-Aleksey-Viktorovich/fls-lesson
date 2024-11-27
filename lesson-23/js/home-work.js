@@ -33,10 +33,13 @@ for(let i = 0; i < getItem.length; i++){
     getItem[i].classList.add('active');
     getItem[i].textContent = (`element №${i+1}`);
     if(getItem[i].closest('.active')){
+        getItem[i].style.fontWeight = 600;
         getItem[i].style.color = 'red';
+        getItem[i].style.fontSize = '18px';
     } 
 }
 
 if(makeDiv.closest('.loaded')){
     makeDiv.style.color = 'green';
+    makeDiv.style.fontSize = '48px';
 }
