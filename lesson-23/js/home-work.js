@@ -16,6 +16,7 @@ function addList (getQuntity){
             ul.appendChild(li);
         }
         getBody.appendChild(ul);
+        ul.classList.add('ul');
     }
 
 addList(getQuntity);
@@ -27,7 +28,8 @@ getBody.appendChild(makeDiv);
 
 // task 04
 
-const getItem = document.getElementsByClassName("item");
+const getItem = document.querySelectorAll(".item");  // querySelector, querySelectorAll, getElementsByClassName
+
 
 for(let i = 0; i < getItem.length; i++){
     getItem[i].classList.add('active');
@@ -43,3 +45,18 @@ if(makeDiv.closest('.loaded')){
     makeDiv.style.color = 'green';
     makeDiv.style.fontSize = '48px';
 }
+
+
+let mainDiv = document.querySelector('.main-div');
+let mainHead  = document.querySelector('.mainHead');
+
+console.log(mainDiv, mainHead)
+
+mainHead.prepend(mainDiv);
+
+/* mainHead.insertAdjacentElement("afterbegin", mainDiv); test fot transfer element with js */
+
+
+/* task 05 */
+
+let getBtn = document.querySelector(".button");
