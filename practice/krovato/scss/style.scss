@@ -1,0 +1,32 @@
+/* /* import styles */
+@import "reset.scss";
+/* reset default */
+@import "mixins";
+
+/* Import foonts */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+
+body {
+	font-family: "Roboto", sans-serif;
+}
+
+no-scroll{
+	overflow: hidden;
+}
+
+[class*="__container"] {
+	max-width: 82.5rem;
+}
+
+.wrapper {
+	min-height: 100%;
+	overflow: clip;
+
+	display: flex;
+	flex-direction: column;
+	position: relative;
+}
+
+.wrapper > main {
+	flex-grow: 1;
+}
